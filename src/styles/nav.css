@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "ScrollTroll";
+    src: local("Scroll_Troll-Regular"),
+    url("../fonts/Scroll_troll-Regular.ttf") format("truetype");
+}
+
+.navBar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftNav{
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    padding-left: 2%;
+}
+.navTitle{
+    display: flex;
+    padding-left: 40px;
+    text-decoration: none;
+    color: #202258;
+    font-family: "ScrollTroll";
+    font-size: 2.5vw;
+}
+
+.navUl{
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 50%;
+
+}
+.navLi{
+    padding: 0px 20px 0px 20px;
+    
+}
+.navLinks{
+    text-decoration: none;
+    color: #595B8C;
+    font-family: "ScrollTroll";
+        font-size: 2vw;
+}
+.navLinks:hover{
+    color: #202258; /*fix later*/
+    cursor: pointer;
+    text-decoration: underline;
+}
+.navLinks :active {
+    color: red;
+    /*fix later*/
+    cursor: pointer;
+    text-decoration: underline;
+}

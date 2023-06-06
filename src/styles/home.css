@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "ScrollTroll";
+    src: local("Scroll_Troll-Regular"),
+        url("../fonts/Scroll_troll-Regular.ttf") format("truetype");
+}
+.homeMain{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+h1{
+color: #202258;
+font-family: "ScrollTroll";
+font-size: 6.5vw;
+padding: none;
+margin: none;
+
+
+}
+.signupLink{
+    background-color: #7A9647 ;
+    color: #fff;
+    font-family: "ScrollTroll";
+    font-size: 1.8vw;
+    padding: 10px 30px 10px 30px;
+border: #7A9647;
+border-radius: 50px;
+}

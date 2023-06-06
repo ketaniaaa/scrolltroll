@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+//Page Imports
+import Home from './pages/Home';
+import Blog from './pages/Blog';
+import Design from './pages/Design';
+
+
+//Design Imports
+import EssayBlog from './pages/blogs/BlogEssay1';
+
+
+//Component Imports 
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+class App extends Component {
+  render(){
+    return <div className='App'>
+    <Navbar/>
+    <Routes>
+      <Route exact path='/' element= {<Home/>}/>
+
+
+      {/* Main Pages */}
+       <Route path='/BlogSelection' element= {<Blog/>}/>
+        <Route path='/DesignSelection' element= {<Design/>}/>
+         <Route path='/EssayBlog' element= {<EssayBlog/>}/>
+
+      {/* Blog Pages */}
+      {/* Design Pages */}
+      {/* Artwork Pages */}
+
+    </Routes>
+    <Footer/>
+</div>
+  }
 }
 
 export default App;
