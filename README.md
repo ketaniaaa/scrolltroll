@@ -18,3 +18,5 @@ This site contains a homepage, blog and design page as the artwork is implicit i
 - contrast checker for style guide 
 - microformats for some elements 
 - layout through negative space etc and grids whatevs 
+- tabination using this.state fix 
+- new blog posts 
