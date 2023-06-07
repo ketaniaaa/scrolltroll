@@ -48,7 +48,7 @@ box-shadow: 5px 5px 0px 0px rgba(60, 61, 135, 0.65);
 }
 .blogCardAuthor{
     font-family: 'ScrollTroll';
-    font-size: 30px;
+    font-size: 1.8em;
     margin: 0px 10px 0px 10px;
     color: #595B8C;
 }
@@ -59,7 +59,7 @@ box-shadow: 5px 5px 0px 0px rgba(60, 61, 135, 0.65);
     justify-content: center;
     padding: 0px 0px 0px 20px;
     font-family: 'Outfit';
-    font-size: 24px;
+    font-size: 1.5em;
     color: #202258;
   
 }

@@ -6,10 +6,10 @@
     url("./fonts/Scroll_troll-Regular.ttf") format("truetype");
 }
 .App {
-  background-color: #FFF2D8;;
+  background-color: #fcf6ea;
 }
 body{
-  background-color: #FFF2D8;
+  background-color: #fcf6ea;
   padding: 0;
   margin: 0;
 }

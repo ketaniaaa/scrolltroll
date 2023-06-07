@@ -1,42 +1,47 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom";
-import { useState } from 'react';
+
 
 import EssayBanner from '../../images/blogimages/essay.JPG';
 import icon from '../../images/icon.png';
-
 import EssayPic from '../../images/blogimages/poem-portrait.png';
+import '../../styles/blogTemplate.css';
 
 export default class BlogEssay1 extends Component {
   render() {
     return (
      <main className='e-content blogEntryMain'>
-        
-        <Link to={'/BlogSelection'}></Link>
-        <img src={EssayBanner} alt="blah" className='u-photo BlogImage' />
+       
+        <Link to={'/BlogSelection'}>back</Link>
+        <img src={EssayBanner} alt="blah" className='u-photo blogImage' />
 
 
         <section className='h-card blogIconandButton'>
-        <img src={icon} alt="..sndns" />
+        <img src={icon} alt="..sndns" className='blogTempIcon' />
         <Link to={'/'} className='blogNextButton'>Next Post</Link>
         </section>
+
+
+        <section className='e-content blogTempMain'>
+
         <h1 className='blogTitle p-name'>A Critical Analysis of &lsquo;POEMPORTRAITS&rsquo; by Es Devlin, Ross Goodwin, IYOIYO and Google Arts &amp; Culture.&nbsp; </h1>
         <h2 className='blogAuthor p-author'>@Ketania</h2>
-        <p className='p-summary blogDescription'> An Essay exploring my chosen artwork in the context of Internet Artwork </p>
-        <p className='dt-published blogDate'> 4.34PM. 14 May, 2023</p>
+        <p className='p-summary blogDescription'> An Essay exploring my chosen artwork in the context of Internet Artwork. This essay focuses on the idea of artifical intelligence and its ethical uses as an artistic tool. </p>
+        <p className='dt-published blogTempDate'> 4.34PM. 14 May, 2023</p>
         
         <ul className='tabList navigation'>
-          <li className='blogTab tab activeTab'>Blog</li>
-            <li className='blogRefTab tab'>References</li>
+          <li className='blogTab tab activeTab'><a href='#blogID' id='blogTab'>Blog</a></li>
+            <li className='blogRefTab tab'><a href='#refList' id='refTab'>References</a></li>
 
         </ul>
-        <section className='h-card blogRefContentContainer'>
+
+        <section className='h-card blogContentContainer' id='blogID'>
         <article className='e-content blogActiveContent bfCont'>
         <p>As artificial intelligence becomes more accessible to the art community, I have become more interested in using AI as a tool for creating artistic experiences. For this reason, I have chosen the net artwork ‘POEMPORTRAITS’ by Es Devlin to discuss.  Devlin’s artwork has highlighted the internet’s ability to create collective pieces that intersect visual and literary artwork. This essay will provide a critical analysis of the piece ‘POEMPORTRAITS’ in relation to the use of the internet as a medium through discussion of the artwork’s creatorship, interactive experience and aesthetic values. 
 </p>
 <p>‘POEMPORTRAITS’ requests users to provide a word and a webcam-generated photo of the user to create a two-word poem that is integrated onto the portrait of the user. Each portrait rendered features the poem repeated across the image to form an overlapped effect. The size of the font of the poem across the image is increased on the areas of the user's face. The original webcam photo is also recoloured with new vibrant pools of colours around the portrait. Each portrait has a unique poem with individual colourization of the user’s picture to create a one-of-a-kind artwork that is part of a larger collection. </p>
      <figure className='u-photo blogFigure'>
-      <img src={EssayPic} alt="A poem portrat from Es Devlin with users portrait and the poem: This isolation of the light of the night, my wet wings break, the fresh black faces." className='blogImage u-photo'/> 
+      <img src={EssayPic} alt="A poem portrat from Es Devlin with users portrait and the poem: This isolation of the light of the night, my wet wings break, the fresh black faces." className='blogFigure u-photo'/> 
       <figcaption className='p-summary figCap'>  <em>Figure 1:</em> My unique POEMPORTRAIT 
 </figcaption>
        </figure>
@@ -68,25 +73,25 @@ export default class BlogEssay1 extends Component {
  
         <ol className='h-card blogReferenceSection'>
       
-   <h1 className='p-name blogTitle'>References</h1>
+   <h3 className='p-name referenceList' id='refList'>References</h3>
         <li className='author'>Benjamin, W. (2008)&nbsp;The Work of Art in the Age of Mechanical Reproduction. Penguin UK.</li>
-<li className='author'>Carrier, D. (2020)&nbsp;The Work of Art in the Age of the Internet. Available at:<a href="https://hyperallergic.com/563938/the-work-of-art-in-the-age-of-the-internet/" className='u-url'>&nbsp;https://hyperallergic.com/563938/the-work-of-art-in-the-age-of-the-internet/</a> (Accessed: 2 May 2023).</li>
-<li className='author'>Cover, R. (2006) &lsquo;Audience inter/active: Interactive media, narrative control and reconceiving audience history&rsquo;,&nbsp;New Media &amp; Society, 8(1), pp. 139&ndash;158. Available at:<a href="https://doi.org/10.1177/1461444806059922" className='u-url'>&nbsp;https://doi.org/10.1177/1461444806059922</a>.</li>
-<li className='author'>Devlin, E. and Goodwin, R. (no date)&nbsp;POEMPORTRAITS by Es Devlin, Ross Goodwin, IYOIYO, Google Arts &amp; Culture - Experiments with Google. Available at:<a href="https://experiments.withgoogle.com/poemportraits" className='u-url'>&nbsp;https://experiments.withgoogle.com/poemportraits</a> (Accessed: 1 May 2023).</li>
-<li className='author'> Euchner, J. (2016) &lsquo;The Medium is the Message&rsquo;,&nbsp;Research-Technology Management, 59, pp. 9&ndash;11. Available at:<a href="https://doi.org/10.1080/08956308.2016.1209068" className='u-url'>&nbsp;https://doi.org/10.1080/08956308.2016.1209068</a>.</li>
-<li className='author'>Jennifer Aue (2019)&nbsp;The Relationship Between Art and AI | by Jennifer Aue | IBM Design | Medium. Available at:<a href="https://medium.com/design-ibm/the-role-of-art-in-ai-31033ad7c54e" className='u-url'>&nbsp;https://medium.com/design-ibm/the-role-of-art-in-ai-31033ad7c54e</a> (Accessed: 1 May 2023).</li>
-<li className='author'>Mailloux, S. (1983) &lsquo;Convention and Context&rsquo;,&nbsp;New Literary History, 14(2), pp. 399&ndash;407. Available at:<a href="https://doi.org/10.2307/468693" className='u-url'>&nbsp;https://doi.org/10.2307/468693</a>.</li>
-<li className='author'>McCormack, J., Gifford, T. and Hutchings, P. (2019) &lsquo;Autonomy, Authenticity, Authorship and Intention in computer generated art&rsquo;. arXiv. Available at:<a href="https://doi.org/10.48550/arXiv.1903.02166" className='u-url'>&nbsp;https://doi.org/10.48550/arXiv.1903.02166</a>.</li>
+<li className='author'>Carrier, D. (2020)&nbsp;The Work of Art in the Age of the Internet. Available at:<a href="https://hyperallergic.com/563938/the-work-of-art-in-the-age-of-the-internet/" className='u-url refA'>&nbsp;https://hyperallergic.com/563938/the-work-of-art-in-the-age-of-the-internet/</a> (Accessed: 2 May 2023).</li>
+<li className='author'>Cover, R. (2006) &lsquo;Audience inter/active: Interactive media, narrative control and reconceiving audience history&rsquo;,&nbsp;New Media &amp; Society, 8(1), pp. 139&ndash;158. Available at:<a href="https://doi.org/10.1177/1461444806059922" className='u-url refA'>&nbsp;https://doi.org/10.1177/1461444806059922</a>.</li>
+<li className='author'>Devlin, E. and Goodwin, R. (no date)&nbsp;POEMPORTRAITS by Es Devlin, Ross Goodwin, IYOIYO, Google Arts &amp; Culture - Experiments with Google. Available at:<a href="https://experiments.withgoogle.com/poemportraits" className='u-url refA'>&nbsp;https://experiments.withgoogle.com/poemportraits</a> (Accessed: 1 May 2023).</li>
+<li className='author'> Euchner, J. (2016) &lsquo;The Medium is the Message&rsquo;,&nbsp;Research-Technology Management, 59, pp. 9&ndash;11. Available at:<a href="https://doi.org/10.1080/08956308.2016.1209068" className='u-url refA'>&nbsp;https://doi.org/10.1080/08956308.2016.1209068</a>.</li>
+<li className='author'>Jennifer Aue (2019)&nbsp;The Relationship Between Art and AI | by Jennifer Aue | IBM Design | Medium. Available at:<a href="https://medium.com/design-ibm/the-role-of-art-in-ai-31033ad7c54e" className='u-url refA'>&nbsp;https://medium.com/design-ibm/the-role-of-art-in-ai-31033ad7c54e</a> (Accessed: 1 May 2023).</li>
+<li className='author'>Mailloux, S. (1983) &lsquo;Convention and Context&rsquo;,&nbsp;New Literary History, 14(2), pp. 399&ndash;407. Available at:<a href="https://doi.org/10.2307/468693" className='u-url refA'>&nbsp;https://doi.org/10.2307/468693</a>.</li>
+<li className='author'>McCormack, J., Gifford, T. and Hutchings, P. (2019) &lsquo;Autonomy, Authenticity, Authorship and Intention in computer generated art&rsquo;. arXiv. Available at:<a href="https://doi.org/10.48550/arXiv.1903.02166" className='u-url refA'>&nbsp;https://doi.org/10.48550/arXiv.1903.02166</a>.</li>
 <li className='author'>McLuhan, M. (1964) &lsquo;The Medium is the Message (1964)&rsquo;, in&nbsp;Crime and Media. Routledge.</li>
 <li className='author'>McLuhan, M., and McLuhan, E. 1988. The Laws of Media: The New Science. Toronto: University of Toronto Press.&nbsp;</li>
-<li className='author'>Morris, M. and Ogan, C. (1996) &lsquo;The Internet as Mass Medium&rsquo;,&nbsp;Journal of Computer-Mediated Communication, 1(4), p. JCMC141. Available at:<a href="https://doi.org/10.1111/j.1083-6101.1996.tb00174.x" className='u-url'>&nbsp;https://doi.org/10.1111/j.1083-6101.1996.tb00174.x</a>.</li>
-<li className='author'>POEMPORTRAITS&nbsp;(no date). Available at:<a href="https://artsexperiments.withgoogle.com/poemportraits " className='u-url'>&nbsp;https://artsexperiments.withgoogle.com/poemportraits</a> (Accessed: 1 May 2023).</li>
-<li className='author'>Ricci, B. (2020)&nbsp;Net Art and How The Internet Has Created A New Medium,&nbsp;Artland Magazine. Available at:<a href="https://magazine.artland.com/agents-of-change-internet-net-art-how-the-world-wide-web-has-affected-the-way-we-make-art/" className='u-url'>&nbsp;https://magazine.artland.com/agents-of-change-internet-net-art-how-the-world-wide-web-has-affected-the-way-we-make-art/</a> (Accessed: 1 May 2023).</li>
-<li className='author'>Robert Adrian X Turns 80 -&nbsp;(no date)&nbsp;Ars Electronica Blog. Available at:<a href="https://ars.electronica.art/aeblog/en/2015/02/21/robert-adrian-x-turns-80/" className='u-url'>&nbsp;https://ars.electronica.art/aeblog/en/2015/02/21/robert-adrian-x-turns-80/</a> (Accessed: 2 May 2023).</li>
+<li className='author'>Morris, M. and Ogan, C. (1996) &lsquo;The Internet as Mass Medium&rsquo;,&nbsp;Journal of Computer-Mediated Communication, 1(4), p. JCMC141. Available at:<a href="https://doi.org/10.1111/j.1083-6101.1996.tb00174.x" className='u-url refA'>&nbsp;https://doi.org/10.1111/j.1083-6101.1996.tb00174.x</a>.</li>
+<li className='author'>POEMPORTRAITS&nbsp;(no date). Available at:<a href="https://artsexperiments.withgoogle.com/poemportraits " className='u-url refA'>&nbsp;https://artsexperiments.withgoogle.com/poemportraits</a> (Accessed: 1 May 2023).</li>
+<li className='author'>Ricci, B. (2020)&nbsp;Net Art and How The Internet Has Created A New Medium,&nbsp;Artland Magazine. Available at:<a href="https://magazine.artland.com/agents-of-change-internet-net-art-how-the-world-wide-web-has-affected-the-way-we-make-art/" className='u-url refA'>&nbsp;https://magazine.artland.com/agents-of-change-internet-net-art-how-the-world-wide-web-has-affected-the-way-we-make-art/</a> (Accessed: 1 May 2023).</li>
+<li className='author'>Robert Adrian X Turns 80 -&nbsp;(no date)&nbsp;Ars Electronica Blog. Available at:<a href="https://ars.electronica.art/aeblog/en/2015/02/21/robert-adrian-x-turns-80/" className='u-url refA'>&nbsp;https://ars.electronica.art/aeblog/en/2015/02/21/robert-adrian-x-turns-80/</a> (Accessed: 2 May 2023).</li>
        </ol>
       
         </section>
-
+</section>
      </main>
     )
   }
