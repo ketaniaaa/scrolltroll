@@ -8,17 +8,7 @@ import DesignImgD from '../images/designimages/us.JPG';
 
 
 export const DesignList =[
-    {
-    name: "Wireframes",
-    user: "@ketania",
-    description: "Wireframes for TrollScroll.",
-    icon: icon,
-    image: DesignImgA,
-    date: "2:05PM. 5 June, 2023",
-    platform: "ScrollTroll Desktop",
-    alt: 'Drawing of low-fidelity wireframes',
-    route: "/"
-},
+    
 {
     name: "Style Guide",
     user: "@ketania",
@@ -28,7 +18,18 @@ export const DesignList =[
     date: "8:40PM. 1 June, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'Drawing of a style guide with colour swatches and h1, h2 and h3 font sizings'
-     ,route: "/"
+     ,route: "/StyleGuide"
+},
+{
+    name: "Wireframes",
+    user: "@ketania",
+    description: "Wireframes for TrollScroll.",
+    icon: icon,
+    image: DesignImgA,
+    date: "2:05PM. 5 June, 2023",
+    platform: "ScrollTroll Desktop",
+    alt: 'Drawing of low-fidelity wireframes',
+    route: "/Wireframes"
 },
 {
     name: "Interaction Design of TrollScroll",
@@ -39,10 +40,10 @@ export const DesignList =[
     date: "3:05AM. 26 May, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'A drawing of flowchart '
-     ,route: "/"
+     ,route: "/IXD"
 },
 {
-    name: "UX Reflection",
+    name: "UX Reflection of ScrollTroll",
     user: "@ketania",
     description: "An analysis of the UX and UI implementation of TrollScroll",
     icon: icon,
@@ -50,7 +51,7 @@ export const DesignList =[
     date: "7:45PM. 13 May, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'Drawing of block letters saying UXUI'
- ,route: "/"
+ ,route: "/UXReflection2"
 },
 
 

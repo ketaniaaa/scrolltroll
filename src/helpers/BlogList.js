@@ -18,7 +18,7 @@ export const BlogList =[
     date: "2:05PM. 5 June, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'Drawing of a handheld mirror',
-    route: "/EssayBlog",
+    route: "/Reflection2",
 
 },
 {
@@ -30,7 +30,7 @@ export const BlogList =[
     date: "8:40PM. 1 June, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'the words what is in a name with a red squiggly line to represent autocorrect underlining the sentence'
-     ,route: "/"
+     ,route: "/AutocorrectBias"
 },
 {
     name: "African Digital Artwork and Ethno-computing",
@@ -41,7 +41,7 @@ export const BlogList =[
     date: "3:05AM. 26 May, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'Silouette of Africa with some code brackets in white on the image'
-     ,route: "/"
+     ,route: "/AfricanArt"
 },
 {
     name: "AI and Art",
@@ -52,7 +52,7 @@ export const BlogList =[
     date: "7:45PM. 13 May, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'rendering of a simple neutral network with the words AI in the middle'
- ,route: "/"
+ ,route: "/AiArt"
 },
 {
     name: "Critical Analysis Essay: POEMPORTRAITS",
@@ -77,7 +77,7 @@ export const BlogList =[
     platform: "ScrollTroll Desktop",
    
     alt: 'Drawing of a compute with the image of a troll face inbetween two curly brackets on the screen of the laptop'
-,route: "/"
+,route: "/PrepBlog"
 },
 
 

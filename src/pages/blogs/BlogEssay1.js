@@ -18,7 +18,8 @@ export default class BlogEssay1 extends Component {
 
         <section className='h-card blogIconandButton'>
         <img src={icon} alt="..sndns" className='blogTempIcon' />
-        <Link to={'/'} className='blogNextButton'>Next Post</Link>
+
+       <button className='nextButton'><Link to={'/'} className='blogNextButton'>Next Post</Link></button> 
         </section>
 
 
@@ -42,7 +43,7 @@ export default class BlogEssay1 extends Component {
 <p>‘POEMPORTRAITS’ requests users to provide a word and a webcam-generated photo of the user to create a two-word poem that is integrated onto the portrait of the user. Each portrait rendered features the poem repeated across the image to form an overlapped effect. The size of the font of the poem across the image is increased on the areas of the user's face. The original webcam photo is also recoloured with new vibrant pools of colours around the portrait. Each portrait has a unique poem with individual colourization of the user’s picture to create a one-of-a-kind artwork that is part of a larger collection. </p>
      <figure className='u-photo blogFigure'>
       <img src={EssayPic} alt="A poem portrat from Es Devlin with users portrait and the poem: This isolation of the light of the night, my wet wings break, the fresh black faces." className='blogFigure u-photo'/> 
-      <figcaption className='p-summary figCap'>  <em>Figure 1:</em> My unique POEMPORTRAIT 
+      <figcaption className='p-caption figCap'>  <em>Figure 1:</em> My unique POEMPORTRAIT 
 </figcaption>
        </figure>
      <p>Upon first interaction with &lsquo;POEMPORTRAITS&rsquo;, the viewer is made aware of the use of artificial intelligence. &nbsp;This emphasizes the need to focus on the uses of artificial intelligence in this analysis. The artwork makes use of two types of artificial intelligence; natural language processing (NLP) and image processing to create the final and unique &lsquo;poem portrait&rsquo;.&nbsp;</p>

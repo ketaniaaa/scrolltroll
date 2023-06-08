@@ -14,7 +14,8 @@ export default class Design extends Component {
 
       {DesignList.map((designItem, value)=>{
         return(
-          <DesignItem name={designItem.name}
+          <DesignItem className='entryItem'
+          name={designItem.name}
           user={designItem.user}
           description={designItem.description}
               icon={designItem.icon}
