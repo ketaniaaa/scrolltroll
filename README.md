@@ -19,3 +19,4 @@ This site contains a homepage, blog and design page as the artwork is implicit i
 - layout through negative space etc and grids whatevs for styleguide 
 - tabination using this.state fix 
 - new blog posts 
+- fix hashlinks

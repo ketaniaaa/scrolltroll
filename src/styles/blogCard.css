@@ -143,7 +143,7 @@ border-radius: 20px;
     }
 }
 
-@media only screen and (min-width: 374px) and (max-width: 766px){
+@media only screen and (min-width: 104px) and (max-width: 766px){
 .blogGrid{
     grid-template-columns: 1fr;
 

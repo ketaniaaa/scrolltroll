@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from "react-router-dom";
-
+import { HashLink } from 'react-router-hash-link';
 
 import EssayBanner from '../../images/blogimages/essay.JPG';
 import icon from '../../images/icon.png';
@@ -11,7 +11,7 @@ import BackButton from '../../components/EntryBackButton';
 export default class BlogEssay1 extends Component {
   render() {
     return (
-     <main className='e-content blogEntryMain'>
+     <main className='e-content blogEntryMain' id='#top'>
        
        <BackButton/>
         <img src={EssayBanner} alt="blah" className='u-photo entryImage' />
@@ -32,8 +32,8 @@ export default class BlogEssay1 extends Component {
         <p className='dt-published blogTempDate'> 4.34PM. 14 May, 2023</p>
         
         <ul className='tabList navigation'>
-          <li className='blogTab tab activeTab'><a href='#blogID' id='blogTab'>Blog</a></li>
-            <li className='blogRefTab tab'><a href='#refList' id='refTab'>References</a></li>
+          <li className='blogTab tab activeTab'><HashLink to='#blogID' id='blogTab'>Blog</HashLink></li>
+            <li className='blogRefTab tab'><HashLink smooth to="#refList" id='refTab'>References</HashLink></li>
 
         </ul>
 
@@ -94,6 +94,7 @@ export default class BlogEssay1 extends Component {
       
         </section>
 </section>
+<HashLink smooth to="#top"> Back to top</HashLink>
      </main>
     )
   }
