@@ -39,3 +39,28 @@ h5{
 .footerLink:hover{
     color: red;
 }
+
+@media only screen and (min-width: 767px) and (max-width: 1199px){
+.footer{
+    height: 50%;
+    max-width: 750px;
+    transform: translateY(-100px);
+}
+.footerLi{
+    transform: translateX(-3px);
+   
+}
+}
+@media only screen and (min-width: 374px) and (max-width: 766px){
+    .footer{
+      transform: translateY(100px);
+        width: 160%;
+        margin: 0px 20px 0px 20px;
+    }
+    h5{
+        font-size: 3.5em;
+    }
+    .footerLink{
+        font-size: 3.5em;
+    }
+}

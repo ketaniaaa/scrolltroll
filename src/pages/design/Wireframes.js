@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import EssayBanner from '../../images/designimages/wireframes.JPG';
 import icon from '../../images/icon.png';
 import '../../styles/blogTemplate.css';
+import BackButton from '../../components/EntryBackButton';
 
 import WireframeHome from '../../images/designimages/lowfidelity-home-desktop.png';
 import WireframeSelection from '../../images/designimages/lowfidelity-blog-design-desktop.png';
@@ -15,14 +16,14 @@ export default class Wirefames extends Component {
     return (
      <main className='e-content blogEntryMain'>
        
-        <Link to={'/DesignSelection'}>back</Link>
-        <img src={EssayBanner} alt="blah" className='u-photo blogImage' />
+        <BackButton/>
+        <img src={EssayBanner} alt="blah" className='u-photo entryImage' />
 
 
         <section className='h-card blogIconandButton'>
         <img src={icon} alt="..sndns" className='blogTempIcon' />
 
-       <button className='nextButton'><Link to={'/'} className='blogNextButton'>Next Post</Link></button> 
+       <button className='nextButton'><Link to={'/'} className='blogNextButton'>Share Post</Link></button> 
         </section>
 
 

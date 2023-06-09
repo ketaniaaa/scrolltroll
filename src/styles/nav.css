@@ -23,7 +23,7 @@
     text-decoration: none;
     color: #202258;
     font-family: "ScrollTroll";
-    font-size: 2.5vw;
+    font-size: 2.5em;
 }
 
 .navUl{
@@ -42,7 +42,7 @@
     text-decoration: none;
     color: #595B8C;
     font-family: "ScrollTroll";
-        font-size: 2vw;
+        font-size: 2em;
 }
 .navLinks:hover{
     color: #202258; /*fix later*/
@@ -54,4 +54,27 @@
     /*fix later*/
     cursor: pointer;
     text-decoration: underline;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1199px){
+    .navTitle{
+        font-size: 2em;
+        padding-left: 20px;
+    }
+    .navUl{
+        padding-left: 0%;
+        transform: translateX(200px);
+    
+
+    }
+    .navLinks{
+        font-size: 1.5em;
+    }
+    .navLi{
+        padding: 0px 5px 0px 5px;
+    }
+    .nav{
+        overflow-x: hidden;
+    }
+    
 }

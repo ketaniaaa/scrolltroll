@@ -5,4 +5,14 @@
     flex-direction: column;
     width: 90%;
     padding-left: 5%;
+    margin-bottom: 200px;
+}
+@media only screen and (min-width: 374px) and (max-width: 766px){
+    .blogMain{
+        width: 360px;
+        align-items: center;
+    }
+    .blogSelectionTitle{
+        transform: translateX(130px);
+    }
 }

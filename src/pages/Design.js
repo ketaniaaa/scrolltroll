@@ -7,7 +7,7 @@ export default class Design extends Component {
   render() {
     return (
      <main className='blogMain h-feed'>
-        <h1 className='blogTitle p-name'>Design</h1>
+        <h1 className='blogTitle blogSelectionTitle p-name'>Design</h1>
 
 
      <section className='blogGrid'>

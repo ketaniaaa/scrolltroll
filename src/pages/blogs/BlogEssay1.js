@@ -6,20 +6,21 @@ import EssayBanner from '../../images/blogimages/essay.JPG';
 import icon from '../../images/icon.png';
 import EssayPic from '../../images/blogimages/poem-portrait.png';
 import '../../styles/blogTemplate.css';
+import BackButton from '../../components/EntryBackButton';
 
 export default class BlogEssay1 extends Component {
   render() {
     return (
      <main className='e-content blogEntryMain'>
        
-        <Link to={'/BlogSelection'}>back</Link>
-        <img src={EssayBanner} alt="blah" className='u-photo blogImage' />
+       <BackButton/>
+        <img src={EssayBanner} alt="blah" className='u-photo entryImage' />
 
 
         <section className='h-card blogIconandButton'>
         <img src={icon} alt="..sndns" className='blogTempIcon' />
 
-       <button className='nextButton'><Link to={'/'} className='blogNextButton'>Next Post</Link></button> 
+       <button className='nextButton'><Link to={'/'} className='blogNextButton'>Share Post</Link></button> 
         </section>
 
 

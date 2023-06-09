@@ -32,7 +32,7 @@ export const DesignList =[
     route: "/Wireframes"
 },
 {
-    name: "Interaction Design of TrollScroll",
+    name: "Interaction Design",
     user: "@ketania",
     description: "All about the user interactions on the site along with flows and personas",
     icon: icon,

@@ -16,7 +16,6 @@ This site contains a homepage, blog and design page as the artwork is implicit i
 - meta data packages 
 - look at snapchat for home page design
 - contrast checker for style guide 
-- microformats for some elements 
-- layout through negative space etc and grids whatevs 
+- layout through negative space etc and grids whatevs for styleguide 
 - tabination using this.state fix 
 - new blog posts 

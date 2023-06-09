@@ -33,7 +33,7 @@ export const BlogList =[
      ,route: "/AutocorrectBias"
 },
 {
-    name: "African Digital Artwork and Ethno-computing",
+    name: "African Digital Artwork ",
     user: "@ketania",
     description: "A look into the role and ethics of using AI for making artwork",
     icon: icon,
@@ -55,7 +55,7 @@ export const BlogList =[
  ,route: "/AiArt"
 },
 {
-    name: "Critical Analysis Essay: POEMPORTRAITS",
+    name: "Critical Analysis Essay",
     user: "@ketania",
     description: "This essay investigates the work POEMPORTRAITS by Es Devlin and Google Arts and Culture in relation to net artwork and artifical intelligence",
     icon: icon,
