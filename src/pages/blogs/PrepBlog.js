@@ -130,7 +130,7 @@ export default class PrepBlog extends Component {
       
         </section>
 </section>
-<HashLink smooth to="#top"> Back to top</HashLink>
+<HashLink smooth to="#top"> Back to start</HashLink>
      </main>
     )
   }
