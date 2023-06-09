@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/scrolltroll/static/css/main.81ebbf44.css",
-    "main.js": "/scrolltroll/static/js/main.52e2a5ce.js",
+    "main.css": "/scrolltroll/static/css/main.a81befe8.css",
+    "main.js": "/scrolltroll/static/js/main.0c9c8908.js",
     "static/js/787.d01dd61d.chunk.js": "/scrolltroll/static/js/787.d01dd61d.chunk.js",
     "static/media/poem-portrait.png": "/scrolltroll/static/media/poem-portrait.31418414d511ff90c78a.png",
+    "static/media/twitterinspo.png": "/scrolltroll/static/media/twitterinspo.6b94578ca2bb912ee422.png",
     "static/media/homebanner.png": "/scrolltroll/static/media/homebanner.39901b8e2e73ae0b582c.png",
     "static/media/essay.JPG": "/scrolltroll/static/media/essay.b8553b33a5a38e5c0ee2.JPG",
     "static/media/styleguide.JPG": "/scrolltroll/static/media/styleguide.1063f68d3926add1d23a.JPG",
     "static/media/name.JPG": "/scrolltroll/static/media/name.ad3147104ac089aa1bd0.JPG",
+    "static/media/Inspiration.png": "/scrolltroll/static/media/Inspiration.7709926f6356726dd4f8.png",
+    "static/media/logodesign.png": "/scrolltroll/static/media/logodesign.307df31ef9d2d0c90122.png",
     "static/media/wireframes.JPG": "/scrolltroll/static/media/wireframes.944c08656d60f955cb6e.JPG",
     "static/media/reflection.JPG": "/scrolltroll/static/media/reflection.b94bf3594c720e6460c1.JPG",
     "static/media/process.JPG": "/scrolltroll/static/media/process.96c94fd6b140164d3e4b.JPG",
@@ -15,18 +18,21 @@
     "static/media/ai.JPG": "/scrolltroll/static/media/ai.3189fc74fd60fc4283c9.JPG",
     "static/media/ixd.JPG": "/scrolltroll/static/media/ixd.77c58e4521bdee8e6d96.JPG",
     "static/media/ethno.JPG": "/scrolltroll/static/media/ethno.b6fff90a2b588e07b418.JPG",
+    "static/media/fonts.png": "/scrolltroll/static/media/fonts.841308ff4c9610d83d68.png",
     "static/media/lowfidelity-blog-template-desktop.png": "/scrolltroll/static/media/lowfidelity-blog-template-desktop.547d7c49c0f8290fdff6.png",
+    "static/media/InputFields.png": "/scrolltroll/static/media/InputFields.75110d67910f86b46067.png",
     "static/media/lowfidelity-blog-design-desktop.png": "/scrolltroll/static/media/lowfidelity-blog-design-desktop.af3b05984860dbcb1325.png",
     "static/media/lowfidelity-home-desktop.png": "/scrolltroll/static/media/lowfidelity-home-desktop.7d6ebdfd274ffb64e379.png",
+    "static/media/palette.png": "/scrolltroll/static/media/palette.9c426040c08ebef674ed.png",
     "static/media/Scroll_troll-Regular.ttf": "/scrolltroll/static/media/Scroll_troll-Regular.6aeffca9caabeea71262.ttf",
     "static/media/navLogo.png": "/scrolltroll/static/media/navLogo.3f1bf4f6aab911e94c92.png",
     "index.html": "/scrolltroll/index.html",
-    "main.81ebbf44.css.map": "/scrolltroll/static/css/main.81ebbf44.css.map",
-    "main.52e2a5ce.js.map": "/scrolltroll/static/js/main.52e2a5ce.js.map",
+    "main.a81befe8.css.map": "/scrolltroll/static/css/main.a81befe8.css.map",
+    "main.0c9c8908.js.map": "/scrolltroll/static/js/main.0c9c8908.js.map",
     "787.d01dd61d.chunk.js.map": "/scrolltroll/static/js/787.d01dd61d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81ebbf44.css",
-    "static/js/main.52e2a5ce.js"
+    "static/css/main.a81befe8.css",
+    "static/js/main.0c9c8908.js"
   ]
 }
