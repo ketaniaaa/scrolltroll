@@ -10,6 +10,18 @@ import icon from '../images/navLogo.png';
 
 export const BlogList =[
     {
+    name: "TrollScroll: The Making Of",
+    user: "@ketania",
+    description: "Prepatory work and inspiration for the creation of TrollScroll",
+    icon: icon,
+    image: BlogImgE,
+    date: "11:45AM. 1 May, 2023",
+    platform: "ScrollTroll Desktop",
+   
+    alt: 'Drawing of a compute with the image of a troll face inbetween two curly brackets on the screen of the laptop'
+,route: "/PrepBlog"
+},
+    {
     name: "Reflection",
     user: "@ketania",
     description: "A reflection on the design and development of TrollScroll for assignment 3.",
@@ -67,18 +79,7 @@ export const BlogList =[
 },
 
 
-{
-    name: "TrollScroll: The Making Of",
-    user: "@ketania",
-    description: "Prepatory work and inspiration for the creation of TrollScroll",
-    icon: icon,
-    image: BlogImgE,
-    date: "11:45AM. 1 May, 2023",
-    platform: "ScrollTroll Desktop",
-   
-    alt: 'Drawing of a compute with the image of a troll face inbetween two curly brackets on the screen of the laptop'
-,route: "/PrepBlog"
-},
+
 
 
 ];

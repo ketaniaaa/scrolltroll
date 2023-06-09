@@ -10,13 +10,11 @@ This site contains a homepage, blog and design page as the artwork is implicit i
 #To-Do 
 
 - Fix nav and footer on hover effect aka remove spaces and work on transition times such as ease in out etc
-- media queries for responsiveness 
+- media queries : just mac sizes
 - icons: linkedin, google, github, fb etc social links for form - can be prioritized for exam 
 - draw social icons ^
-- meta data packages 
 - look at snapchat for home page design
 - contrast checker for style guide 
 - layout through negative space etc and grids whatevs for styleguide 
-- tabination using this.state fix 
-- new blog posts 
+- tabination using this.state fix for exam
 - fix hashlinks
