@@ -7,12 +7,30 @@ import icon from '../../images/icon.png';
 import EssayPic from '../../images/blogimages/poem-portrait.png';
 import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';
-
+import { Helmet } from 'react-helmet';
 export default class BlogEssay1 extends Component {
   render() {
     return (
      <main className='e-content blogEntryMain' id='#top'>
        
+<Helmet>
+  
+        {/* SEO meta data since react does not hold interent capability for meta tags without the Helmet package */}
+        <title> Essay</title>
+        <meta name='author' content='Ketania Govender'/>
+          <meta name="description" content="Criticial Analysis essay regarding the artwork POEMPORTRAITS"/>
+   
+    <meta property="og:site_name" content="Scroll Troll" />
+    <meta property="og:title" content="Blog" />
+    <meta property="og:type" content="website" />
+     <meta
+      property="og:image"content="https://github.com/ketaniaaa/scrolltroll/src/images/navLogo.png"/>
+    <meta property="og:image:alt" content="Scroll Troll Logo" />
+    <meta
+      property="og:url" content="https://ketaniaaa.github.io/scrolltroll/#/EssayBlog"/>
+       <meta name="keywords" content="Internet Art, AI art, ethics of ai art, poemportraits, google arts and culture, google experiments, poemportraits, essay"/>
+      </Helmet>
+
        <BackButton/>
         <img src={EssayBanner} alt="blah" className='u-photo entryImage' />
 

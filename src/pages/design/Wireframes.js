@@ -11,11 +11,29 @@ import WireframeHome from '../../images/designimages/lowfidelity-home-desktop.pn
 import WireframeSelection from '../../images/designimages/lowfidelity-blog-design-desktop.png';
 import WireframeEntry from '../../images/designimages/lowfidelity-blog-template-desktop.png';
 
+import { Helmet } from 'react-helmet';
+
 export default class Wirefames extends Component {
   render() {
     return (
      <main className='e-content blogEntryMain'>
-       
+       <Helmet>
+  
+        {/* SEO meta data since react does not hold interent capability for meta tags without the Helmet package */}
+        <title> Wireframes</title>
+        <meta name='author' content='Ketania Govender'/>
+          <meta name="description" content="Wireframes for Scroll Troll"/>
+   
+    <meta property="og:site_name" content="Scroll Troll" />
+    <meta property="og:title" content="Wireframes" />
+    <meta property="og:type" content="website" />
+     <meta
+      property="og:image"content="https://github.com/ketaniaaa/scrolltroll/src/images/navLogo.png"/>
+    <meta property="og:image:alt" content="Scroll Troll Logo" />
+    <meta
+      property="og:url" content="https://ketaniaaa.github.io/scrolltroll/#/Wireframes"/>
+       <meta name="keywords" content="wireframes, lf, hf ,high fidelity wireframes, low fidelity wireframes, app design , web design , ux design , ui design , uxui"/>
+      </Helmet>
         <BackButton/>
         <img src={EssayBanner} alt="blah" className='u-photo entryImage' />
 
