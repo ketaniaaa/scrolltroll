@@ -16,7 +16,7 @@ export default class Reflection2 extends Component {
 <Helmet>
   
         {/* SEO meta data since react does not hold interent capability for meta tags without the Helmet package */}
-        <title> Essay</title>
+        <title> UXUI Reflection</title>
         <meta name='author' content='Ketania Govender'/>
           <meta name="description" content="Reflection on UX and UI"/>
    
@@ -27,7 +27,7 @@ export default class Reflection2 extends Component {
       property="og:image"content="https://github.com/ketaniaaa/scrolltroll/src/images/navLogo.png"/>
     <meta property="og:image:alt" content="Scroll Troll Logo" />
     <meta
-      property="og:url" content="https://ketaniaaa.github.io/scrolltroll/#/EssayBlog"/>
+      property="og:url" content="https://ketaniaaa.github.io/scrolltroll/#/Reflection2"/>
        <meta name="keywords" content="Ux practice, ux guidelines, ui guidelines, uxui, ixd, reflection"/>
       </Helmet>
 

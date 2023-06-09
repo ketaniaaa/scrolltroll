@@ -304,6 +304,11 @@ width: 60px;
    width: 50em;
    object-fit: contain;
 }
+.styleImg{
+   width: 50rem;
+   object-fit: contain;
+
+}
 }
 /*Mobile*/
 @media only screen and (min-width: 374px) and (max-width: 766px){
@@ -377,4 +382,7 @@ width: 60px;
     .designImg{
 width: 30rem;
     }
+        .styleImg{
+            width: 30rem;
+        }
 }
