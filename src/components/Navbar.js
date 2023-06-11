@@ -29,8 +29,8 @@ export default class Navbar extends Component{
                 </section>
 
                <ul className="navUl h-feed">
-                <li className="navLi u-url"> <NavLink className="navLinks" to='/BlogSelection'> bLog</NavLink></li>
-                <li className="navLi u-url"> <NavLink className="navLinks" to='/DesignSelection'> dESIgn</NavLink></li>
+                <li className="navLi u-url"> <NavLink activeClassName="activeNav" className="navLinks u-url" to='/BlogSelection'> bLog</NavLink></li>
+                <li className="navLi u-url"> <NavLink activeClassName="activeNav" className="navLinks u-url" to='/DesignSelection'> dESIgn</NavLink></li>
               
                </ul>
             </nav>

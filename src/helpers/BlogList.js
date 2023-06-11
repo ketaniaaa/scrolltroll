@@ -36,7 +36,7 @@ export const BlogList =[
 {
     name: "Autocorrect and Bias",
     user: "@ketania",
-    description: "How does natural language processing effect BIPOC internet users daily? A look at web technology and digital colonialism through spellcheck and non-european names.",
+    description: "How does autocorrect and algoritmic bias confirm technological segretion between North and South.",
     icon: icon,
     image: BlogImgD,
     date: "8:40PM. 1 June, 2023",
@@ -47,7 +47,7 @@ export const BlogList =[
 {
     name: "African Digital Artwork ",
     user: "@ketania",
-    description: "A look into the role and ethics of using AI for making artwork",
+    description: "Ethnocomputing and the culture signifigance of african computing",
     icon: icon,
     image: BlogImgC,
     date: "3:05AM. 26 May, 2023",
@@ -69,7 +69,7 @@ export const BlogList =[
 {
     name: "Critical Analysis Essay",
     user: "@ketania",
-    description: "This essay investigates the work POEMPORTRAITS by Es Devlin and Google Arts and Culture in relation to net artwork and artifical intelligence",
+    description: "Analysis of POEMPORTRAITS by Es Devlin and Google Arts and Culture in relation to Internet Art.",
     icon: icon,
     image: BlogImgB,
     date: "12:15PM. 2 May, 2023",

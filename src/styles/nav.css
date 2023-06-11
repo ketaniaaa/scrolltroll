@@ -43,18 +43,17 @@
     color: #595B8C;
     font-family: "ScrollTroll";
         font-size: 2em;
+        
 }
 .navLinks:hover{
     color: #202258; /*fix later*/
     cursor: pointer;
     text-decoration: underline;
 }
-.navLinks :active {
+.activeNav{
     color: red;
-    /*fix later*/
-    cursor: pointer;
-    text-decoration: underline;
 }
+
 
 @media only screen and (min-width: 767px) and (max-width: 1199px){
     .navTitle{

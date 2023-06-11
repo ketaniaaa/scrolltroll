@@ -47,7 +47,7 @@ export default class BlogEssay1 extends Component {
         <h1 className='blogTitle p-name'>African Digital Art and Ethnocomputing </h1>
         <h2 className='blogAuthor p-author'>@Ketania</h2>
         <p className='p-summary blogDescription'> This week I discuss the readings regarding African digital art and the idea of ethnocomputing for empowerment of the African identity  </p>
-        <p className='dt-published blogTempDate'> 5.34PM. 29 May, 2023</p>
+        <p className='dt-published blogTempDate'> 5.34PM. 26 May, 2023</p>
         
         <ul className='tabList navigation'>
           <li className='blogTab tab activeTab'><HashLink to='#blogID' id='blogTab'>Blog</HashLink></li>
@@ -76,7 +76,7 @@ export default class BlogEssay1 extends Component {
    <li className='author'>Petty, N. (2006) &lsquo;African Art in Western Museums: Issues and Perspectives&rsquo;, <em>HIM 1990-2015</em> [Preprint]. Available at: <a href="https://stars.library.ucf.edu/honorstheses1990-2015/548" className='u-url refA'>https://stars.library.ucf.edu/honorstheses1990-2015/548</a>.</li>
    <li className='author'>Pijnaker, T. and Spronk, R. (2017) &lsquo;Africa&rsquo;s Legends: digital technologies, aesthetics and middle-class aspirations in Ghanaian games and comics&rsquo;, <em>Critical African Studies</em>, 9(3), pp. 327&ndash;349. Available at: <a href="https://doi.org/10.1080/21681392.2017.1371617" className='u-url refA'>https://doi.org/10.1080/21681392.2017.1371617</a>.</li>
    <li className='author'>K&auml;hk&ouml;nen, E. <em>et al.</em> (2006) &lsquo;Ethnocomputing: ICT in cultural and social context&rsquo;, <em>Communications of the ACM</em>, 49(1), pp. 126&ndash;130. Available at: <a href="https://doi.org/10.1145/1107458.1107466" className='u-url refA'>https://doi.org/10.1145/1107458.1107466</a>.</li>
-   <li className='author'><em>Vezi - 2011 - Challenges facing artists and institutions when sh.pdf: WSOA4175A - Interactive Media IV-2023-SM1</em> (no date). Available at: <a href="https://ulwazi.wits.ac.za/courses/49205/files/4500288?wrap=1" className='u-url refA'>https://ulwazi.wits.ac.za/courses/49205/files/4500288?wrap=1</a> (Accessed: 29 May 2023).</li>
+   <li className='author'><em>Vezi - 2011 - Challenges facing artists and institutions when sh.pdf: WSOA4175A - Interactive Media IV-2023-SM1</em> (no date). Available at: <a href="https://ulwazi.wits.ac.za/courses/49205/files/4500288?wrap=1" className='u-url refA'>https://ulwazi.wits.ac.za/courses/49205/files/4500288?wrap=1</a> (Accessed: 26 May 2023).</li>
 
        </ol>
       

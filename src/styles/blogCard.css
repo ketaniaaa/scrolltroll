@@ -142,10 +142,10 @@ transform: translateY(-45px);
     }
     .blogDate{
         font-size: 0.7em;
-        transform: translateY(-20px);
+        transform: translateY(-45px);
     }
     .blogSocials{
-        transform: translateY(-20px);
+        transform: translateY(-45px);
         font-size: 0.8em;
     }
 }
