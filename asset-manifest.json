@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/scrolltroll/static/css/main.1e0373b7.css",
-    "main.js": "/scrolltroll/static/js/main.5f422cec.js",
+    "main.css": "/scrolltroll/static/css/main.86494c6f.css",
+    "main.js": "/scrolltroll/static/js/main.2b278198.js",
     "static/js/787.d01dd61d.chunk.js": "/scrolltroll/static/js/787.d01dd61d.chunk.js",
     "static/media/poem-portrait.png": "/scrolltroll/static/media/poem-portrait.31418414d511ff90c78a.png",
     "static/media/twitterinspo.png": "/scrolltroll/static/media/twitterinspo.6b94578ca2bb912ee422.png",
@@ -30,12 +30,12 @@
     "static/media/dob.png": "/scrolltroll/static/media/dob.94672c8518f80e2df989.png",
     "static/media/navLogo.png": "/scrolltroll/static/media/navLogo.3f1bf4f6aab911e94c92.png",
     "index.html": "/scrolltroll/index.html",
-    "main.1e0373b7.css.map": "/scrolltroll/static/css/main.1e0373b7.css.map",
-    "main.5f422cec.js.map": "/scrolltroll/static/js/main.5f422cec.js.map",
+    "main.86494c6f.css.map": "/scrolltroll/static/css/main.86494c6f.css.map",
+    "main.2b278198.js.map": "/scrolltroll/static/js/main.2b278198.js.map",
     "787.d01dd61d.chunk.js.map": "/scrolltroll/static/js/787.d01dd61d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e0373b7.css",
-    "static/js/main.5f422cec.js"
+    "static/css/main.86494c6f.css",
+    "static/js/main.2b278198.js"
   ]
 }
