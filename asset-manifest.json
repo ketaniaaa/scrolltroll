@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/scrolltroll/static/css/main.1e0373b7.css",
-    "main.js": "/scrolltroll/static/js/main.72e7c54d.js",
+    "main.js": "/scrolltroll/static/js/main.5f422cec.js",
     "static/js/787.d01dd61d.chunk.js": "/scrolltroll/static/js/787.d01dd61d.chunk.js",
     "static/media/poem-portrait.png": "/scrolltroll/static/media/poem-portrait.31418414d511ff90c78a.png",
     "static/media/twitterinspo.png": "/scrolltroll/static/media/twitterinspo.6b94578ca2bb912ee422.png",
@@ -31,11 +31,11 @@
     "static/media/navLogo.png": "/scrolltroll/static/media/navLogo.3f1bf4f6aab911e94c92.png",
     "index.html": "/scrolltroll/index.html",
     "main.1e0373b7.css.map": "/scrolltroll/static/css/main.1e0373b7.css.map",
-    "main.72e7c54d.js.map": "/scrolltroll/static/js/main.72e7c54d.js.map",
+    "main.5f422cec.js.map": "/scrolltroll/static/js/main.5f422cec.js.map",
     "787.d01dd61d.chunk.js.map": "/scrolltroll/static/js/787.d01dd61d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1e0373b7.css",
-    "static/js/main.72e7c54d.js"
+    "static/js/main.5f422cec.js"
   ]
 }
