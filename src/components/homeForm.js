@@ -10,7 +10,7 @@ export default class homeForm extends Component {
     return (
       <main>
         <form action="" className='homeForm'>
-            <h2 className='formH2'>Sign Up!</h2>
+            <h2 className='formH2'>Create an Account</h2>
             <h3 className='formH3'>email</h3>
             <input type="text" className='homeInput'/>
              <h3 className='formH3'>password</h3>

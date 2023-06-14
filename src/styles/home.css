@@ -3,11 +3,25 @@
     src: local("Scroll_Troll-Regular"),
         url("../fonts/Scroll_troll-Regular.ttf") format("truetype");
 }
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap');
 .homeMain{
     display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+}
+.heroHome{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    padding: 0px 0px 100px 0px;
+}
+.heroSummary{
+    font-family: "Outfit" ;
+    width: 80%;
+    font-size: 1.5em;
+    color: #404493;
+    transform: translateY(-50px);
 }
 h1{
 color: #202258;
@@ -19,6 +33,7 @@ margin: none;
 
 }
 .signupLink{
+    text-decoration: none;
     background-color: #7A9647 ;
     color: #fff;
     font-family: "ScrollTroll";
@@ -26,4 +41,14 @@ margin: none;
     padding: 10px 30px 10px 30px;
 border: #7A9647;
 border-radius: 50px;
+}
+.signupLink:hover{
+    background-color: #607735;
+}
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-80px);
+    padding: 0px 0px 50px 0px;
 }

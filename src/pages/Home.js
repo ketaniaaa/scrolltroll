@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
 
-import banner from '../images/homebanner.png';
+import banner from '../images/heroimage.png';
 import '../styles/home.css';
 import '../fonts/Scroll_troll-Regular.ttf';
-import {Link, NavLink} from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 import Form from '../components/homeForm';
 
@@ -32,12 +32,21 @@ export default class Home extends Component {
        <meta name="keywords" content="UX Design, intentionally-bad-design, ux, ui , pardoy, social media"/>
       </Helmet>
 
+       <article className='h-card heroHome'>
+        <section className='p-summary'>
+      <h1 className='p-title'>The World's Worst Social Media Website</h1>
+      <p className='e-content heroSummary'> An all new space to share your shitposts and connect with other like-minded trolls. Troll those that matter most and we troll you!</p>
+            <HashLink className='signupLink u-url' smooth to ="#form">sign up today! </HashLink> 
 
-      <h1 className='p-title'>WeLcoMe to ScroLl trOLL</h1>
-      <button className='signupLink u-url'> <a className='u-url aIdRedirect' href={Form}></a>start trolling </button> 
+      </section>
+            <img src={banner} alt="Three troll characters talking about their posts on scroll troll" className='homeBanner u-photo' />
+
+      </article>
       {/* Maybe make the button a pop-up instead of redirecting to the form?? */}
-      <img src={banner} alt="Three troll characters talking about their posts on scroll troll" className='homeBanner u-photo' />
+
+      <article  id="form">
       <Form/>
+      </article>
     </main>
     )
   }

@@ -12,9 +12,13 @@
     padding: 20px 100px 20px 100px;
     margin: 20px 100px 20px 100px;
     transform: translateX(-100px);
-    background-color: #202258;
-    color: #fff;
+    background-color: #ffffff;
+    color: #2f3170;
     border-radius: 100px;
+        border: 10px solid #2f3170;
+            box-shadow: 30px 30px 0px 0px rgba(32, 34, 88, 0.66);
+            -webkit-box-shadow: 30px 30px 0px 0px rgba(32, 34, 88, 0.66);
+            -moz-box-shadow: 30px 30px 0px 0px rgba(32, 34, 88, 0.66);
 
   
 }
@@ -55,7 +59,7 @@ border: 4px solid #202258;
 .nextA{
     font-family: 'ScrollTroll';
     text-decoration: underline;
-    color: #fff;
+    color: #2f3170;
     align-self: center;
     margin: 20px 0px 0px 0px;
 }
