@@ -63,6 +63,7 @@
     .navUl{
         padding-left: 0%;
         transform: translateX(200px);
+
     
 
     }
@@ -76,4 +77,27 @@
         overflow-x: hidden;
     }
     
+}
+@media only screen and (min-width: 374px) and (max-width: 766px){
+    .navTitle{
+        font-size: 1.5em;
+        width: 200px;
+        transform: translateX(-30px);
+    }
+    .navImage{
+        width: 50px;
+    }
+    .navUl{
+        transform: translateX(-280px);
+        padding: none;
+    }
+    .navLinks{
+        font-size: 1em;
+        padding: none;
+    }
+    .navLi{
+        padding: none;
+        margin: none;
+
+    }
 }

@@ -11,9 +11,9 @@ export default class homeForm extends Component {
       <main>
         <form action="" className='homeForm'>
             <h2 className='formH2'>Create an Account</h2>
-            <h3 className='formH3'>email</h3>
+            <h3 className='formH3'>username</h3>
             <input type="text" className='homeInput'/>
-             <h3 className='formH3'>password</h3>
+             <h3 className='formH3'>email</h3>
              <input type="text" className='homeInput' />
              <Link className='nextA'> NEXT  </Link>
 

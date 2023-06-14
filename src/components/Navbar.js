@@ -6,7 +6,7 @@ import {NavLink, Routes, Route} from "react-router-dom";
 //Local Stylesheet and Assests 
 import '../fonts/Scroll_troll-Regular.ttf';
 import navLogo from '../images/navLogo.png';
-import burger from '../images/hamburgericon.png';
+
 import '../styles/nav.css';
 
 //External Package Imports 
@@ -29,8 +29,8 @@ export default class Navbar extends Component{
                 </section>
 
                <ul className="navUl h-feed">
-                <li className="navLi u-url"> <NavLink activeClassName="activeNav" className="navLinks u-url" to='/BlogSelection'> bLog</NavLink></li>
-                <li className="navLi u-url"> <NavLink activeClassName="activeNav" className="navLinks u-url" to='/DesignSelection'> dESIgn</NavLink></li>
+                <li className="navLi u-url"> <NavLink  className="navLinks u-url" to='/BlogSelection'> bLog</NavLink></li>
+                <li className="navLi u-url"> <NavLink  className="navLinks u-url" to='/DesignSelection'> dESIgn</NavLink></li>
               
                </ul>
             </nav>

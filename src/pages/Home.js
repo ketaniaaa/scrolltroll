@@ -5,7 +5,7 @@ import banner from '../images/heroimage.png';
 import '../styles/home.css';
 import '../fonts/Scroll_troll-Regular.ttf';
 import { HashLink } from 'react-router-hash-link';
-
+import scrollVid from "../images/scrollhomevid.mp4";
 import Form from '../components/homeForm';
 
 import HelmetExport, { Helmet } from 'react-helmet';
@@ -34,13 +34,20 @@ export default class Home extends Component {
 
        <article className='h-card heroHome'>
         <section className='p-summary'>
-      <h1 className='p-title'>The World's Worst Social Media Website</h1>
+      <h1 className='p-title homeTitle'>The World's Worst Social Media Website</h1>
       <p className='e-content heroSummary'> An all new space to share your shitposts and connect with other like-minded trolls. Troll those that matter most and we troll you!</p>
             <HashLink className='signupLink u-url' smooth to ="#form">sign up today! </HashLink> 
 
       </section>
             <img src={banner} alt="Three troll characters talking about their posts on scroll troll" className='homeBanner u-photo' />
 
+      </article>
+
+      <article className='videoSection'>
+        <h2 className='videoCopy'>Become A Part of the Troll Community</h2>
+        <video loop autoPlay className='homeVid'>
+          <source src={scrollVid}/>
+        </video>
       </article>
       {/* Maybe make the button a pop-up instead of redirecting to the form?? */}
 

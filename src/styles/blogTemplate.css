@@ -17,7 +17,7 @@
     font-size: 1.5em;
     border: none;
     border-radius: 25px;
-    font-family: 'Outfit';
+    font-family: "ScrollTroll";
     box-shadow: none;
     transition: all ease-out 0.2s;
 }
@@ -63,7 +63,7 @@ height: 80vh;
     text-decoration: none;
     color: white;
     transform: translateY(80px);
-    font-family: 'Outfit';
+font-family: "ScrollTroll";
     font-size: 2em;
    background-color: #4045C6;
     border-radius: 50px;
@@ -227,10 +227,11 @@ color: #202258;
 @media only screen and (min-width: 767px) and (max-width: 1199px){
 .backButton{
     transform: translateX(-280px) translateY(50px);
-    font-size: 0.8em;
+    font-size: 1.2em;
     padding: none;
     max-width: 80px;
     z-index: 1;
+    font-family: "ScrollTroll";
 }
 .entryImage{
     width: 45rem;
@@ -245,9 +246,10 @@ color: #202258;
 .blogNextButton {
     margin: 0px 0px 0px 400px;
     padding: 10px 20px 10px 20px;
-    transform: translateY(30px);
-    font-size: 0.6em;
+    transform: translateY(40px);
+    font-size: 1.2em;
     max-width: 200px;
+    font-family: "ScrollTroll";
 }
 .blogTempMain {
     padding: 100px 20px 0px 0px;
@@ -294,18 +296,18 @@ width: 60px;
 .blogContentContainer{
     max-width: 720px;
     transform: translateY(-100px) translateX(20px);
-    font-size: 1.5vw;
+    font-size: 2vw;
     overflow-x: hidden;
 }
 .blogReferenceSection{
     padding-bottom: none;
 }
 .designImg{
-   width: 50em;
+   width: 40em;
    object-fit: contain;
 }
 .styleImg{
-   width: 50rem;
+   width: 40rem;
    object-fit: contain;
 
 }
@@ -313,15 +315,18 @@ width: 60px;
 /*Mobile*/
 @media only screen and (min-width: 374px) and (max-width: 766px){
    .backButton{
-    width: 80px;
-    transform: translateX(75px) translateY(60px);
+    width: 60px;
+    font-size: 1em;
+    transform: translateX(60px) translateY(45px);
     z-index: 1;
    }
     .blogEntryMain{
-        transform: translateX(-30px);
-        width: 600px;
+        transform: translateX(-40px);
+        transform: translateY(-30px);
+        width: 370px;
         padding: none;
         margin: none;
+        overflow-x: hidden;
     }
     .blogTempMain{
         margin: none;
@@ -329,60 +334,72 @@ width: 60px;
         transform: translateX(-20px);
     }
     .entryImage{
-        width: 33rem;
-        height: 23rem;
-        transform: translateX(30px);
+        width: 20rem;
+        height: 13rem;
+        transform: translateX(10px);
         z-index: 0;
     }
         .blogIconandButton {
-            transform: translate(80px, -80px);
+            transform: translate(40px, -60px);
     
         }
         .blogTempIcon{
-            width: 200px;
+            width: 50px;
+            height: 50px;
+            border: 3px solid;
         }
                 .blogNextButton {
                     
                     
-                    transform: translateX(-800px) translateY(50px);
-                   font-size: 1.3em;
+                    transform: translateX(-960px) translateY(25px);
+                   font-size: 1em;
                    display: flex;
                    align-content: center;
                    justify-content: center;
-                    width: 100px;
+                    width: 80px;
+                    padding: 10px 5px 10px 5px;
+                    font-family: "ScrollTroll";
                 }
                 
     .blogContentContainer{
-        transform: translateX(-60px);
+        transform: translateX(-130px) translateY(-120px);
+        font-size: 1em;
+        overflow-x: hidden;
+    }
+    .blogFigure{
+        width: 300px;
+        transform: translateX(-20px)
     }
     .blogTitle{
-        transform: translateX(-60px);
-        font-size: 3em;
+        transform: translateX(-120px) translateY(-60px);
+        font-size: 2.3em;
     }
     .blogAuthor{
-        font-size: 2em;
+        font-size: 1.7em;
+        transform: translateX(-120px) translateY(-100px);
         
-        transform: translateX(-60px) translateY(-50px);
     }
     .blogDescription{
-        transform: translateX(-60px) translateY(-80px);
-        font-size: 1.5em;
+        transform: translateX(-120px) translateY(-120px);
+        font-size: 1em;
     }
     .blogTempDate{
-        transform: translateX(-60px) translateY(-80px);
-        font-size: 1.4em;
+        transform: translateX(-120px) translateY(-120px);
+        font-size: 1em;
     }
     .tabList{
-        transform: translateX(-60px) translateY(-80px);
-        font-size: 1.2em;
+        transform: translateX(-140px) translateY(-120px);
+        font-size: 1em;
     }
     .blogReferenceSection{
-        max-width: 370px;
+        max-width: 300px;
+        transform: translateX(-20px);
+        font-size: 0.7em;
     }
     .designImg{
-width: 30rem;
+max-width: 18rem;
     }
         .styleImg{
-            width: 30rem;
+           max-width: 18rem;
         }
 }

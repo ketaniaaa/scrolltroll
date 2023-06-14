@@ -125,10 +125,15 @@ transform: translateY(-45px);
     
     }
     .blogCardTitle{
-        font-size: 2em;
-        transform: translateX(-25px);
-        width: 200px;
+        font-size: 1.5em;
+        transform: translateX(-10px);
+        width: 190px;
     }
+    .blogCardAuthor{
+        font-size: 1.3em;
+        transform: translateY(-15px) translateX(-13px);
+    }
+  
     .blogIcon{
         width: 60px;
         height: 60px;
@@ -156,15 +161,17 @@ transform: translateY(-45px);
 
 }
 .blogCard{
-    transform: translateX(120px);
+    transform: translateX(-10px);
+    width: 300px;
 }
  .blogCardTitle {
-     font-size: 1.8em;
-     transform: translateX(-5px);
-     width: 200px;
+     font-size: 1.5em;
+     transform: translateX(8px);
+     width: 170px;
  }
  .blogCardAuthor{
-    font: 0.5em;
+    font-size: 1.2em;
+    padding: 8px 0px 0px 0px;
  }
  
 }

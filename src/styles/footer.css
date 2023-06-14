@@ -54,13 +54,14 @@ h5{
 @media only screen and (min-width: 374px) and (max-width: 766px){
     .footer{
       transform: translateY(100px);
-        width: 160%;
-        margin: 0px 20px 0px 20px;
+        width: 355px;
+        margin: 0px 10px 0px 10px;
+        
     }
     h5{
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
     .footerLink{
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
 }
