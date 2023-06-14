@@ -35,7 +35,7 @@ export default class Home extends Component {
        <article className='h-card heroHome'>
         <section className='p-summary'>
       <h1 className='p-title homeTitle'>The World's Worst Social Media Website</h1>
-      <p className='e-content heroSummary'> An all new space to share your shitposts and connect with other like-minded trolls. Troll those that matter most and we troll you!</p>
+      <p className='e-content heroSummary'> An all new space to share your shitposts and connect with other like-minded trolls. Troll those that matter most while we troll who matters most to us: <em>YOU</em> !</p>
             <HashLink className='signupLink u-url' smooth to ="#form">sign up today! </HashLink> 
 
       </section>
