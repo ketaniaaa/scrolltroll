@@ -31,7 +31,7 @@
     flex: 50%;
     align-items: center;
     list-style-type: none;
-    padding-left: 50%;
+    padding-left: 40%;
 
 }
 .navLi{
@@ -53,8 +53,31 @@
 .activeNav{
     color: red;
 }
-
-
+.menuButton{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.navSignUp{
+    font-family: 'ScrollTroll';
+    text-decoration: none;
+    font-size: 2.2em;
+    background-color: #7A9647;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    transition: ease-in-out 0.3s;
+    box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
+        -webkit-box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
+        -moz-box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
+}
+.navSignUp:hover{
+    border: 3px solid #26285c;
+    box-shadow: 8px 10px 0px 0px rgba(32, 34, 88, 0.69);
+        -webkit-box-shadow: 5px 5px 0px 0px rgba(32, 34, 88, 0.69);
+        -moz-box-shadow: 5px 5px 0px 0px rgba(32, 34, 88, 0.69);
+        transition: ease-in-out 0.3s;
+}
 @media only screen and (min-width: 767px) and (max-width: 1199px){
     .navTitle{
         font-size: 2em;

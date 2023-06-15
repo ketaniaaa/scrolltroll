@@ -31,6 +31,9 @@
     border-radius: 25px;
     justify-content: center;
     font-size: 3vw;
+    box-shadow: 4px 4px 0px 0px rgba(32, 34, 88, 0.69);
+        -webkit-box-shadow: 4px 4px 0px 0px rgba(32, 34, 88, 0.69);
+        -moz-box-shadow: 4px 4px 0px 0px rgba(32, 34, 88, 0.69);
 }
 .formH2:hover {
     background-color: red;

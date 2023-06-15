@@ -41,9 +41,17 @@ margin: none;
     padding: 10px 30px 10px 30px;
 border: #7A9647;
 border-radius: 50px;
+transition: ease-in-out 0.3s;
+box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
 }
 .signupLink:hover{
-    background-color: #607735;
+    border: 3px solid #26285c;
+        box-shadow: 8px 10px 0px 0px rgba(32, 34, 88, 0.69);
+        -webkit-box-shadow: 5px 5px 0px 0px rgba(32, 34, 88, 0.69);
+        -moz-box-shadow: 5px 5px 0px 0px rgba(32, 34, 88, 0.69);
+        transition: ease-in-out 0.3s;
 }
 #form{
     display: flex;
