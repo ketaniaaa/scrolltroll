@@ -8,7 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 import scrollVid from "../images/scrollhomevid.mp4";
 import Form from '../components/homeForm';
 
-import HelmetExport, { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 export default class Home extends Component {
   render() {

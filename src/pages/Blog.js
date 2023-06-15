@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../styles/blog.css';
-import {Link} from "react-router-dom";
+
 import {BlogList} from '../helpers/BlogList';
 import BlogItem from '../components/BlogItem';
 

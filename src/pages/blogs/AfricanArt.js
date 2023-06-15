@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 
 import EssayBanner from '../../images/blogimages/essay.JPG';
 import icon from '../../images/icon.png';
-import EssayPic from '../../images/blogimages/poem-portrait.png';
+
 import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';
 import { Helmet } from 'react-helmet';

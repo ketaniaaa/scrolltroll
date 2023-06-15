@@ -1,12 +1,12 @@
 //React Imports 
 
 import React, {Component} from "react";
-import {NavLink, Routes, Route} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 //Local Stylesheet and Assests 
 import '../fonts/Scroll_troll-Regular.ttf';
 import navLogo from '../images/navLogo.png';
-import MenuIcon from '../images/menuvector.svg';
+
 import { HashLink } from "react-router-hash-link";
 import '../styles/nav.css';
 

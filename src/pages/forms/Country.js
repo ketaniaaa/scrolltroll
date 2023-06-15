@@ -8,6 +8,7 @@ export default function Country() {
     <main>
        
       <h1>Country</h1>
+
           <Link to='/Password'> continue</Link>
      
     </main>
