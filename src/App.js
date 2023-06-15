@@ -8,6 +8,14 @@ import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Design from './pages/Design';
 
+//Form Imports
+import NameForm from './pages/forms/NameForm';
+import Country from './pages/forms/Country';
+import Password from './pages/forms/password';
+import Submit from './pages/forms/submit';
+import SuggestedFollows from './pages/forms/SuggestedFollows';
+import Post from './pages/forms/Post';
+
 //Blog Imports 
 import EssayBlog from './pages/blogs/BlogEssay1';
 import Reflection2 from './pages/blogs/Reflection2';
@@ -74,7 +82,12 @@ class App extends Component {
        
 
       {/* Artwork Pages */}
-
+    <Route path='/NameForm' element= {<NameForm/>}/>
+    <Route path='/Country' element= {<Country/>}/>
+    <Route path='/Password' element= {<Password/>}/>
+    <Route path='/Submit' element= {<Submit/>}/>
+    <Route path='/SuggestedFollows' element= {<SuggestedFollows/>}/>
+    <Route path='/Post' element= {<Post/>}/>
     </Routes>
     <Footer/>
 </div>

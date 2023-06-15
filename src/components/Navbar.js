@@ -51,7 +51,7 @@ export default class Navbar extends Component{
                <ul className="navUl h-feed">
                 <li className="navLi u-url"> <NavLink  className="navLinks u-url" to='/BlogSelection'> bLog</NavLink></li>
                 <li className="navLi u-url"> <NavLink  className="navLinks u-url" to='/DesignSelection'> dESIgn</NavLink></li>
-               <HashLink className="navSignUp" smooth to ="#form">Sign Up</HashLink>
+               <HashLink className="navSignUp" to ="/#form">Sign Up</HashLink>
               {/*  <button onClick={this.toggleNav} className="menuButton"><img src={MenuIcon} alt="menu icon" className="mobileMenu" /></button>*/}
                </ul>
             </nav>
