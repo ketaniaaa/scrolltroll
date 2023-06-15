@@ -45,6 +45,7 @@
         font-size: 2em;
         
 }
+
 .navLinks:hover{
     color: #202258; /*fix later*/
     cursor: pointer;
@@ -57,7 +58,17 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    display: flex;
+
+    opacity: 0;
 }
+.mobileMenuButton{
+    max-width: 24px;
+}
+.mobileNav{
+    display: none;
+}
+
 .navSignUp{
     font-family: 'ScrollTroll';
     text-decoration: none;
@@ -78,6 +89,7 @@
         -moz-box-shadow: 5px 5px 0px 0px rgba(32, 34, 88, 0.69);
         transition: ease-in-out 0.3s;
 }
+
 @media only screen and (min-width: 767px) and (max-width: 1199px){
     .navTitle{
         font-size: 2em;
@@ -85,7 +97,7 @@
     }
     .navUl{
         padding-left: 0%;
-        transform: translateX(200px);
+        transform: translateX(70px);
 
     
 
@@ -94,7 +106,7 @@
         font-size: 1.5em;
     }
     .navLi{
-        padding: 0px 5px 0px 5px;
+        padding: 0px 10px 0px 10px;
     }
     .nav{
         overflow-x: hidden;
@@ -115,12 +127,21 @@
         padding: none;
     }
     .navLinks{
-        font-size: 1em;
-        padding: none;
+       font-size: 1em;
+       padding: 0px 0px 0px 0px;
+       margin: 0px 0px 0px 0px
     }
     .navLi{
         padding: none;
         margin: none;
 
     }
+    .blogNavLink{
+        display: flex;
+        transform: translateX(25px) translateY(2px);
+    }
+   .navSignUp{
+    font-size: 0.7em;
+    transform: translateX(-10px);
+   }
 }
