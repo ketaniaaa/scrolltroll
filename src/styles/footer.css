@@ -37,7 +37,11 @@ h5{
     color: inherit;
 }
 .footerLink:hover{
-    color: red;
+    color: #202258;
+        cursor: pointer;
+     
+        text-underline-offset: 5px;
+        transition-delay: ease-in-out 0.3s;
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1199px){

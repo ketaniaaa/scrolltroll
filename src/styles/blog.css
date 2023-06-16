@@ -12,6 +12,10 @@
         width: 360px;
         align-items: center;
     }
+    .blogTitle{
+        display: flex;
+      padding: 50px 0px 0px 50px;
+    }
     .blogSelectionTitle{
         transform: translateX(70px);
     }

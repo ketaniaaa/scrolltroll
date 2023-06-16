@@ -43,6 +43,7 @@
     color: #595B8C;
     font-family: "ScrollTroll";
         font-size: 2em;
+        transition: ease-in-out 0.3s;
         
 }
 
@@ -50,6 +51,8 @@
     color: #202258; /*fix later*/
     cursor: pointer;
     text-decoration: underline;
+    text-underline-offset: 5px;
+    transition-delay: ease-in-out 0.3s;
 }
 .activeNav{
     color: red;
@@ -60,14 +63,12 @@
     cursor: pointer;
     display: flex;
 
-    opacity: 0;
+   
 }
 .mobileMenuButton{
-    max-width: 24px;
+    max-width: 30px;
 }
-.mobileNav{
-    display: none;
-}
+
 
 .navSignUp{
     font-family: 'ScrollTroll';
@@ -88,6 +89,9 @@
         -webkit-box-shadow: 5px 5px 0px 0px rgba(32, 34, 88, 0.69);
         -moz-box-shadow: 5px 5px 0px 0px rgba(32, 34, 88, 0.69);
         transition: ease-in-out 0.3s;
+}
+.mobileNav{
+    display: none;
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1199px){
@@ -114,34 +118,84 @@
     
 }
 @media only screen and (min-width: 374px) and (max-width: 766px){
-    .navTitle{
-        font-size: 1.5em;
-        width: 200px;
-        transform: translateX(-30px);
-    }
-    .navImage{
-        width: 50px;
-    }
-    .navUl{
-        transform: translateX(-280px);
-        padding: none;
-    }
-    .navLinks{
-       font-size: 1em;
-       padding: 0px 0px 0px 0px;
-       margin: 0px 0px 0px 0px
-    }
-    .navLi{
-        padding: none;
-        margin: none;
-
-    }
-    .blogNavLink{
-        display: flex;
-        transform: translateX(25px) translateY(2px);
-    }
-   .navSignUp{
+  
+   .mobileNavSignUp{
     font-size: 0.7em;
-    transform: translateX(-10px);
+display: flex;
+justify-items: center;
+align-items: center;
+ background-color: #7A9647;
+ font-family: "ScrollTroll";
+ color: white;
+ text-decoration: none;
+ border-radius: 15px;
+ padding: 5px 10px 5px 10px;
+ margin: 25px 5px 5px 120px;
+ transform: translateY(-5px) translateX(20px);
+transition: ease-in-out 0.3s;
+    box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
+
    }
+   .navBar{
+    display: none;
+   }
+   .mobileNav{
+    display: flex;
+    flex-direction: column;
+ 
+   }
+
+   .mobileAllVis{
+    display: inline-flex;
+   }
+   .mobileLogoImg{
+    display: flex;
+    max-width: 48px;
+    padding: 10px 50px 5px 15px;
+   }
+   .menuButton{
+    padding: 25px 10px 5px 15px;
+    margin: 0px 5px 0px 20px;
+   }
+   .close{
+    display: none;
+    text-decoration: none;
+   }
+   .open {
+    display:flex;
+    height: 100%;
+    width: 100%;
+  transform: translateX(-50px);
+  padding: 20px 30px 20px 40px;
+    color: white;
+    text-decoration: none;
+    background-color: #26285c;
+  
+   
+    
+   }
+   .open:hover{
+   text-decoration: underline;
+    text-underline-offset: 5px;
+    transition-delay: 0.3s;
+  
+   }
+   .mobileTtile{
+    font-size: 2em;
+   }
+   .mobileNavList{
+    text-decoration: none;
+    font-family: 'ScrollTroll';
+    color: white;
+  
+
+
+   }
+   .navMobileLinks{
+    text-decoration: none;
+    color: white;
+   }
+
 }
