@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/scrolltroll/static/css/main.a0a2138f.css",
-    "main.js": "/scrolltroll/static/js/main.0e31e15f.js",
+    "main.css": "/scrolltroll/static/css/main.621fedd7.css",
+    "main.js": "/scrolltroll/static/js/main.1547221e.js",
     "static/js/787.d01dd61d.chunk.js": "/scrolltroll/static/js/787.d01dd61d.chunk.js",
     "static/media/poem-portrait.png": "/scrolltroll/static/media/poem-portrait.31418414d511ff90c78a.png",
     "static/media/twitterinspo.png": "/scrolltroll/static/media/twitterinspo.6b94578ca2bb912ee422.png",
@@ -31,12 +31,13 @@
     "static/media/dob.png": "/scrolltroll/static/media/dob.94672c8518f80e2df989.png",
     "static/media/navLogo.png": "/scrolltroll/static/media/navLogo.3f1bf4f6aab911e94c92.png",
     "index.html": "/scrolltroll/index.html",
-    "main.a0a2138f.css.map": "/scrolltroll/static/css/main.a0a2138f.css.map",
-    "main.0e31e15f.js.map": "/scrolltroll/static/js/main.0e31e15f.js.map",
+    "static/media/menuvector.svg": "/scrolltroll/static/media/menuvector.c5d3542d46e919af5f1ed4814484f339.svg",
+    "main.621fedd7.css.map": "/scrolltroll/static/css/main.621fedd7.css.map",
+    "main.1547221e.js.map": "/scrolltroll/static/js/main.1547221e.js.map",
     "787.d01dd61d.chunk.js.map": "/scrolltroll/static/js/787.d01dd61d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0a2138f.css",
-    "static/js/main.0e31e15f.js"
+    "static/css/main.621fedd7.css",
+    "static/js/main.1547221e.js"
   ]
 }
