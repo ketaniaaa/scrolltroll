@@ -11,8 +11,8 @@ import Design from './pages/Design';
 //Form Imports
 import NameForm from './pages/forms/NameForm';
 import Country from './pages/forms/Country';
-import Password from './pages/forms/password';
-import Submit from './pages/forms/submit';
+import Password from './pages/forms/Password';
+import Submit from './pages/forms/Submit';
 import SuggestedFollows from './pages/forms/SuggestedFollows';
 import Post from './pages/forms/Post';
 
