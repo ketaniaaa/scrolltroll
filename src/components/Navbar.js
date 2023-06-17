@@ -9,6 +9,7 @@ import navLogo from '../images/navLogo.png';
 import MenuIcon from "../images/menuvector.svg";
 import { HashLink } from "react-router-hash-link";
 import '../styles/nav.css';
+import CloseIcon from '../images/closeWhite.svg';
 
 
 //External Package Imports 
@@ -75,8 +76,11 @@ export default class Navbar extends Component{
                 <button onClick={this.toggleMenu} className="menuButton"><img src={MenuIcon} alt="menu icon" className="mobileMenuButton" /></button>
                 </section>
 
-                <ul className="mobileNavList">
-                {/*  <li className={`navMobileLi ${isOpen ? 'open' : 'close'}`}> <NavLink  className="navMobileLinks mobileTitle u-url" to='/'> sCroLl trOLL</NavLink></li> */}
+                <ul className={`navMobileList ${isOpen ? 'openList' : 'close'}`}>
+                 <li className={`navMobileLi ${isOpen ? 'open' : 'close'}`}> <button onClick={this.toggleMenu} className="closeButton"><img src={CloseIcon} alt="close icon" className="mobileCloseButton"/></button></li>
+                 
+                 <li className={`navMobileLi ${isOpen ? 'openMobileTitle' : 'close'}`}> <NavLink  className="navMobileLinks mobileTitle u-url" to='/'> <img src={navLogo} alt="Scroll Troll Logo" className="mobileOpenLogo"/> sCroLl trOLL</NavLink></li> 
+                <hr className="mobileHr"/>
                  <li className={`navMobileLi ${isOpen ? 'open' : 'close'}`}> <NavLink  className="navMobileLinks u-url" to='/' onClick={this.toggleMenu}> hOmE</NavLink></li>
                  <li className={`navMobileLi ${isOpen ? 'open' : 'close'}`}> <NavLink  className="navMobileLinks u-url" to='/BlogSelection' onClick={this.toggleMenu}> bLog</NavLink></li>
                 <li className={`navMobileLi ${isOpen ? 'open' : 'close'}`}> <NavLink  className="navMobileLinks u-url" to='/DesignSelection' onClick={this.toggleMenu}> dESIgn</NavLink></li>

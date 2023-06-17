@@ -12,7 +12,6 @@ This site contains a homepage, blog and design page as the artwork is implicit i
 - contrast checker for style guide 
 - layout through negative space etc and grids whatevs for styleguide 
 - tabination using this.state fix for exam
-- fix a link error in console
 - share post pop up fix and scroll to top button in blog styling
 - add next/prev post buttons to blogs
 - active tab correlate to nav 
