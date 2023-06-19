@@ -29,8 +29,8 @@ export default class Blog extends Component {
        <meta name="keywords" content="Blog, Africa Digital Art, AI Art, Interactive Media, Digital Art Theory"/>
       </Helmet>
 
-        <h1 className='blogTitle blogSelectionTitle p-name'>Blog</h1>
-
+        <h1 className='blogSTitle blogSelectionTitle p-name'>Blog</h1>
+ <h2 className='mobileSelectionTitle'>Blog</h2>
 
      <section className='blogGrid'>
 

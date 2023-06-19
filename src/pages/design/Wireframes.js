@@ -191,9 +191,10 @@ The use of colour is again utilised to create an information hierarchy as this i
 
 
  
-        <section className={`h-card  designActiveContent ${activeTab === 1 ? 'designActiveSection' : 'designInactiveSection'}`}>
+        <section className={`h-card  ${activeTab === 1 ? 'designActiveSection' : 'designInactiveSection'}`}>
       
    <h3 className='p-name designActiveContent' > Mobile Wireframes</h3>
+   <p>blah blah blah</p>
       
        </section>
       <section className={`h-card blogReferenceSection ${activeTab === 2 ? 'designActiveSection' : 'designInactiveSection'}`}>

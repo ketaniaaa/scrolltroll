@@ -39,8 +39,10 @@ box-shadow: 8px 10px 0px 0px rgba(32, 34, 88, 0.69);
     display: flex;
     flex-direction: column;
 overflow-y: hidden;
+
    
 }
+
 .entryImage{
   width: 100rem;
 height: 80vh;
@@ -70,12 +72,14 @@ height: 80vh;
     transform: translateY(-180px);
     width: 80%;
     padding: 0px 200px 0px 200px;
+    z-index: 2;
   
 }
 .blogTitle{
     font-size: 5em;
     padding: none;
     margin: none;
+    width: 100%
 }
 .blogAuthor{
     font-family: 'ScrollTroll';
@@ -138,6 +142,7 @@ height: 80vh;
 .designActiveContent{
     display: block;
 }
+
 .designInactiveContent {
     display: none;
 }
@@ -203,7 +208,9 @@ color: #202258;
     transform: translate(90px, -120px);
 
 }
-
+.blogTitle{
+    width: 100%;
+}
 .blogContentContainer{
     display: flex;
     align-items: center;
@@ -239,12 +246,12 @@ color: #202258;
   z-index: 0;
 }
 .blogIconandButton {
-    transform: translate(-20px, -80px);
+    transform: translate(10px, -80px);
 
 }
 
 .blogTempMain {
-    padding: 100px 20px 0px 0px;
+    margin: 100px 20px 0px 0px;
 
 }
 .blogEntryMain{
@@ -266,7 +273,7 @@ width: 60px;
 }
 .blogTitle{
     font-size: 3.5vw;
-    max-width: 760px;
+    width: 100%;
 }
 .blogAuthor{
     font-size: 2.3vw;
@@ -305,7 +312,7 @@ width: 60px;
 }
 }
 /*Mobile*/
-@media only screen and (min-width: 374px) and (max-width: 766px){
+@media only screen and  (max-width: 480px){
    .backButton{
     width: 60px;
     font-size: 1em;
@@ -333,7 +340,7 @@ width: 60px;
         z-index: 0;
     }
         .blogIconandButton {
-            transform: translate(40px, -60px);
+            transform: translate(40px, -40px);
     
         }
         .blogTempIcon{
@@ -352,8 +359,9 @@ width: 60px;
         transform: translateX(-20px)
     }
     .blogTitle{
-        transform: translateX(-120px) translateY(-60px);
+        transform: translateX(-130px) translateY(-60px);
         font-size: 2.3em;
+        width: 300px;
     }
     .blogAuthor{
         font-size: 1.7em;
@@ -371,6 +379,17 @@ width: 60px;
     .tabList{
         transform: translateX(-140px) translateY(-120px);
         font-size: 1em;
+        border-bottom: 2px solid #898bc1;
+    }
+    .tabButton{
+        transform: translateX(-30px);
+        font-size: 0.6em;
+    }
+    .tabButton:hover{
+        text-decoration: none;
+    }
+    .activeTab{
+        text-decoration: none;
     }
     .blogReferenceSection{
         max-width: 300px;

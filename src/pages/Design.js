@@ -29,7 +29,8 @@ export default class Design extends Component {
       </Helmet>
 
       
-        <h1 className='blogTitle blogSelectionTitle p-name'>Design</h1>
+        <h1 className='blogSTitle blogSelectionTitle p-name'>Design</h1>
+         <h2 className='mobileSelectionTitle'>Design</h2>
 
 
      <section className='blogGrid'>

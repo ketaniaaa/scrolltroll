@@ -29,3 +29,17 @@
     color: #202258;
     text-decoration: underline;
 }
+@media only screen and (max-width: 480px){
+    .smMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .smTitle{
+        font-size: 3em;
+    }
+    .smUL{
+        margin: 30px;
+    }
+}

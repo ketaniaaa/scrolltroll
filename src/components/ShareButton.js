@@ -22,7 +22,7 @@ export default class ShareButton extends Component {
      const { open } = this.state;
     return (
       <>
-      <button onClick={this.handleOpen} className="shareButton">share post!</button>
+      <button onClick={this.handleOpen} className="shareButton"><p className='shareP'>share post!</p></button>
       <Modal
           open={open}
           onClose={this.handleClose}

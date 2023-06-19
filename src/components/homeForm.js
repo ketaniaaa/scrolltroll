@@ -33,7 +33,7 @@ export default class homeForm extends Component {
 
 </select>
              </section>
-             <Link className='nextA' to="/NameForm"> NEXT  </Link>
+             <Link className='nextA' smooth to="/NameForm"> NEXT  </Link>
 
         </form>
       </main>

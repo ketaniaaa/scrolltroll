@@ -1,6 +1,6 @@
 .modalContent{
     background-color: red;
-   position: absolute;
+   position: relative;
    left: 50%;
    top: 80%;
    width: 1000px;
@@ -50,6 +50,9 @@
         -moz-box-shadow: 12px 12px 0px 0px rgba(32, 34, 88, 0.69);
         transition: ease-in-out 0.3s;
 }
+.shareP{
+    transform: translateY(-40px);
+}
 .closeModal{
     width: 30px;
     background-color: transparent;
@@ -60,7 +63,59 @@
 }
 @media only screen and (max-width: 1600px){
 .shareButton{
-    margin: 40px 0px 0px 800px ;
-    height: 50px;
+    margin: 0px 0px 0px 700px ;
+    height: 70px;
+    display: block;
+
 }
+.shareP{
+    transform: translateY(-55px);
+}
+.modalContent{
+    top: 90%;
+}
+}
+@media only screen and (max-width: 1200px){
+.shareButton {
+        margin: 0px 0px 0px 400px;
+        height: 55px;
+        transform: translateY(40px);
+        z-index: 20;
+    }
+        .shareP {
+           font-size: 0.5em;
+            transform: translateY(-43px);
+            
+        }
+        .modalContent{
+            width: 500px;
+            height: 800px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+}
+@media only screen and (max-width: 768px){
+    .shareButton {
+            margin: 0px 0px 0px 60px;
+            height: 30px;
+            transform: translateY(10px);
+            z-index: 20;
+        }
+                .shareP {
+                    font-size: 0.4em;
+                    transform: translateY(-33px)
+        
+                }
+                .modalContent{
+                    max-width: 150px;
+                    height: 300px;
+                    font-size: 1em;
+                    left: 50%;
+                        top: 30%;
+                        transform: translate(-50%, -70%);
+                }
+                .closeIconModal{
+                    width: 30px;
+                }
 }

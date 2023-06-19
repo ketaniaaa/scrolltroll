@@ -33,9 +33,9 @@ export default class SiteMap extends Component {
       <ul className='smUL'>
           <Link to="DesignSelection" className='smMP'>Design</Link>
         <li><Link to="/StyleGuide" className='smMinor'>Style Guide</Link></li>
-           <li><Link to="/Wireframes" className='smMinor'>Wireframes</Link></li>
-              <li><Link to="/IXD" className='smMinor'>IXD Process</Link></li>
-                 <li><Link to="/UXReflection2" className='smMinor'>UX/UI Reflection</Link></li>
+        <li><Link to="/Wireframes" className='smMinor'>Wireframes</Link></li>
+        <li><Link to="/IXD" className='smMinor'>IXD Process</Link></li>
+        <li><Link to="/UXReflection2" className='smMinor'>UX/UI Reflection</Link></li>
 
       </ul>
       </main>

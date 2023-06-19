@@ -6,17 +6,27 @@
     width: 90%;
     padding-left: 5%;
     margin-bottom: 200px;
+
+}
+.mobileSelectionTitle{
+    display: hidden;
 }
 @media only screen and (min-width: 374px) and (max-width: 766px){
     .blogMain{
         width: 360px;
         align-items: center;
     }
-    .blogTitle{
-        display: flex;
-      padding: 50px 0px 0px 50px;
+    .blogSTitle{
+      display: none;
     }
     .blogSelectionTitle{
-        transform: translateX(70px);
+      
+     display: none;
+    }
+    .mobileSelectionTitle{
+        display: block;
+        font-family: "ScrollTroll";
+        color: #202258;
+        font-size: 3em;
     }
 }

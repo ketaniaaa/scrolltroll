@@ -134,7 +134,7 @@ box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
     }
 }
 /*Mobile*/
-@media only screen and (min-width: 374px) and (max-width: 766px){
+@media only screen and (max-width: 766px){
         .heroHome {
                 display: flex;
                 flex-direction: column;
@@ -150,7 +150,7 @@ box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
                 text-align: center;
                 max-width: 300px;
                 font-size: 2em;
-                transform: translateY(-40px);
+                transform: translateY(-20px);
             }
      .homeBanner {
      width: 300px;
