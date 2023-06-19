@@ -7,9 +7,21 @@ import icon from '../../images/icon.png';
 
 import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';
+import ShareButton from '../../components/ShareButton';
 import { Helmet } from 'react-helmet';
 export default class UXReflection2 extends Component {
+    constructor(props) {
+    super(props);
+    this.state = {
+    activeTab: 0,
+    };
+  }
+
+  handleTabClick = (index) => {
+  this.setState({ activeTab: index });
+  };
   render() {
+     const { activeTab } = this.state;
     return (
      <main className='e-content blogEntryMain' id='#top'>
        
@@ -37,8 +49,8 @@ export default class UXReflection2 extends Component {
 
         <section className='h-card blogIconandButton'>
         <img src={icon} alt="..sndns" className='blogTempIcon' />
-
-       <button className='nextButton'><Link to={'/'} className='blogNextButton'>Share Post</Link></button> 
+<ShareButton/>
+     
         </section>
 
 
@@ -49,14 +61,14 @@ export default class UXReflection2 extends Component {
         <p className='p-summary blogDescription'> A Critical Analysis of the UX and UI of Scroll Troll for Assignment 3. </p>
         <p className='dt-published blogTempDate'> 4.34PM. 9 June, 2023</p>
         
-        <ul className='tabList navigation'>
-          <li className='blogTab tab activeTab'><HashLink to='#blogID' id='blogTab'>Blog</HashLink></li>
-            <li className='blogRefTab tab'><HashLink smooth to="#refList" id='refTab'>References</HashLink></li>
-
-        </ul>
+       
+         <ul className="tabList navigation">
+                <li ><button onClick={() => this.handleTabClick(0)} className={`tabButton ${activeTab === 0 ? 'activeTab' : 'inactive'}`}> Blog</button></li>
+                <li ><button onClick={() => this.handleTabClick(1)} className={`tabButton ${activeTab === 1 ? 'activeTab' : 'inactive'}`}> References</button></li>
+             </ul>
 
         <section className='h-card blogContentContainer' id='blogID'>
-        <article className='e-content blogActiveContent bfCont'>
+             <article className={`e-content blogActiveContent bfCont ${activeTab === 0 ? 'activeSection' : 'inactiveSection'}`}>
        <p>Scroll Troll is a unique site to write about in regard to UX and UI due to the artwork aiming to subvert UX rules. I believe the site as it stands for assignment 3 is of acceptable UX standards and is highly useable. The site makes use of a plain background in order to make use of negative space. The selection pages are organized into a grid to that a user is able to take in more information without feeling overwhelmed and the entries contain negative space on the sides of the content which in turn creates a container for the content. The negative space also allows for the user&rsquo;s attention to be focused on actual content as the background and empty space cannot compete with the bolder colours of images, text and inputs.</p>
 <p>The components that ensure useability are the navigation bar and footer. The navigation stays consistent throughout the site and it&apos;s largely of similar design across devices. I do believe that I broke the convention of using a collapsable menu for this assignment. I chose to forgo this element because I only have two other pages apart from the home page. I will admit that this was a design mistake as I have not come across many websites on mobile that use a normal navigation bar similar to desktop and this lack of implementation causes the site to feel underdeveloped and not considerate of different form factors. This is therefore a high priority for the exam. This feature also provides an opportunity to display more technical skills in terms of the ability to use states. In the navigation bar, I have not created a link that says home. Instead, I have made use of the navigation convention by making the title a link back to the home page. This establishes familiarity with the user as they are likely to be familiar with clicking the title for redirection.</p>
 <p>The navigation can be further improved for mobile by becoming sticky so that the user does not have to scroll back up to find the navigation. Another major feature to include is highlighting page links in the navigation bar to show the active content. This would allow for more information to the user of where they are.&nbsp;</p>
@@ -74,7 +86,7 @@ export default class UXReflection2 extends Component {
 
 
  
-        <ol className='h-card blogReferenceSection'>
+        <ol className={`h-card blogReferenceSection ${activeTab === 1 ? 'activeSection' : 'inactiveSection'}`}>
       
    <h3 className='p-name referenceList' id='refList'>References</h3>
       <li className='author'><em>10 Guidelines For Navigation Usability</em> (2015) <em>Usability Geek</em>. Available at: <a href="https://usabilitygeek.com/10-guidelines-for-navigation-usability/" className='u-url refA'>https://usabilitygeek.com/10-guidelines-for-navigation-usability/</a> (Accessed: 9 June 2023).</li>

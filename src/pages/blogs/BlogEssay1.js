@@ -7,6 +7,7 @@ import icon from '../../images/icon.png';
 import EssayPic from '../../images/blogimages/poem-portrait.png';
 import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';
+import ShareButton from '../../components/ShareButton';
 import { Helmet } from 'react-helmet';
 export default class BlogEssay1 extends Component {
         constructor(props) {
@@ -49,7 +50,7 @@ export default class BlogEssay1 extends Component {
         <section className='h-card blogIconandButton'>
         <img src={icon} alt="..sndns" className='blogTempIcon' />
 
-       <button className='nextButton'><Link to={'/'} className='blogNextButton'>Share Post</Link></button> 
+       <ShareButton/>
         </section>
 
 

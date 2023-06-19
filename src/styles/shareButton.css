@@ -1,0 +1,66 @@
+.modalContent{
+    background-color: red;
+   position: absolute;
+   left: 50%;
+   top: 80%;
+   width: 1000px;
+   height: 500px;
+   padding: 100px;
+   transform: translate(-50%, -50%);
+    backdrop-filter: blur(20px);
+    z-index: 999;
+   font-size: 3em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-family: 'ScrollTroll';
+   border-radius: 25px;
+-webkit-box-shadow: 0px 0px 300px 200px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 0px 300px 200px rgba(0, 0, 0, 0.48);
+    box-shadow: 0px 0px 300px 200px rgba(0, 0, 0, 0.48);
+}
+.shareButton{
+    margin: 40px 0px 0px 900px;
+        text-decoration: none;
+        color: white;
+        height: 100px;
+       padding: 30px 20px 10px 20px;
+        transform: translateY(60px);
+        font-family: "ScrollTroll";
+        font-size: 2.5em;
+        background-color: #4045C6;
+
+        border-radius: 50px;
+      
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        border: 1px solid #4045C6;
+        transition: ease-in-out 0.3s;
+        box-shadow: 6px 6px 0px 0px rgba(32, 34, 88, 0.69);
+        -webkit-box-shadow: 6px 6px 0px 0px rgba(32, 34, 88, 0.69);
+        -moz-box-shadow: 6px 6px 0px 0px rgba(32, 34, 88, 0.69);
+}
+.shareButton:hover{
+    border: 3px solid #26285c;
+        box-shadow: 12px 12px 0px 0px rgba(32, 34, 88, 0.69);
+        -webkit-box-shadow: 12px 12px 0px 0px rgba(32, 34, 88, 0.69);
+        -moz-box-shadow: 12px 12px 0px 0px rgba(32, 34, 88, 0.69);
+        transition: ease-in-out 0.3s;
+}
+.closeModal{
+    width: 30px;
+    background-color: transparent;
+    border: none;
+}
+.closeIconModal{
+    width: 50px;
+}
+@media only screen and (max-width: 1600px){
+.shareButton{
+    margin: 40px 0px 0px 800px ;
+    height: 50px;
+}
+}

@@ -14,7 +14,7 @@ This site contains a homepage, blog and design page as the artwork is implicit i
 - tabination mainly on design pages + media queries 
 - try to remove hard code of tabination function
 - add media queries for samsung flip 
-- share post pop up fix and scroll to top button in blog styling
+- scroll to top button in blog styling
 - add next/prev post buttons to blogs
 - active tab correlate to nav 
 - stying form

@@ -63,37 +63,7 @@ height: 80vh;
     margin: 0px 30px 0px 0px;
     border: 10px solid #202258;
 }
-.blogNextButton{
-    margin: 0px 0px 0px 1000px;
-    text-decoration: none;
-    color: white;
-    transform: translateY(80px);
-font-family: "ScrollTroll";
-    font-size: 2em;
-   background-color: #4045C6;
-    border-radius: 50px;
-    padding: 20px;
-    display: flex;
-    transition: ease-in-out 0.3s;
-    box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
-        -webkit-box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
-        -moz-box-shadow: 2px 2px 0px 0px rgba(32, 34, 88, 0.69);
-      
 
-   
-}
-.blogNextButton:hover{
-border: 3px solid #26285c;
-box-shadow: 8px 10px 0px 0px rgba(32, 34, 88, 0.69);
-    -webkit-box-shadow: 5px 5px 0px 0px rgba(32, 34, 88, 0.69);
-    -moz-box-shadow: 5px 5px 0px 0px rgba(32, 34, 88, 0.69);
-    transition: ease-in-out 0.3s;
-  
-}
-.nextButton{
-    background-color: #898bc100;
-    border: none;
-}
 .blogTempMain{
     display: flex;
     flex-direction: column;
@@ -233,10 +203,7 @@ color: #202258;
     transform: translate(90px, -120px);
 
 }
-.blogNextButton{
-    margin: 0px 0px 0px 600px;
-    transform: translateY(60px);
-}
+
 .blogContentContainer{
     display: flex;
     align-items: center;
@@ -275,14 +242,7 @@ color: #202258;
     transform: translate(-20px, -80px);
 
 }
-.blogNextButton {
-    margin: 0px 0px 0px 400px;
-    padding: 10px 20px 10px 20px;
-    transform: translateY(40px);
-    font-size: 1.2em;
-    max-width: 200px;
-    font-family: "ScrollTroll";
-}
+
 .blogTempMain {
     padding: 100px 20px 0px 0px;
 
@@ -381,19 +341,7 @@ width: 60px;
             height: 50px;
             border: 3px solid;
         }
-                .blogNextButton {
-                    
-                    
-                    transform: translateX(-960px) translateY(25px);
-                   font-size: 1em;
-                   display: flex;
-                   align-content: center;
-                   justify-content: center;
-                    width: 80px;
-                    padding: 10px 5px 10px 5px;
-                    font-family: "ScrollTroll";
-                }
-                
+      
     .blogContentContainer{
         transform: translateX(-130px) translateY(-120px);
         font-size: 1em;

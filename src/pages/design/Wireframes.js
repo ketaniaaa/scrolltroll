@@ -6,6 +6,7 @@ import EssayBanner from '../../images/designimages/wireframes.JPG';
 import icon from '../../images/icon.png';
 import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';
+import ShareButton from '../../components/ShareButton';
 
 import WireframeHome from '../../images/designimages/lowfidelity-home-desktop.png';
 import WireframeSelection from '../../images/designimages/lowfidelity-blog-design-desktop.png';
@@ -51,8 +52,7 @@ constructor(props) {
 
         <section className='h-card blogIconandButton'>
         <img src={icon} alt="..sndns" className='blogTempIcon' />
-
-       <button className='nextButton'><Link to={'/'} className='blogNextButton'>Share Post</Link></button> 
+<ShareButton/>
         </section>
 
 
