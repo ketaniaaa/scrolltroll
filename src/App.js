@@ -7,6 +7,7 @@ import './App.css';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Design from './pages/Design';
+import SiteMap from './pages/SiteMap';
 
 //Form Imports
 import NameForm from './pages/forms/NameForm';
@@ -64,6 +65,7 @@ class App extends Component {
       {/* Main Pages */}
        <Route path='/BlogSelection' element= {<Blog/>}/>
         <Route path='/DesignSelection' element= {<Design/>}/>
+         <Route path='/SiteMap' element= {<SiteMap/>}/>
        
 
       {/* Blog Pages */}
