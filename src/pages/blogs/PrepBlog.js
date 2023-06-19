@@ -14,7 +14,18 @@ import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';
 import { Helmet } from 'react-helmet';
 export default class PrepBlog extends Component {
+         constructor(props) {
+    super(props);
+    this.state = {
+    activeTab: 0,
+    };
+  }
+
+  handleTabClick = (index) => {
+  this.setState({ activeTab: index });
+  };
   render() {
+     const { activeTab } = this.state;
     return (
      <main className='e-content blogEntryMain' id='#top'>
        
@@ -37,7 +48,7 @@ export default class PrepBlog extends Component {
       </Helmet>
 
        <BackButton/>
-        <img src={EssayBanner} alt="blah" className='u-photo entryImage' />
+        <img src={EssayBanner} alt="Drawing of a trolls poem portrait" className='u-photo entryImage' />
 
 
         <section className='h-card blogIconandButton'>
@@ -53,15 +64,14 @@ export default class PrepBlog extends Component {
         <h2 className='blogAuthor p-author'>@Ketania</h2>
         <p className='p-summary blogDescription'> This blog post explores the development and design for my internet artwork. </p>
         <p className='dt-published blogTempDate'> 2.12AM. 6 June, 2023</p>
-        
-        <ul className='tabList navigation'>
-          <li className='blogTab tab activeTab'><HashLink to='#blogID' id='blogTab'>Blog</HashLink></li>
-            <li className='blogRefTab tab'><HashLink smooth to="#refList" id='refTab'>References</HashLink></li>
 
-        </ul>
+           <ul className="tabList navigation">
+                <li ><button onClick={() => this.handleTabClick(0)} className={`tabButton ${activeTab === 0 ? 'activeTab' : 'inactive'}`}> Blog</button></li>
+                <li ><button onClick={() => this.handleTabClick(1)} className={`tabButton ${activeTab === 1 ? 'activeTab' : 'inactive'}`}> References</button></li>
+             </ul>
 
         <section className='h-card blogContentContainer' id='blogID'>
-        <article className='e-content blogActiveContent bfCont'>
+        <article className={`e-content blogActiveContent bfCont ${activeTab === 0 ? 'activeSection' : 'inactiveSection'}`}>
 <p>When approaching the design of Scroll Troll, I was largely influenced by the subreddit &lsquo;Intentionally Bad UI&rsquo; or &lsquo;r/badUIbattles&rsquo;. This subreddit explores fun and interesting ways to create the most annoying user interfaces. I wanted to use this inspiration to create a sort of learning material for how not to design interfaces.&nbsp;</p>
 <p></p>
 <p>My vision for the site is to create a form to sign-up for a parody social media website using intentionally bad UI that mimics the home pages of many other major social media sites. The use of a parody theme works hand-in-hand with the key concept of the website as I am parodying the design itself. I have named the website Scroll Troll because I am therefore &lsquo;trolling&rsquo; the user.</p>
@@ -115,7 +125,7 @@ export default class PrepBlog extends Component {
 
 
  
-        <ol className='h-card blogReferenceSection'>
+        <ol className={`h-card blogReferenceSection ${activeTab === 1 ? 'activeSection' : 'inactiveSection'}`}>
       
    <h3 className='p-name referenceList' id='refList'>References</h3>
         <li className='author'>0 Fundamental UI Design Principles You Need to Know | Dribbble&nbsp;(no date). Available at:<a href="https://dribbble.com/resources/ui-design-principles" className='u-url refA'>&nbsp;https://dribbble.com/resources/ui-design-principles</a> (Accessed: 4 June 2023)..</li>

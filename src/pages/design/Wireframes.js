@@ -14,7 +14,18 @@ import WireframeEntry from '../../images/designimages/lowfidelity-blog-template-
 import { Helmet } from 'react-helmet';
 
 export default class Wirefames extends Component {
+constructor(props) {
+    super(props);
+    this.state = {
+    activeTab: 0,
+    };
+  }
+
+  handleTabClick = (index) => {
+  this.setState({ activeTab: index });
+  };
   render() {
+     const { activeTab } = this.state;
     return (
      <main className='e-content blogEntryMain'>
        <Helmet>
@@ -52,14 +63,15 @@ export default class Wirefames extends Component {
         <p className='p-summary blogDescription'> The first iteration of low-fidelty wireframes for Assignment 3. </p>
         <p className='dt-published blogTempDate'> 1.19PM. 5 June, 2023</p>
         
-        <ul className='tabList navigation'>
-          <li className='blogTab tab activeTab'><a href='#blogID' id='blogTab'>Current Wireframes</a></li>
-            <li className='blogRefTab tab'><a href='#refList' id='refTab'>Outdated Wireframes</a></li>
+       <ul className="tabList navigation">
+                <li ><button onClick={() => this.handleTabClick(0)} className={`tabButton ${activeTab === 0 ? 'activeTab' : 'inactive'}`}> Desktop Wireframes</button></li>
+                <li ><button onClick={() => this.handleTabClick(1)} className={`tabButton ${activeTab === 1 ? 'activeTab' : 'inactive'}`}> Mobile Wireframes</button></li>
+                 <li ><button onClick={() => this.handleTabClick(2)} className={`tabButton ${activeTab === 2 ? 'activeTab' : 'inactive'}`}> Outdated Wireframes</button></li>
+             </ul>
 
-        </ul>
 
         <section className='h-card blogContentContainer' id='blogID'>
-        <article className='e-content designActiveContent bfCont'>
+             <article className={`e-content designActiveContent bfCont ${activeTab === 0 ? 'designActiveSection' : 'designInactiveSection'}`}>
      <h3 className='p-name wireframeTitle'>Home Page </h3>
      <img src={WireframeHome} alt="wireframe of the homepage" className='u-photo designImg'/>
      <ol className='wireframeAnList'> 
@@ -179,12 +191,14 @@ The use of colour is again utilised to create an information hierarchy as this i
 
 
  
-        <section className='h-card blogReferenceSection'>
+        <section className={`h-card  designActiveContent ${activeTab === 1 ? 'designActiveSection' : 'designInactiveSection'}`}>
       
-   <h3 className='p-name referenceList' id='refList'>Wireframes will be updated for exam</h3>
+   <h3 className='p-name designActiveContent' > Mobile Wireframes</h3>
       
        </section>
-      
+      <section className={`h-card blogReferenceSection ${activeTab === 2 ? 'designActiveSection' : 'designInactiveSection'}`}>
+         <h3 className='p-name referenceList' id='refList'>Wireframes will be updated for exam</h3>
+      </section>
         </section>
  
 </section>

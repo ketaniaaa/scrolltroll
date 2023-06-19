@@ -132,23 +132,44 @@ box-shadow: 8px 10px 0px 0px rgba(32, 34, 88, 0.69);
     font-size: 2em;
     transform: translateY(-50px);
     border-bottom: 4px solid #898bc1;
+    list-style: none;
     
 }
 .tab{
     list-style: none;
     padding: 0px 20px 10px 20px;
 }
-#blogTab {
-    text-decoration: none;
-    color: #202258;
-    font-weight: bold;
-    text-decoration: underline;
-    text-underline-offset: 0.6em;
-    text-decoration-thickness: 4px;
-}
-#refTab {
-    text-decoration: none;
+.tabButton{
+    background-color: transparent;
+    border: none;
     color: #595B8C;
+    font-family: "Outfit";
+    font-size: 1em;
+    margin: 0px 10px 0px 10px;
+}
+.tabButton:hover{
+    color: #202258;
+    text-decoration: underline;
+    text-underline-offset: 11px;
+
+}
+.activeTab{
+        color: #202258;
+            text-decoration: underline;
+            text-underline-offset: 11px;
+            font-weight: bold;
+}
+.activeSection{
+    display: block;
+}
+.inactiveSection{
+    display: none;
+}
+.designActiveContent{
+    display: block;
+}
+.designInactiveContent {
+    display: none;
 }
 .blogContentContainer{
    font-family: 'Outfit';
@@ -333,11 +354,12 @@ width: 60px;
    }
     .blogEntryMain{
         transform: translateX(-40px);
-        transform: translateY(-30px);
+        transform: translateY(-20px);
         width: 370px;
         padding: none;
         margin: none;
         overflow-x: hidden;
+        z-index: -1;
     }
     .blogTempMain{
         margin: none;

@@ -2,14 +2,26 @@ import React, { Component } from 'react'
 import {Link} from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
-import EssayBanner from '../../images/blogimages/essay.JPG';
+import EssayBanner from '../../images/blogimages/ethno.JPG';
 import icon from '../../images/icon.png';
 
 import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';
 import { Helmet } from 'react-helmet';
-export default class BlogEssay1 extends Component {
+export default class AfricanArt extends Component {
+ 
+      constructor(props) {
+    super(props);
+    this.state = {
+    activeTab: 0,
+    };
+  }
+
+  handleTabClick = (index) => {
+  this.setState({ activeTab: index });
+  };
   render() {
+     const { activeTab } = this.state;
     return (
      <main className='e-content blogEntryMain' id='#top'>
        
@@ -32,7 +44,7 @@ export default class BlogEssay1 extends Component {
       </Helmet>
 
        <BackButton/>
-        <img src={EssayBanner} alt="blah" className='u-photo entryImage' />
+        <img src={EssayBanner} alt="drawing of the African content with these symbols: </> to indicate code on the continent" className='u-photo entryImage' />
 
 
         <section className='h-card blogIconandButton'>
@@ -49,14 +61,13 @@ export default class BlogEssay1 extends Component {
         <p className='p-summary blogDescription'> This week I discuss the readings regarding African digital art and the idea of ethnocomputing for empowerment of the African identity  </p>
         <p className='dt-published blogTempDate'> 5.34PM. 26 May, 2023</p>
         
-        <ul className='tabList navigation'>
-          <li className='blogTab tab activeTab'><HashLink to='#blogID' id='blogTab'>Blog</HashLink></li>
-            <li className='blogRefTab tab'><HashLink smooth to="#refList" id='refTab'>References</HashLink></li>
-
-        </ul>
+         <ul className="tabList navigation">
+                <li ><button onClick={() => this.handleTabClick(0)} className={`tabButton ${activeTab === 0 ? 'activeTab' : 'inactive'}`}> Blog</button></li>
+                <li ><button onClick={() => this.handleTabClick(1)} className={`tabButton ${activeTab === 1 ? 'activeTab' : 'inactive'}`}> References</button></li>
+             </ul>
 
         <section className='h-card blogContentContainer' id='blogID'>
-        <article className='e-content blogActiveContent bfCont'>
+        <article className={`e-content blogActiveContent bfCont ${activeTab === 0 ? 'activeSection' : 'inactiveSection'}`}>
 <p>This week in theory we approach the topic of African Digital Art and Ethnocomputing. This topic is essential considering that this course focuses on creating a piece of Internet artwork as a South African.&nbsp;</p>
 <p>Let me first elaborate on what ethnocomputing is. K&auml;hk&ouml;nen et al. (2006, pp128) raise the issue of cultural and technological overlap in computer sciences. Computer science which has resulted in the creation of the internet has largely been approached as an objective field considering its roots in mathematics and science. This sentiment, however, is incorrect. According to K&auml;hk&ouml;nen et al.,&nbsp;&lsquo;science is not constructed by scientists alone but is negotiated among several agents&rsquo;(pp 129). This refers to the idea that the science that has created the internet has been inherently biased by its creators who are a part of a culture and therefore negating the role of cultural context when approaching computing is unjust. I have discussed the role of technological bias in my blog entry regarding my internet artwork <Link to="/BlogEssay">rationale</Link>. To give a summation of the bias that affects countries such as South Africa and the global South at large is a historic lack of access to information. This lack of information has resulted in these regions being barred from participating equally in the progression of technology. For further understanding, I highly recommend that you refer to the above-linked entries. This lack of inclusion has subsequently resulted in the creation of ethnocomputing. Ethnocomputing refers to the re-constitution of the link between computing and culture in order to negate the reproduction of colonial ideas when approaching computational technology (Allen et. al. 2021, pp4). This idea of ethnocomputing is vital as it enables marginalized regions to engage on a higher level in a global zeitgeist.&nbsp;</p>
 <p>According to Bisschoff (2017, pp264), engagement with Ethnocomputing allows for global connectivity that allows for the wider spread of the African identity. The internet as a medium is therefore a powerful tool to generate content regarding the content as it allows for heightened accessibility over traditional media and art forms. The creation of African digital art is not only helpful for affirming identity in the global community but has economic value for the continent. As previously discussed, the South accounts for a proportionally small amount of the world&rsquo;s wealth and this has further denied these communities from accessing information and tools for adding to global information (Pijnake &amp; Spronk 2017, pp342). Therefore, strengthening economies further solidifies African voices in an age of globalization. &nbsp;Examples of this include the creation of comic genres such as Afrofuturism and film industries like Nollywood. This demonstration of African digital art allows for Africans to re-represent themselves on their terms which is inherently empowering when battling the dissolution of colonial identities.&nbsp;</p>
@@ -67,8 +78,8 @@ export default class BlogEssay1 extends Component {
 
 
 
- 
-        <ol className='h-card blogReferenceSection'>
+
+        <ol className={`h-card blogReferenceSection ${activeTab === 1 ? 'activeSection' : 'inactiveSection'}`}>
       
    <h3 className='p-name referenceList' id='refList'>References</h3>
    <li className='author'>Bisschoff, L. (2017) &lsquo;The future is digital: an introduction to African digital arts&rsquo;, <em>Critical African Studies</em>, 9(3), pp. 261&ndash;267. Available at: <a href="https://doi.org/10.1080/21681392.2017.1376506" className='u-url refA'>https://doi.org/10.1080/21681392.2017.1376506</a>.</li>

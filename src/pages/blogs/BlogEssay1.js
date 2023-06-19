@@ -9,7 +9,18 @@ import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';
 import { Helmet } from 'react-helmet';
 export default class BlogEssay1 extends Component {
+        constructor(props) {
+    super(props);
+    this.state = {
+    activeTab: 0,
+    };
+  }
+
+  handleTabClick = (index) => {
+  this.setState({ activeTab: index });
+  };
   render() {
+     const { activeTab } = this.state;
     return (
      <main className='e-content blogEntryMain' id='#top'>
        
@@ -49,14 +60,15 @@ export default class BlogEssay1 extends Component {
         <p className='p-summary blogDescription'> An Essay exploring my chosen artwork in the context of Internet Artwork. This essay focuses on the idea of artifical intelligence and its ethical uses as an artistic tool. </p>
         <p className='dt-published blogTempDate'> 4.34PM. 14 May, 2023</p>
         
-        <ul className='tabList navigation'>
-          <li className='blogTab tab activeTab'><HashLink to='#blogID' id='blogTab'>Blog</HashLink></li>
-            <li className='blogRefTab tab'><HashLink smooth to="#refList" id='refTab'>References</HashLink></li>
+        <ul className="tabList navigation">
+                <li ><button onClick={() => this.handleTabClick(0)} className={`tabButton ${activeTab === 0 ? 'activeTab' : 'inactive'}`}> Blog</button></li>
+                <li ><button onClick={() => this.handleTabClick(1)} className={`tabButton ${activeTab === 1 ? 'activeTab' : 'inactive'}`}> References</button></li>
+             </ul>
 
-        </ul>
 
         <section className='h-card blogContentContainer' id='blogID'>
-        <article className='e-content blogActiveContent bfCont'>
+             <article className={`e-content blogActiveContent bfCont ${activeTab === 0 ? 'activeSection' : 'inactiveSection'}`}>
+
         <p>As artificial intelligence becomes more accessible to the art community, I have become more interested in using AI as a tool for creating artistic experiences. For this reason, I have chosen the net artwork ‘POEMPORTRAITS’ by Es Devlin to discuss.  Devlin’s artwork has highlighted the internet’s ability to create collective pieces that intersect visual and literary artwork. This essay will provide a critical analysis of the piece ‘POEMPORTRAITS’ in relation to the use of the internet as a medium through discussion of the artwork’s creatorship, interactive experience and aesthetic values. 
 </p>
 <p>‘POEMPORTRAITS’ requests users to provide a word and a webcam-generated photo of the user to create a two-word poem that is integrated onto the portrait of the user. Each portrait rendered features the poem repeated across the image to form an overlapped effect. The size of the font of the poem across the image is increased on the areas of the user's face. The original webcam photo is also recoloured with new vibrant pools of colours around the portrait. Each portrait has a unique poem with individual colourization of the user’s picture to create a one-of-a-kind artwork that is part of a larger collection. </p>
@@ -92,7 +104,7 @@ export default class BlogEssay1 extends Component {
 
 
  
-        <ol className='h-card blogReferenceSection'>
+        <ol className={`h-card blogReferenceSection ${activeTab === 1 ? 'activeSection' : 'inactiveSection'}`}>
       
    <h3 className='p-name referenceList' id='refList'>References</h3>
         <li className='author'>Benjamin, W. (2008)&nbsp;The Work of Art in the Age of Mechanical Reproduction. Penguin UK.</li>

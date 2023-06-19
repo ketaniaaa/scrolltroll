@@ -150,6 +150,7 @@ transition: ease-in-out 0.3s;
    .mobileNav{
     display: flex;
     flex-direction: column;
+    z-index: 3;
   
  
    }

@@ -7,8 +7,21 @@ import icon from '../../images/icon.png';
 import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';
 import { Helmet } from 'react-helmet';
+
 export default class Autocorrectionbias extends Component {
+
+      constructor(props) {
+    super(props);
+    this.state = {
+    activeTab: 0,
+    };
+  }
+
+  handleTabClick = (index) => {
+  this.setState({ activeTab: index });
+  };
   render() {
+             const { activeTab } = this.state;
     return (
      <main className='e-content blogEntryMain' id='#top'>
        
@@ -31,7 +44,7 @@ export default class Autocorrectionbias extends Component {
       </Helmet>
 
        <BackButton/>
-        <img src={EssayBanner} alt="blah" className='u-photo entryImage' />
+        <img src={EssayBanner} alt="the text what is in a name with the name underlined with a red squiggly line and highlighted" className='u-photo entryImage' />
 
 
         <section className='h-card blogIconandButton'>
@@ -47,15 +60,19 @@ export default class Autocorrectionbias extends Component {
         <h2 className='blogAuthor p-author'>@Ketania</h2>
         <p className='p-summary blogDescription'> An exploration of bias in the autorrect spellcheckers that we use on the internet and its effects on the Global South. </p>
         <p className='dt-published blogTempDate'> 2.50PM. 1 June, 2023</p>
-        
-        <ul className='tabList navigation'>
+
+        <ul className="tabList navigation">
+                <li ><button onClick={() => this.handleTabClick(0)} className={`tabButton ${activeTab === 0 ? 'activeTab' : 'inactive'}`}> Blog</button></li>
+                <li ><button onClick={() => this.handleTabClick(1)} className={`tabButton ${activeTab === 1 ? 'activeTab' : 'inactive'}`}> References</button></li>
+             </ul>
+        {/*<ul className='tabList navigation'>
           <li className='blogTab tab activeTab'><HashLink to='#blogID' id='blogTab'>Blog</HashLink></li>
             <li className='blogRefTab tab'><HashLink smooth to="#refList" id='refTab'>References</HashLink></li>
 
-        </ul>
+    </ul>*/}
 
         <section className='h-card blogContentContainer' id='blogID'>
-        <article className='e-content blogActiveContent bfCont'>
+        <article className='e-content blogActiveContent bfCont' id='blogActive' style={{ display: activeTab === 0 ? 'block' : 'none' }}>
   <p>This week as the implemented vision for my internet artwork draws closer, I find myself interrogating the idea of autocorrect bias. In my rationale and prep work found <Link to="/PrepBlog">here</Link>, I mention wanting to add an autocorrection feature that underlines ethnic and non-English names. This stems from the years of seeing squiggly lines underneath my name, and the names of most people I know, in documents and forms. This week let us dive deeper into computational biases and colonialism in code that has resulted in technology negating the presence of many populations.&nbsp;</p>
 <p>As technology has advanced allowing for higher computational functions to be run on a wider spectrum of devices, machine learning (ML) and artificial intelligence (AI) have become extremely common. We all tend to have encounters with ML on a daily basis through our spell checkers and the content shown to us from the algorithms on the websites that we engage in. It must be initially understood that the data we engage in are inherently biased.&nbsp;</p>
 <p>To explain this, let us inspect Graham et al&rsquo;s (2015) idea that there is an information disparity between the global north and the global south. They propose the idea that in pre-technological eras, the global north with more power and resources could better document information thus allowing for data to be easily accessible. This power has been gained through colonialism, further running the global south dry of material resources. This hoard of resources allowed for a faster progression into the age of the internet in these areas while the global south followed slowly behind (pp 91). The lack of access to information has thus barred the global south from being encouraged to add to information stores because a lack of information results in consequences such as lower literacy levels and lack of hardware availability. This demonstrates the fundamental inequality regarding access to technology between the North and South. The North having access to new technology has subsequently meant that technology has largely been catered towards these communities. This is seen within the development of Natural Language Processing (NLP).</p>
@@ -68,7 +85,7 @@ export default class Autocorrectionbias extends Component {
 
 
  
-        <ol className='h-card blogReferenceSection'>
+        <ol className='h-card blogReferenceSection' id='refActive' style={{ display: activeTab === 1 ? 'block' : 'none' }}>
       
    <h3 className='p-name referenceList' id='refList'>References</h3>
 <li className='author'>Adams, R. (2021) &lsquo;Can artificial intelligence be decolonized?&rsquo;, <em>Interdisciplinary Science Reviews</em>, 46(1/2), pp. 176&ndash;197. Available at: <a href="https://doi.org/10.1080/03080188.2020.1840225" className='u-url refA'>https://doi.org/10.1080/03080188.2020.1840225</a>.</li>
