@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import Snake from '../../components/Snake';
 
 export default function NameForm() {
 
@@ -28,6 +29,7 @@ export default function NameForm() {
         <p>date of birth</p>
         <input type="text" />
        </form>
+<Snake/>
        <Link to='/Country'> continue</Link>
        
     </main>

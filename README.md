@@ -18,3 +18,4 @@ This site contains a homepage, blog and design page as the artwork is implicit i
 - add next/prev post buttons to blogs
 - active tab correlate to nav 
 - stying form
+- collapse function for snake game
