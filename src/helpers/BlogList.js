@@ -19,7 +19,7 @@ export const BlogList =[
     platform: "ScrollTroll Desktop",
    
     alt: 'Drawing of a compute with the image of a troll face inbetween two curly brackets on the screen of the laptop'
-,route: "/PrepBlog"
+,route: "/PrepBlog#top"
 },
     {
     name: "Reflection",
@@ -30,7 +30,7 @@ export const BlogList =[
     date: "2:05PM. 5 June, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'Drawing of a handheld mirror',
-    route: "/Reflection2",
+    route: "/Reflection2#top",
 
 },
 {
@@ -42,7 +42,7 @@ export const BlogList =[
     date: "8:40PM. 1 June, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'the words what is in a name with a red squiggly line to represent autocorrect underlining the sentence'
-     ,route: "/AutocorrectBias"
+     ,route: "/AutocorrectBias#top"
 },
 {
     name: "African Digital Artwork ",
@@ -53,7 +53,7 @@ export const BlogList =[
     date: "3:05AM. 26 May, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'Silouette of Africa with some code brackets in white on the image'
-     ,route: "/AfricanArt"
+     ,route: "/AfricanArt#top"
 },
 {
     name: "AI and Art",
@@ -75,7 +75,7 @@ export const BlogList =[
     date: "12:15PM. 2 May, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'Drawing of a Troll in a POEMPORTRAIT like the original by Es Devlin'
- ,route: "/EssayBlog"
+ ,route: "/EssayBlog#top"
 },
 
 

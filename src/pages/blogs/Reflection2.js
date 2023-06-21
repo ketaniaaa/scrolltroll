@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import {Link} from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 import EssayBanner from '../../images/blogimages/reflection.JPG';
@@ -8,6 +7,9 @@ import icon from '../../images/icon.png';
 import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';
 import ShareButton from '../../components/ShareButton';
+import SubscribeButton from "../../components/SubscribeButton";
+import TopButton from "../../components/BlogToTop";
+
 import { Helmet } from 'react-helmet';
 export default class Reflection2 extends Component {
     constructor(props) {
@@ -93,8 +95,41 @@ export default class Reflection2 extends Component {
        </ol>
       
         </section>
+
+              {/* Related Articles for easy navigation*/}
+        <section className='p-related relatedContent'>
+        <h4 className='relatedTitle'>Related Articles</h4>
+        <section className='relatedSpan h-card'>
+
+        <article className='h-card relatedCard'>
+        <h5 className='relatedArticle p-name'>Preparatory Work and Rationale </h5>
+        <p className='relatedSummary p-summary'> This blog post explores the development and design for my internet artwork.</p>
+        <HashLink to='/PrepBlog#top' className='readMoreLink u-url'> Read More</HashLink>
+        </article>
+        
+        <article className='h-card relatedCard'>
+        <h5 className='relatedArticle p-name'> Final Development Reflection </h5>
+        <p className='relatedSummary p-summary'> The latest dev blog regarding the exam changes of Scroll Troll.</p>
+        <HashLink to='/AutocorrectBias#top' className='readMoreLink u-url'> Read More</HashLink>
+        </article>
+
+        <article className='h-card relatedCard'>
+        <h5 className='relatedArticle p-name'>Exam UXUI Reflection </h5>
+        <p className='relatedSummary p-summary'>An updated reflection of the UX and UI of Scroll Troll and all the changes made.</p>
+        <HashLink to='/AiArt' className='readMoreLink u-url'> Read More</HashLink>
+        </article>
+
+        
+        </section>
+
+        <section className='emailSubscribe'>
+        <input type="email" name="email" id="subEmail" placeholder='email@example.com' />
+        <SubscribeButton/>
+        <TopButton/>
+        </section>
+        </section>  {/* End Related Section */}
 </section>
-<HashLink smooth to="#top"> Back to top</HashLink>
+
      </main>
     )
   }

@@ -6,7 +6,10 @@
         url("../fonts/Scroll_troll-Regular.ttf") format("truetype");
 }
 
-/*Desktop*/
+/*//////////////////////////////////////////////////////DESKTOP/////////////////////////////////////////////////////////////////*/
+.imageFHover{
+    transform: translateY(-50%, -50%);
+}
 .backButton{
     width: 200px;
     margin: 0px 30px 0px 0px;
@@ -175,6 +178,89 @@ color: #202258;
 .refA{
     color: #EA9B00;
 }
+/* Related post blog stuff */
+.relatedContent{
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+}
+.relatedTitle{
+    font-size: 3.5em;
+    font-family: 'ScrollTroll';
+    color: #35376b;
+    width: 100%;
+    border-bottom: 5px solid #35376b;
+}
+.relatedSpan{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100px);
+}
+.relatedCard{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    height: 150px;
+
+    margin: 20px;
+}
+.relatedArticle{
+font-family: 'ScrollTroll';
+    color: #2b2d58d9;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0;
+}
+.relatedSummary{
+    font-family: 'Outfit';
+    color: #35376bcd;
+    transform: translateY(-50px);
+}
+.readMoreLink{
+    font-family: 'ScrollTroll';
+    color: #2b2d58;
+    transform: translateY(-50px);
+}
+.emailSubscribe{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#subEmail{
+    padding: 20px;
+    width: 300px;
+    border: 2px solid #35376b;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-family: 'ScrollTroll';
+}
+.subscribeButton{
+    padding: 20px;
+        
+        border: 2px solid #35376b;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        font-family: 'ScrollTroll';
+        font-weight: bold;
+        color: white;
+        background-color: #35376b;
+}
+#subPopover{
+   font-family: 'ScrollTroll';
+   padding: 10px;
+}
+.topLink{
+    position: absolute;
+    right: 5%;
+    border: 2px solid #202258;
+    border-radius: 50px;
+}
+.topLink:hover{
+    border: 5px solid #202258;
+}
 .designImg{
     align-self: center;
     justify-self: center;
@@ -193,7 +279,9 @@ color: #202258;
     width: 1000px;
 }
 
-/*Mac*/
+/*//////////////////////////////////////////////////////Mac/////////////////////////////////////////////////////////////////*/
+
+
 @media only screen and (min-width: 1200px ) and (max-width: 1600px){
 .backButton{
     transform: translateX(100px) translateY(80px);
@@ -229,7 +317,7 @@ color: #202258;
 
 }
 }
-/*Tablets*/
+/*//////////////////////////////////////////////////////Tablets/////////////////////////////////////////////////////////////////*/
 @media only screen and (min-width: 767px) and (max-width: 1199px){
 .backButton{
     transform: translateX(-280px) translateY(50px);
@@ -246,7 +334,7 @@ color: #202258;
   z-index: 0;
 }
 .blogIconandButton {
-    transform: translate(10px, -80px);
+    transform: translate(-200px, -60px);
 
 }
 
@@ -310,8 +398,21 @@ width: 60px;
    object-fit: contain;
 
 }
+.topLink{
+    width: 48px;
+    position: relative;
+    right: 0%;
+    margin: 0px 0px 0px 50px;
 }
-/*Mobile*/
+.toTopImg{
+    width: 48px;
+}
+}
+
+
+
+
+/*//////////////////////////////////////////////////////Mobile/////////////////////////////////////////////////////////////////*/
 @media only screen and  (max-width: 480px){
    .backButton{
     width: 60px;
@@ -339,6 +440,7 @@ width: 60px;
         transform: translateX(10px);
         z-index: 0;
     }
+ 
         .blogIconandButton {
             transform: translate(40px, -40px);
     
@@ -402,4 +504,36 @@ max-width: 18rem;
         .styleImg{
            max-width: 18rem;
         }
+
+        .relatedTitle{
+            font-size: 2em;
+            transform: translateX(-130px) translateY(-60px);
+        }
+.relatedSpan{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-130px) translateY(-60px);
+}
+.emailSubscribe{
+    transform: translateX(-130px);
+}
+#subEmail{
+    padding: 10px;
+  
+    
+}
+.subscribeButton{
+    padding: 10px;
+    font-size: 0.45em;
+}
+.topLink{
+    width: 48px;
+    position: relative;
+    right: 0%;
+    margin: 0px 0px 0px 5px;
+  
+}
+.toTopImg{
+    width: 32px;
+}
 }

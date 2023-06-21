@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/blogCard.css';
+import { HashLink } from 'react-router-hash-link';
 
 export default class BlogItem extends Component {
   render() {
     return (
-      <Link className='h-card blogCard' to ={this.props.route}>
+      <HashLink className='h-card blogCard' to ={this.props.route}>
         <section className='p-name blogHeader'>
 
 
@@ -34,7 +35,7 @@ export default class BlogItem extends Component {
         <li className='blogSocialType'> <b className='number blogNumber'>10k</b> Retrolls </li>
         <li className='blogSocialType'> <b className='number blogNumber'>22.1k</b> Trollikes </li>
         </ul>
-        </Link>
+        </HashLink>
     )
   }
 }

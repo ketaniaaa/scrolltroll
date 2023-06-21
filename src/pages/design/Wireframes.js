@@ -28,7 +28,7 @@ constructor(props) {
   render() {
      const { activeTab } = this.state;
     return (
-     <main className='e-content blogEntryMain'>
+     <main className='e-content blogEntryMain' id='#top'>
        <Helmet>
   
         {/* SEO meta data since react does not hold interent capability for meta tags without the Helmet package */}

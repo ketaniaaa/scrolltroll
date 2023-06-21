@@ -1,0 +1,30 @@
+.imageHover{
+        position: fixed;
+        width: 300px;
+        height: 300px;
+transform: translate(-50%, -50%);
+transition: opacity 0.10s ease-in-out;
+pointer-events: none;
+z-index: 20;
+}
+.mainHover{
+        display: block;
+        /* max-width: 300px;
+                max-height: 300px; */
+}
+.staticHover{
+    display: none;
+}
+.imageHovering{
+        transform: translateY(-300px);
+}
+@media only screen and  (max-width: 1500px){
+        .mainHover {
+                        display: none;
+                }
+}
+@media only screen and (max-width: 480px) {
+        .mainHover{
+                display: none;
+        }
+}

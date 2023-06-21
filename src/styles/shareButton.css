@@ -77,10 +77,13 @@
 }
 @media only screen and (max-width: 1200px){
 .shareButton {
-        margin: 0px 0px 0px 400px;
+        /* margin: 0px 0px 0px 400px;
         height: 55px;
         transform: translateY(40px);
-        z-index: 20;
+        z-index: 20; */
+        position: relative;
+        right: 0;
+        transform: translateX(500px);
     }
         .shareP {
            font-size: 0.5em;

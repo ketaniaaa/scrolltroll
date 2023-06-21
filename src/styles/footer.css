@@ -55,7 +55,7 @@ h5{
    
 }
 }
-@media only screen and (min-width: 374px) and (max-width: 766px){
+@media only screen and (min-width: 274px) and (max-width: 766px){
     .footer{
       transform: translateY(100px);
         width: 355px;

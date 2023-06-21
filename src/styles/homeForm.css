@@ -56,7 +56,8 @@
         font-size: 2vw;
 }
 .homeInput:hover {
-border: 4px solid #202258;
+border: 5px solid #2f3170;
+background-color: white;
 
 }
 .nextA{
@@ -68,6 +69,17 @@ border: 4px solid #202258;
 }
 .nextA:hover{
     cursor: pointer;
+}
+
+.homeNameInput{
+    padding: 20px;
+        border-radius: 15px;
+        background-color: #d9d9d9db;
+        border: 4px solid #8B8DC9;
+        font-family: 'Outfit';
+        font-size: 1.5em;
+        color: #2f3170;
+
 }
 @media only screen and (min-width: 767px) and (max-width: 1199px){
     .homeForm{

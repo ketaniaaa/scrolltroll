@@ -18,7 +18,7 @@ export const DesignList =[
     date: "8:40PM. 1 June, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'Drawing of a style guide with colour swatches and h1, h2 and h3 font sizings'
-     ,route: "/StyleGuide"
+     ,route: "/StyleGuide#top"
 },
 {
     name: "Wireframes",
@@ -29,7 +29,7 @@ export const DesignList =[
     date: "2:05PM. 5 June, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'Drawing of low-fidelity wireframes',
-    route: "/Wireframes"
+    route: "/Wireframes#top"
 },
 {
     name: "Interaction Design",
@@ -51,7 +51,7 @@ export const DesignList =[
     date: "7:45PM. 13 May, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'Drawing of block letters saying UXUI'
- ,route: "/UXReflection2"
+ ,route: "/UXReflection2#top"
 },
 
 

@@ -30,7 +30,7 @@ export default class StyleGude extends Component {
   render() {
      const { activeTab } = this.state;
     return (
-     <main className='e-content blogEntryMain'>
+     <main className='e-content blogEntryMain' id='#top'>
        
 <Helmet>
   
