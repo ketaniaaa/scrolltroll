@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
+import { HashLink } from 'react-router-hash-link';
 
-import {Link} from "react-router-dom";
 
 
 import '../styles/homeForm.css';
@@ -12,7 +12,7 @@ export default class homeForm extends Component {
         <form action="" className='homeForm'>
             <h2 className='formH2'>Create an Account</h2>
             <h3 className='formH3'>username</h3>
-            <input type="text" className='homeInput'/>
+            <input type="text" className='homeInput' name="username" id='username'/>
              <h3 className='formH3'>email</h3>
 
              <section className='emailInput'>
@@ -35,7 +35,7 @@ export default class homeForm extends Component {
 
 </select>
              </section>
-             <Link className='nextA' smooth to="/NameForm"> NEXT  </Link>
+             <HashLink className='nextA' smooth to="/NameForm#formstart"> NEXT  </HashLink>
 
         </form>
       </main>

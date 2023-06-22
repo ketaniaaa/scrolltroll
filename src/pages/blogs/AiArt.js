@@ -1,47 +1,36 @@
-import React, { useState } from 'react';
-import Picture from '../../images/homebanner.png';
+import React, { Component } from "react";
+import '../../styles/scrolltest.css';
+import testImg from '../../images/homebanner.png';
 
-const AiArt = () => {
-  const [hovered, setHovered] = useState(false);
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+class AiArt extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isHovered: false,
+    };
+  }
 
-  const handleMouseEnter = () => {
-    setHovered(true);
+  handleMouseEnter = () => {
+    this.setState({ isHovered: true });
   };
 
-  const handleMouseLeave = () => {
-    setHovered(false);
+  handleMouseLeave = () => {
+    this.setState({ isHovered: false });
   };
 
-  const handleMouseMove = (event) => {
-    setCursorPosition({ x: event.clientX, y: event.clientY });
-  };
+  render() {
+    const { isHovered } = this.state;
 
-  const imageStyle = {
-    position: 'fixed',
-    top: cursorPosition.y,
-    left: cursorPosition.x,
-    transform: 'translate(-50%, -50%)',
-    pointerEvents: 'none',
-    opacity: hovered ? 1 : 0,
-    transition: 'opacity 0.3s ease-in-out',
-  };
-
-  return (
-    <div
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onMouseMove={handleMouseMove}
-      style={{ width: '100%', height: '100vh' }}
-    >
-      {/* Replace 'image-url' with the URL of your desired image */}
-      <img
-        src={Picture}
-        alt="Hover Image"
-        style={imageStyle}
-      />
-    </div>
-  );
-};
+    return (
+      <div
+        className={`imageCurseContainer ${isHovered ? "hoveredVibrate" : ""}`}
+        onMouseEnter={this.handleMouseEnter}
+        onMouseLeave={this.handleMouseLeave}
+      >
+        <img src={testImg} alt="banner" />
+      </div>
+    );
+  }
+}
 
 export default AiArt;

@@ -50,7 +50,7 @@ class ImageHover extends Component {
       >
         <img
           src={imageUrl}
-          alt="Hover Image"
+          alt="Hovered"
           style={imageStyle}
           className={`imageUnhovered ${hovered ? 'imageHovering' : 'staticHover'}`}
         />

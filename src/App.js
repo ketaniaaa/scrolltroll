@@ -17,6 +17,7 @@ import Submit from './pages/forms/Submit';
 import SuggestedFollows from './pages/forms/SuggestedFollows';
 import Post from './pages/forms/Post';
 
+
 //Blog Imports 
 import EssayBlog from './pages/blogs/BlogEssay1';
 import Reflection2 from './pages/blogs/Reflection2';
@@ -38,61 +39,69 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 class App extends Component {
   render(){
-    return <div className='App'>
-      <Helmet>
-  
-        {/* SEO meta data since react does not hold interent capability for meta tags without the Helmet package */}
-        <title> Scroll Troll</title>
-        <meta name='author' content='Ketania Govender'/>
-          <meta name="description" content="A parody social media which aims to depict bad UI design"/>
-   
-    <meta property="og:site_name" content="Scroll Troll" />
-    <meta property="og:title" content="Scroll Troll" />
-    <meta property="og:type" content="website" />
-     <meta
-      property="og:image"content="https://github.com/ketaniaaa/scrolltroll/src/images/navLogo.png"/>
-    <meta property="og:image:alt" content="Scroll Troll Logo" />
-    <meta
-      property="og:url" content="https://ketaniaaa.github.io/scrolltroll/"/>
-       <meta name="keywords" content="Blog, Africa Digital Art, AI Art, Interactive Media, Digital Art Theory, Ux, UI ,ixd, wireframes, style guide"/>
-      </Helmet>
+    return (
+      <div className="App">
+        <Helmet>
+          {/* SEO meta data since react does not hold interent capability for meta tags without the Helmet package */}
+          <title> Scroll Troll</title>
+          <meta name="author" content="Ketania Govender" />
+          <meta
+            name="description"
+            content="A parody social media which aims to depict bad UI design"
+          />
 
-    <Navbar/>
-    <Routes>
-      <Route exact path='/' element= {<Home/>}/>
+          <meta property="og:site_name" content="Scroll Troll" />
+          <meta property="og:title" content="Scroll Troll" />
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:image"
+            content="https://github.com/ketaniaaa/scrolltroll/src/images/navLogo.png"
+          />
+          <meta property="og:image:alt" content="Scroll Troll Logo" />
+          <meta
+            property="og:url"
+            content="https://ketaniaaa.github.io/scrolltroll/"
+          />
+          <meta
+            name="keywords"
+            content="Blog, Africa Digital Art, AI Art, Interactive Media, Digital Art Theory, Ux, UI ,ixd, wireframes, style guide"
+          />
+        </Helmet>
 
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
 
-      {/* Main Pages */}
-       <Route path='/BlogSelection' element= {<Blog/>}/>
-        <Route path='/DesignSelection' element= {<Design/>}/>
-         <Route path='/SiteMap' element= {<SiteMap/>}/>
-       
+          {/* Main Pages */}
+          <Route path="/BlogSelection" element={<Blog />} />
+          <Route path="/DesignSelection" element={<Design />} />
+          <Route path="/SiteMap" element={<SiteMap />} />
 
-      {/* Blog Pages */}
-        <Route path='/EssayBlog' element= {<EssayBlog/>}/>
-        <Route path='/AiArt' element= {<AiArt/>}/>
-        <Route path='/PrepBlog' element= {<PrepBlog/>}/>
-        <Route path='/AfricanArt' element= {<AfricanArt/>}/>
-        <Route path='/AutocorrectBias' element= {<Autocorrectbias/>}/>
-        <Route path='/Reflection2' element= {<Reflection2/>}/>
+          {/* Blog Pages */}
+          <Route path="/EssayBlog" element={<EssayBlog />} />
+          <Route path="/AiArt" element={<AiArt />} />
+          <Route path="/PrepBlog" element={<PrepBlog />} />
+          <Route path="/AfricanArt" element={<AfricanArt />} />
+          <Route path="/AutocorrectBias" element={<Autocorrectbias />} />
+          <Route path="/Reflection2" element={<Reflection2 />} />
 
-      {/* Design Pages */}
-       <Route path='/Wireframes' element= {<Wireframes/>}/>
-       <Route path='/StyleGuide' element= {<StyleGuide/>}/>
-       <Route path='/IXD' element= {<IXD/>}/>
-       <Route path='/UXReflection2' element= {<UXReflection2/>}/>
-       
+          {/* Design Pages */}
+          <Route path="/Wireframes" element={<Wireframes />} />
+          <Route path="/StyleGuide" element={<StyleGuide />} />
+          <Route path="/IXD" element={<IXD />} />
+          <Route path="/UXReflection2" element={<UXReflection2 />} />
 
-      {/* Artwork Pages */}
-    <Route path='/NameForm' element= {<NameForm/>}/>
-    <Route path='/Country' element= {<Country/>}/>
-    <Route path='/Password' element= {<Password/>}/>
-    <Route path='/Submit' element= {<Submit/>}/>
-    <Route path='/SuggestedFollows' element= {<SuggestedFollows/>}/>
-    <Route path='/Post' element= {<Post/>}/>
-    </Routes>
-    <Footer/>
-</div>
+          {/* Artwork Pages */}
+          <Route path="/NameForm" element={<NameForm />} />
+          <Route path="/Country" element={<Country />} />
+          <Route path="/Password" element={<Password />} />
+          <Route path="/Submit" element={<Submit />} />
+          <Route path="/SuggestedFollows" element={<SuggestedFollows />} />
+          <Route path="/Post" element={<Post />} />
+        </Routes>
+        <Footer />
+      </div>
+    );
   }
 }
 

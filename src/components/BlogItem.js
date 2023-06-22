@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/blogCard.css';
 import { HashLink } from 'react-router-hash-link';
 
