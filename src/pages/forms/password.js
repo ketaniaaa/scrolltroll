@@ -48,11 +48,14 @@ export default function Password() {
 
     if (valid) {
       navigate('/Submit');
+    
     } else {
       setState((prevState => ({
         ...prevState,
         errorMessage,
+         
       })));
+        alert('Form is invalid, please fill out the form correctly.'); 
     }
 
   };

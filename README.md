@@ -18,4 +18,5 @@ This site contains a homepage, blog and design page as the artwork is implicit i
 - proof read articles
 - add microformats/headers and meta data for forms
 - updated wireframes and annotations
-- writing: new reflections x2, update prep and rationale 
+- writing: new reflections x2, update prep and rationale, ai and art. 
+- add popup window for location form 
