@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Avatar, Modal, Backdrop, Fade } from '@mui/material';
+import { Avatar, Modal,  Fade } from '@mui/material';
 import SocialNav from '../../components/SocialNav';
 import gd from '../../images/formimages/gdimp.png';
 import SendIcon from '@mui/icons-material/Send';
@@ -34,6 +34,21 @@ export default function Post() {
               </Fab>
             </div>
 
+          </section>
+            <section className='mobileNotice'>
+ <h1 className='p-name pmmTitle'>Sorry!!</h1>
+                
+                <p className='e-content ppmp'>Due to budget cuts and a lawsuit from Elon Musky for copying T**ter, our only developer has quit and we can’t actually sign up users. </p>
+                <p className='e-content ppmp'>We are however, hiring for junior positions</p>
+                <ul className='list mobDevList'>
+                  <h2 className='mobmodalH2 p-name'>Graduate Developer: &lt;em className=&rsquo;hire&rsquo; annual salary of ZAR 120 (market average).</h2>
+                  
+                  <li className='e-content ppmp'>must be proficient in: C#, Delphy, Cobalt, Ruby, Python, PYTorch, React, Redux, Vue, Svelta, Unreal Engine, C++, R, JavaScript, MatLab</li>
+                  <li className='e-content ppmp'>must have a minimum of 15 years experience.</li>
+               <h2 className='mobmodalH2 p-name'>Graphic Designer</h2>
+                  <img src={gd} alt="troll clip art on a rainbow gradient background" className='mgdPassion'/>
+                  <li className='e-content ppmp'>OUR UX/UI TEAM IS FULL AND FUNCTIONING WELL SO NO UI/UX IMPROVEMENTS NEEDED</li>
+                </ul>
           </section>
           <section className='p-content TextArea'>
             <textarea

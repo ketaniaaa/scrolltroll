@@ -13,7 +13,8 @@ export default function SocialNav() {
     <>
     <nav className='headerSocial'>  
        <img src={icon} alt="troll scroll icon"  className='postIcon'/>
-         <TextField
+         <TextField    className='search'
+
         id="input-with-icon-textfield"
         InputProps={{
           startAdornment: (
@@ -23,7 +24,7 @@ export default function SocialNav() {
           ),
         }}
         variant="outlined"
-        className='search'
+     
           color="primary"
           focused
       />

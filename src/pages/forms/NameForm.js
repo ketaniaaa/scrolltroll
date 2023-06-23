@@ -5,7 +5,7 @@ import ProgressBar from '../../images/formimages/progresssvg.svg';
 import '../../styles/forms.css';
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
-import { useNavigate } from 'react-router-dom';
+
 
 export default function NameForm() {
 const surnames = [
@@ -62,7 +62,7 @@ const surnames = [
  
 ];
 
-  const navigate = useNavigate();
+  
 
   
 
@@ -164,7 +164,7 @@ const inputBox =() => setInputState(false);
             <p className='psa'>*better for suggested posts </p>
           </section>
         </form>
-
+       
         <Snake />
         <Link to="/Country" className="nameNext">
           {" "}

@@ -56,63 +56,63 @@ export default function Country() {
   const options = [
     {
       value: "nope",
-      label: <img src={JhbCoat} height="30px" width="30px" />,
+      label: <img src={JhbCoat} height="30px" width="30px"  alt='coat of arms'/>,
     },
     {
       value: "Western Cape",
-      label: <img src={WC} height="60px" width="60px" />,
+      label: <img src={WC} height="60px" width="60px" alt='coat of arms'/>,
     },
     {
       value: "Free State",
-      label: <img src={FS} height="60px" width="60px" />,
+      label: <img src={FS} height="60px" width="60px" alt='coat of arms' />,
     },
     {
       value: "Kwa-Zulu Natal",
-      label: <img src={kzn} height="60px" width="60px" />,
+      label: <img src={kzn} height="60px" width="60px" alt='coat of arms'/>,
     },
     {
       value: "Eastern Cape",
-      label: <img src={ec} height="60px" width="60px" />,
+      label: <img src={ec} height="60px" width="60px" alt='coat of arms'/>,
     },
     {
       value: "nope",
-      label: <img src={pta} height="30px" width="30px" />,
+      label: <img src={pta} height="30px" width="30px" alt='coat of arms'/>,
     },
     {
       value: "nope",
-      label: <img src={welkom} height="30px" width="30px" />,
+      label: <img src={welkom} height="30px" width="30px" alt='coat of arms'/>,
     },
     {
       value: "Gauteng",
-      label: <img src={gp} height="60px" width="60px" />,
+      label: <img src={gp} height="60px" width="60px" alt='coat of arms'/>,
     },
     {
       value: "nope",
-      label: <img src={blv} height="30px" width="30px" />,
+      label: <img src={blv} height="30px" width="30px" alt='coat of arms'/>,
     },
     {
       value: "Northern Cape",
-      label: <img src={nc} height="60px" width="60px" />,
+      label: <img src={nc} height="60px" width="60px" alt='coat of arms'/>,
     },
     {
       value: "Limpopo",
-      label: <img src={lpp} height="60px" width="60px" />,
+      label: <img src={lpp} height="60px" width="60px" alt='coat of arms'/>,
     },
     {
       value: "nope",
-      label: <img src={bloem} height="30px" width="30px" />,
+      label: <img src={bloem} height="30px" width="30px" alt='coat of arms'/>,
     },
     {
       value: "nope",
-      label: <img src={pinelands} height="30px" width="30px" />,
+      label: <img src={pinelands} height="30px" width="30px" alt='coat of arms'/>,
     },
     {
       value: "Mpumalanga",
-      label: <img src={mp} height="60px" width="60px" />,
+      label: <img src={mp} height="60px" width="60px" alt='coat of arms'/>,
     },
     {
       value: "Nort West Province",
-      label: <img src={nw} height="60px" width="60px" />,
+      label: <img src={nw} height="60px" width="60px" alt='coat of arms'/>,
     },
    
   ];

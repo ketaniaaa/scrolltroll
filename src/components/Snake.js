@@ -155,6 +155,7 @@ export default class Snake extends Component {
           proficient.. <br />
           **Use WASD for moving and space to pause age selection
         </p>
+        <p className="mobileSnake">You are on mobile so you cant play. sad..I guess you are 1.</p>
         <section className="snakeContainer">
           <div className="grid">{displayRows}</div>
         </section>

@@ -16,6 +16,12 @@
         -moz-box-shadow: 30px 30px 0px 0px rgba(32, 34, 88, 0.66);
         font-family: 'ScrollTroll';
 }
+.mobileSnake{
+    display: none;
+}
+.mobileNotice{
+    display: none;
+}
 .progressBar{
     height: 70px;
     padding: 0px 0px 20px 0px;
@@ -253,6 +259,7 @@ width: 100%;
 transition: ease-in-out 0.3s;
 text-decoration: none;
     }
+
     .passwordSubmit:hover{
         color: #252762;
         border: 3px solid #26285c;
@@ -337,6 +344,7 @@ padding: 30px;
     .timer{
         font-size: 3em;
         color: #D11F2F;
+        font-family: 'ScrollTroll';
     }
   .postContainer{
     display: flex;
@@ -441,7 +449,189 @@ color: white;
   }
    .modalH2{
     font-size: 0.5em;
+    font-family: "Comic Neue";
+    color: #FFA900;
   }
   .devList{
     transform: translateY(-100px);
   }
+
+    @media only screen and (min-width: 600px) and (max-width: 1000px) {
+        .formContainer{
+           
+            left: 10%;
+            margin: 10px 10px 150px 10px;
+    }
+    .formTitle{
+        text-underline-offset: 0px;
+    }
+    .canvasDraw{
+        max-width: 80%;
+        transform: translateX(50px);
+    }
+    .postContainer{
+        margin-bottom: 110px;
+    }
+    .postLeftNav{
+        padding-left: 20%;
+    }
+    .fab{
+        margin-left: 40%;
+    }
+    .textAc{
+        margin: 0px 20px 20px 60px;
+    }
+    .postModalCont{
+        transform: translateY(60%);
+        overflow-y: scroll;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    .postModal{
+        transform: translateY(30%);
+        font-size: 1.2em;
+        
+    }
+    .devList{
+        transform: translateY(10px);
+    }
+    .gdPassion{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .formContainer{
+        border: 2px solid #252762;
+        border-radius: 15px;
+        box-shadow: 5px 5px 0px 0px rgba(32, 34, 88, 0.66);
+            -webkit-box-shadow: 5px 5px 0px 0px rgba(32, 34, 88, 0.66);
+            -moz-box-shadow: 5px 5px 0px 0px rgba(32, 34, 88, 0.66);
+    }
+    .progressBar{
+        height: 40px;
+        left: 20%;
+    }
+    .formContainer{
+        left: 5%;
+        padding: 40px;
+    }
+    .formTitle{
+        text-underline-offset: 0px;
+        font-size: 2em;
+    }
+    .inputTitles{
+        font-size: 1em;
+        margin: 10px;
+    }
+   .inputsA{
+    margin-right: 15px;
+   }
+   .inputsB{
+    width: 80%;
+   }
+   .inputsC{
+    width: 40%;
+   }
+   .mobileSnake{
+    display: block;
+    font-size: 1em;
+        color: #7f81b9;
+   }
+          .canvasDraw {
+              max-width: 250px;
+              transform: translateX(5px);
+          }
+ .more{
+    font-size: 1em;
+ }
+ .back{
+    font-size: 1em;
+ }
+ .next{
+    font-size: 1em;
+ }
+ .inputsE{
+    padding: 5px;
+ }
+ #idsel{
+    margin: 0px;
+ }
+ .passwordNav{
+    transform: translateX(20px);
+ }
+ .passwordSubmit{
+   
+    font-size: 1em;
+ }
+ .recaptchaButton{
+    width: 100%;
+    margin-left: 0;
+ }
+ .submitPic{
+    width: 10rem;
+ }
+ .openQuiz{
+    width: fit-content;
+ }
+ .quizPrompt{
+    font-size: 1em;
+ }
+ .TextArea{
+    display: none;
+ }
+ .timer{
+    font: 1.5em;
+    font-family: 'ScrollTroll';
+ }
+ #input-with-icon-textfield{
+    display: none;
+ }
+ .headerSocial{
+    font-size: 30px;
+ }
+ .postHeadIcon{
+    font-size: 30px;
+ }
+ .postHeadIconA{
+    padding: none;
+   
+ }
+ .postIcon{
+    width: 30px;
+ }
+ .search{
+    display: none;
+ }
+ .postLeftNav{
+    padding-left: 2px;
+ }
+ .socialTabs{
+    font-size: 1em;
+ }
+ .postHeader{
+    font-size: 1em;
+    border-bottom: 2px solid white;
+ }
+ .mobileNotice{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+font-family: 'ScrollTroll';
+    background-color: #D11F2F;
+
+ }
+ .pmmTitle{
+    color: yellow;
+ }
+ .mgdPassion{
+    width: 80%;
+ }
+ .mobmodalH2{
+    font-family: 'Comic Neue';
+    color: #FFA900;
+ }
+}
