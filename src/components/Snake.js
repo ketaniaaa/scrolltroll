@@ -108,8 +108,8 @@ export default class Snake extends Component {
       if (head.x === snake[i].x && head.y === snake[i].y) {
         this.setState(initialState);
         alert(`game over: you are ${snake.length} years old`);
-        this.snakeLengthRef.current.textContent =
-          "Snake Length: " + snake.length;
+        // this.snakeLengthRef.current.textContent =
+        //   "Snake Length: " + snake.length;
         break;
       }
     }
@@ -147,7 +147,7 @@ export default class Snake extends Component {
     );
     return (
       <>
-        <p ref={this.snakeLengthRef} className="inputTitles">
+        <p className="inputTitles">
           Age: <em className="inputsAB">{this.state.snake.length}</em>
         </p>
         <p className="psa">

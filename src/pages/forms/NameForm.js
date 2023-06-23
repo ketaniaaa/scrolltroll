@@ -5,6 +5,8 @@ import ProgressBar from '../../images/formimages/progresssvg.svg';
 import '../../styles/forms.css';
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
+import { useNavigate } from 'react-router-dom';
+
 export default function NameForm() {
 const surnames = [
   { title: "Smith" },
@@ -59,6 +61,16 @@ const surnames = [
   { title: "Matthews" },
  
 ];
+
+  const navigate = useNavigate();
+
+  
+
+  
+  
+
+
+
   const [
     state,
     setState,

@@ -1,11 +1,81 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Avatar, Modal, Backdrop, Fade } from '@mui/material';
+import SocialNav from '../../components/SocialNav';
+import gd from '../../images/formimages/gdimp.png';
+import SendIcon from '@mui/icons-material/Send';
+import Fab from '@mui/material/Fab';
 
 
 export default function Post() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleInputChange = (e) => {
+    if (!isModalOpen) {
+      setIsModalOpen(true);
+    }
+    // Handle other input change logic here
+  };
+
   return (
     <main>
-        <h1>Post</h1>
-        
+      <section className="postContainer h-entry">
+        <SocialNav />
+        <article className='userPosting'>
+
+          <section className='header postHeader'>
+            <Avatar sx={{ width: 64, height: 64 }}>JD</Avatar>
+            <p className='socialP'>Your Name <br />
+              <em className='usernameSocial'>@username</em>
+            </p>
+            <div className='fab'>
+              <Fab variant="extended" className='fab'>
+                <SendIcon fontSize='large' sx={{ mr: 1 }} />
+                Post
+              </Fab>
+            </div>
+
+          </section>
+          <section className='p-content TextArea'>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="30"
+              className='textAc'
+              placeholder='make your first post!'
+              onChange={handleInputChange}
+            ></textarea>
+          </section>
+          <Modal
+          className='postModal'
+            open={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+            closeAfterTransition
+           
+          >
+            <Fade in={isModalOpen}>
+              <article className="modalContent postModalCont h-card">
+                <h1 className='p-name postModalTitle'>Sorry!!</h1>
+                
+                <p className='e-content postModalP'>Due to budget cuts and a lawsuit from Elon Musky for copying T**ter, our only developer has quit and we can’t actually sign up users. </p>
+                <p className='e-content postModalP'>We are however, hiring for junior positions</p>
+                <ul className='list devList'>
+                  <h2 className='modalH2 p-name'>Graduate Developer: &lt;em className=&rsquo;hire&rsquo; annual salary of ZAR 120 (market average).</h2>
+                  
+                  <li className='e-content postModalP'>must be proficient in: C#, Delphy, Cobalt, Ruby, Python, PYTorch, React, Redux, Vue, Svelta, Unreal Engine, C++, R, JavaScript, MatLab</li>
+                  <li className='e-content postModalP'>must have a minimum of 15 years experience.</li>
+               <h2 className='modalH2 p-name'>Graphic Designer</h2>
+                  <img src={gd} alt="troll clip art on a rainbow gradient background" className='gdPassion'/>
+                  <li className='e-content postModalP'>OUR UX/UI TEAM IS FULL AND FUNCTIONING WELL SO NO UI/UX IMPROVEMENTS NEEDED</li>
+                </ul>
+              
+              </article>
+            </Fade>
+          </Modal>
+        </article>
+      </section>
+
     </main>
-  )
+  );
 }
+

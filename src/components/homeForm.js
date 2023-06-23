@@ -36,6 +36,7 @@ export default class homeForm extends Component {
 </select>
              </section>
              <HashLink className='nextA' smooth to="/NameForm#formstart"> NEXT  </HashLink>
+             <HashLink to='/Submit'> Submit</HashLink>
 
         </form>
       </main>

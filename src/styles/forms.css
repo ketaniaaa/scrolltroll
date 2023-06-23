@@ -247,14 +247,15 @@ width: 100%;
             color: #8B8DC9;
             font-size: 2em;
             background-color: transparent;
-            border: 4px solid #8B8DC9;
+            border: 2px solid #8B8DC9;
             border-radius: 15px;
             margin: 0px 20px 0px 20px;
 transition: ease-in-out 0.3s;
+text-decoration: none;
     }
     .passwordSubmit:hover{
         color: #252762;
-        border: 4px solid #26285c;
+        border: 3px solid #26285c;
             box-shadow: 6px 6px 0px 0px rgba(32, 34, 88, 0.69);
             -webkit-box-shadow: 6px 6px 0px 0px rgba(32, 34, 88, 0.69);
             -moz-box-shadow: 6px 6px 0px 0px rgba(32, 34, 88, 0.69);
@@ -264,3 +265,183 @@ transition: ease-in-out 0.3s;
         font-size: 1em;
         color: #7f81b9;
     }
+    .recaptchaButton{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        border: 1px solid #A9A9A9;
+        box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+            font-family: 'Roboto';
+            padding: 10px;
+            margin-bottom: 50px;
+            width: 50%;
+            margin-left: 25%;
+    }
+        .checkmark {
+          
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+        }
+        .recaptchaCopy{
+            width: 40%;
+            font-size: 1em;
+            padding: 0px 20px 0px 40px;
+        }
+        .recaptchaIcon{
+            width: 50px;
+          align-items: flex-end;
+          padding-left: 30%;
+          
+        }
+    .recaptchaQuiz{
+        border: 1px solid #A9A9A9;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+
+    }
+    .openQuiz{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto';
+       
+        align-items: center;
+        justify-content: center;
+    }
+    .quizPrompt{
+        align-self: flex-start;
+        color: white;
+        background-color: #3880EC;
+        width: 100%;
+        padding: 60px 0px 60px 3px;
+        font-weight: normal;
+        margin:0;
+    }
+    .submitPic{
+        width: 20rem;
+        align-items: center;
+        justify-self: center;
+    }
+    .submitForm{
+padding: 30px;
+    width: 95%;
+    }
+    .closeQuiz{
+        display: none;
+    }
+    .timer{
+        font-size: 3em;
+        color: #D11F2F;
+    }
+  .postContainer{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    margin-left: 2%;
+color: white;
+    
+    background-color: #232549;
+  }
+  .headerSocial{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #232549;
+    color: white;
+    font-size: 60px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+  }
+  .socialTabs{
+    display: flex;
+    font-family: 'ScrollTroll';
+    font-size: 2em;
+    width: 100%;
+  }
+  .feedName{
+    width: 25%;
+    margin-left: 25%;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+  }
+  .exploreName{
+    color: rgba(255, 255, 255, 0.752);
+    width: 25%;
+    margin-left: 25%;
+  }
+  .postHeadIcon{
+    color: white;
+    font-size: 48;
+  }
+  .postHeadIconA{
+    padding: 0px 10px 0px 10px;
+    justify-self: flex-end;
+  }
+  .postLeftNav{
+    padding-left: 60%;
+  }
+  .postIcon{
+    width: 48px;
+    padding: 0px 10px 0px 10px;
+  }
+.postHeader{
+    display: flex;
+    align-content: center;
+   font-family: 'ScrollTroll';
+   font-size: 2em;
+   padding: 20px;
+}
+.socialP{
+    padding: 10px;
+    font: 1em;
+}
+.usernameSocial{
+    font-size: 0.6em;
+    font-style: normal;
+    color: #eee;
+}
+.fab{
+   margin-left: 80%;
+}
+  .userText{
+    width: 80%;
+  }
+  .TextArea{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+
+  }
+  .textAc{
+    margin: 0px 20px 20px 150px;
+    width: 80%;
+  }
+  .postModal{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(0%, -20%);
+    overflow-y: scroll;
+  }
+  .postModalCont{
+    transform: translateY(30px);
+  }
+  .postModalTitle{
+    color: white;
+    font-size: 0.5em;
+  }
+  .postModalP{
+    font-size: 0.5em;
+  }
+   .modalH2{
+    font-size: 0.5em;
+  }
+  .devList{
+    transform: translateY(-100px);
+  }

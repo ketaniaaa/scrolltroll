@@ -194,7 +194,7 @@ export default function Country() {
           />
           {errorMessage && <p className="errorMessage">{errorMessage}</p>}
           <p className="inputTitles">Please choose your phone number</p>
-          <Slider min={2700000000} max={2799999999} valueLabelDisplay="auto" />
+          <Slider min={2700000000} max={2799999999} valueLabelDisplay="auto" color='success' />
         </section>
 
         <section className="countryNav">

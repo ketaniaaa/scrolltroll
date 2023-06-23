@@ -11,9 +11,7 @@ This site contains a homepage, blog and design page as the artwork is implicit i
 
 
 - tabination mainly on design pages + media queries 
-- stying forms - recaptcha and post forms plus media queries 
-- collapse function for snake game
-- red outline for name
+- styling forms media queries
 - top id for aiart and ixd
 - proof read articles
 - add microformats/headers and meta data for forms
