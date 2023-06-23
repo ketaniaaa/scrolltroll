@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/scrolltroll/static/css/main.c45304e3.css",
-    "main.js": "/scrolltroll/static/js/main.73b8df6e.js",
+    "main.css": "/scrolltroll/static/css/main.3ddd3fc5.css",
+    "main.js": "/scrolltroll/static/js/main.f7e869ac.js",
     "static/js/787.d01dd61d.chunk.js": "/scrolltroll/static/js/787.d01dd61d.chunk.js",
     "static/media/poem-portrait.png": "/scrolltroll/static/media/poem-portrait.31418414d511ff90c78a.png",
     "static/media/twitterinspo.png": "/scrolltroll/static/media/twitterinspo.6b94578ca2bb912ee422.png",
     "static/media/homebanner.png": "/scrolltroll/static/media/homebanner.39901b8e2e73ae0b582c.png",
+    "static/media/cbat.mp3": "/scrolltroll/static/media/cbat.07658eb7ed1509a04bab.mp3",
     "static/media/scrollhomevid.mp4": "/scrolltroll/static/media/scrollhomevid.6fe2afd91733e8bba946.mp4",
     "static/media/heroimage.png": "/scrolltroll/static/media/heroimage.64cb4262068af55e0f19.png",
     "static/media/essay.JPG": "/scrolltroll/static/media/essay.b8553b33a5a38e5c0ee2.JPG",
@@ -17,10 +18,12 @@
     "static/media/wireframes.JPG": "/scrolltroll/static/media/wireframes.944c08656d60f955cb6e.JPG",
     "static/media/reflection.JPG": "/scrolltroll/static/media/reflection.b94bf3594c720e6460c1.JPG",
     "static/media/process.JPG": "/scrolltroll/static/media/process.96c94fd6b140164d3e4b.JPG",
+    "static/media/gdimp.png": "/scrolltroll/static/media/gdimp.cc273ff0141971178c2d.png",
     "static/media/us.JPG": "/scrolltroll/static/media/us.da799412a403dfc5cc73.JPG",
     "static/media/ai.JPG": "/scrolltroll/static/media/ai.3189fc74fd60fc4283c9.JPG",
     "static/media/ixd.JPG": "/scrolltroll/static/media/ixd.77c58e4521bdee8e6d96.JPG",
     "static/media/ethno.JPG": "/scrolltroll/static/media/ethno.b6fff90a2b588e07b418.JPG",
+    "static/media/solvet.png": "/scrolltroll/static/media/solvet.4b91849a1554bf5395c5.png",
     "static/media/fonts.png": "/scrolltroll/static/media/fonts.841308ff4c9610d83d68.png",
     "static/media/lowfidelity-blog-template-desktop.png": "/scrolltroll/static/media/lowfidelity-blog-template-desktop.547d7c49c0f8290fdff6.png",
     "static/media/InputFields.png": "/scrolltroll/static/media/InputFields.75110d67910f86b46067.png",
@@ -48,16 +51,17 @@
     "static/media/dob.png": "/scrolltroll/static/media/dob.94672c8518f80e2df989.png",
     "static/media/navLogo.png": "/scrolltroll/static/media/navLogo.3f1bf4f6aab911e94c92.png",
     "static/media/progressbar2.svg": "/scrolltroll/static/media/progressbar2.10e13e35423ed9f2977a770140a335ff.svg",
+    "static/media/completedbar.svg": "/scrolltroll/static/media/completedbar.99c62f7d5fbaee94408b68777eaa0711.svg",
     "index.html": "/scrolltroll/index.html",
     "static/media/progressbar3.svg": "/scrolltroll/static/media/progressbar3.05b120d48857e86cf910ddfaeb3c37ae.svg",
     "static/media/menuvector.svg": "/scrolltroll/static/media/menuvector.c5d3542d46e919af5f1ed4814484f339.svg",
     "static/media/closeWhite.svg": "/scrolltroll/static/media/closeWhite.fb97d77a583252137ef19ebdd9a402f7.svg",
-    "main.c45304e3.css.map": "/scrolltroll/static/css/main.c45304e3.css.map",
-    "main.73b8df6e.js.map": "/scrolltroll/static/js/main.73b8df6e.js.map",
+    "main.3ddd3fc5.css.map": "/scrolltroll/static/css/main.3ddd3fc5.css.map",
+    "main.f7e869ac.js.map": "/scrolltroll/static/js/main.f7e869ac.js.map",
     "787.d01dd61d.chunk.js.map": "/scrolltroll/static/js/787.d01dd61d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c45304e3.css",
-    "static/js/main.73b8df6e.js"
+    "static/css/main.3ddd3fc5.css",
+    "static/js/main.f7e869ac.js"
   ]
 }
