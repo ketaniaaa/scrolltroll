@@ -14,7 +14,6 @@ import NameForm from './pages/forms/NameForm';
 import Country from './pages/forms/Country';
 import Password from './pages/forms/Password';
 import Submit from './pages/forms/Submit';
-import SuggestedFollows from './pages/forms/SuggestedFollows';
 import Post from './pages/forms/Post';
 
 
@@ -96,7 +95,6 @@ class App extends Component {
           <Route path="/Country" element={<Country />} />
           <Route path="/Password" element={<Password />} />
           <Route path="/Submit" element={<Submit />} />
-          <Route path="/SuggestedFollows" element={<SuggestedFollows />} />
           <Route path="/Post" element={<Post />} />
         </Routes>
         <Footer />

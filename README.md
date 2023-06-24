@@ -10,11 +10,10 @@ This site contains a homepage, blog and design page as the artwork is implicit i
 #To-Do 
 
 
-- tabination mainly on design pages + media queries 
-- styling forms media queries
-- top id for aiart and ixd
+- do more page??
+- fix style guide
+- add ixd page
 - proof read articles
 - add microformats/headers and meta data for forms
-- updated wireframes and annotations
+- add form wireframes
 - writing: new reflections x2, update prep and rationale, ai and art. 
-- add popup window for location form 

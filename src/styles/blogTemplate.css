@@ -278,6 +278,14 @@ font-family: 'ScrollTroll';
 .styleImg{
     width: 1000px;
 }
+.outdatedWireframe{
+    width: 60%;
+    padding: 0% 20% 0% 20%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+   
+}
 
 /*//////////////////////////////////////////////////////Mac/////////////////////////////////////////////////////////////////*/
 

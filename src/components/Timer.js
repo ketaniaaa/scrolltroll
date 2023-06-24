@@ -37,9 +37,9 @@ class Timer extends Component {
     return (
       <>
         {seconds === 0 ? (
-          <span>Time's up!</span>
+          <span className='p-name timeerUp'>Time's up!</span>
         ) : (
-          <p className='timer'>{seconds} seconds remaining</p>
+          <p className='timer p-name dt-time'>{seconds} seconds remaining</p>
         )}
       </>
     );
