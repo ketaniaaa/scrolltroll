@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProgressBar from "../../images/formimages/progressbar3.svg";
+import { Helmet } from 'react-helmet';
 export default function Password() {
 
   const navigate = useNavigate();
@@ -62,6 +63,23 @@ export default function Password() {
 
   return (
     <main>
+       <Helmet>
+  
+        {/* SEO meta data since react does not hold interent capability for meta tags without the Helmet package */}
+        <title> Security</title>
+        <meta name='author' content='Ketania Govender'/>
+          <meta name="description" content="security information form "/>
+   
+    <meta property="og:site_name" content="Scroll Troll" />
+    <meta property="og:title" content="Security form" />
+    <meta property="og:type" content="website" />
+     <meta
+      property="og:image"content="https://github.com/ketaniaaa/scrolltroll/src/images/navLogo.png"/>
+    <meta property="og:image:alt" content="Scroll Troll Logo" />
+    <meta
+      property="og:url" content="https://ketaniaaa.github.io/scrolltroll/"/>
+       <meta name="keywords" content="intentionally bad ux, bad ux, parody, twitter meme, ux game, design tips"/>
+      </Helmet>
       <img
         src={ProgressBar}
         alt="progressbar"
@@ -143,7 +161,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+            
             min="0"
             max="9"
             className="inputsE"
@@ -151,7 +169,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+            
             min="0"
             max="9"
             className="inputsE"
@@ -159,7 +177,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+           
             min="0"
             max="9"
             className="inputsE"
@@ -167,7 +185,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+        
             min="0"
             max="9"
             className="inputsE"
@@ -175,7 +193,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+           
             min="0"
             max="9"
             className="inputsE"
@@ -183,7 +201,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+            
             min="0"
             max="9"
             className="inputsE"
@@ -191,7 +209,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+            
             min="0"
             max="9"
             className="inputsE"
@@ -199,7 +217,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+          
             min="0"
             max="9"
             className="inputsE"
@@ -207,7 +225,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+           
             min="0"
             max="9"
             className="inputsE"
@@ -215,7 +233,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+           
             min="0"
             max="9"
             className="inputsE"
@@ -223,7 +241,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+           
             min="0"
             max="9"
             className="inputsE"
@@ -231,7 +249,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+           
             min="0"
             max="9"
             className="inputsE"
@@ -239,7 +257,7 @@ export default function Password() {
           <input
             type="number"
             name="idsel"
-            id="idsel"
+           
             min="0"
             max="9"
             className="inputsE"

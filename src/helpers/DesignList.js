@@ -37,7 +37,7 @@ export const DesignList =[
     description: "All about the user interactions on the site along with flows and personas",
     icon: icon,
     image: DesignImgC,
-    date: "3:05AM. 26 May, 2023",
+    date: "3:5PM. 25 June, 2023",
     platform: "ScrollTroll Desktop",
     alt: 'A drawing of flowchart '
      ,route: "/IXD"

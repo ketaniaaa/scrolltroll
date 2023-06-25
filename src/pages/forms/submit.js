@@ -9,6 +9,7 @@ import SolveX from '../../images/formimages/solvex.png';
 import SolveP from '../../images/formimages/solvep.png';
 import SolveG from '../../images/formimages/solvet.png';
 import Timer from '../../components/Timer';
+import { Helmet } from 'react-helmet';
 
 export default function Submit() {
   const navigate = useNavigate();
@@ -67,7 +68,23 @@ export default function Submit() {
 
   return (
     <main>
-      
+       <Helmet>
+  
+        {/* SEO meta data since react does not hold interent capability for meta tags without the Helmet package */}
+        <title>reCaptcha form</title>
+        <meta name='author' content='Ketania Govender'/>
+          <meta name="description" content="name information form "/>
+   
+    <meta property="og:site_name" content="Scroll Troll" />
+    <meta property="og:title" content="Submit  form" />
+    <meta property="og:type" content="website" />
+     <meta
+      property="og:image"content="https://github.com/ketaniaaa/scrolltroll/src/images/navLogo.png"/>
+    <meta property="og:image:alt" content="Scroll Troll Logo" />
+    <meta
+      property="og:url" content="https://ketaniaaa.github.io/scrolltroll/#/Wireframes"/>
+       <meta name="keywords" content="intentionally bad ux, bad ux, parody, twitter meme, ux game, design tips, recaptcha"/>
+      </Helmet>
       <img src={ProgressBar} alt="progressbar" className="progressBar" id="#formstart" />
       <form className="formContainer form" onSubmit={handleSubmit}>
         <h1 className="p-name formTitle">Let's talk OUR safety.</h1>

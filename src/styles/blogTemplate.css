@@ -272,6 +272,11 @@ font-family: 'ScrollTroll';
     justify-content: center;
 
 }
+.wireframeImg{
+    align-self: center;
+        justify-self: center;
+    max-width: 60%;
+}
 .wireframeTitle{
     font-size: 2em;
 }

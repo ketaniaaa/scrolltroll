@@ -5,6 +5,7 @@ import ProgressBar from '../../images/formimages/progresssvg.svg';
 import '../../styles/forms.css';
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
+import { Helmet } from 'react-helmet';
 
 
 export default function NameForm() {
@@ -86,25 +87,43 @@ const[
 const inputBox =() => setInputState(false);
   return (
     <main>
+        <Helmet>
+  
+        {/* SEO meta data since react does not hold interent capability for meta tags without the Helmet package */}
+        <title> Name</title>
+        <meta name='author' content='Ketania Govender'/>
+          <meta name="description" content="name information form "/>
+   
+    <meta property="og:site_name" content="Scroll Troll" />
+    <meta property="og:title" content="Name form" />
+    <meta property="og:type" content="website" />
+     <meta
+      property="og:image"content="https://github.com/ketaniaaa/scrolltroll/src/images/navLogo.png"/>
+    <meta property="og:image:alt" content="Scroll Troll Logo" />
+    <meta
+      property="og:url" content="https://ketaniaaa.github.io/scrolltroll/"/>
+       <meta name="keywords" content="intentionally bad ux, bad ux, parody, twitter meme, ux game, design tips"/>
+      </Helmet>
+
       <img
         src={ProgressBar}
         alt="progressbar"
-        className="progressBar"
+        className="progressBar u-photo"
         id="#formstart"
       />
       {/* <Steps/> */}
-      <form className="formContainer form">
-        <h1 className="p-name formTitle">Tell us a bit about yourself</h1>
+      <form className="formContainer form h-card">
+        <h1 className="p-label formTitle">Tell us a bit about yourself</h1>
 
         <form action="" className="nameSection">
           <section className="input nameSe">
-            <p className="inputTitles">first name *</p>
+            <p className="inputTitles p-label">first name *</p>
             <input
               type="text"
               onInputCapture={inputError}
               id="fname"
               name="fname"
-              className={`inputsA ${inputBox ? "errorInput" : ""}`}
+              className={`inputsA p-given-name${inputBox ? "errorInput" : ""}`}
             />
             {!!state && (
               <p className="errorMessage">ERROR: choose a more normal name</p>
@@ -112,8 +131,9 @@ const inputBox =() => setInputState(false);
           </section>
 
           <section className="input nameSe">
-            <p className="inputTitles">last name *</p>
+            <p className="inputTitles p-label">last name *</p>
             <Autocomplete
+            className='p-family-name'
               id="surnameComplete"
               options={surnames.map((option) => option.title)}
               renderInput={(params) => (

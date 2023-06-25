@@ -20,7 +20,10 @@ import blv from "../../images/formimages/belville.png";
 import welkom from "../../images/formimages/welkom.jpg";
 import pinelands from "../../images/formimages/pinelands.png";
 
+
 import Select from 'react-select';
+
+import { Helmet } from 'react-helmet';
 
 export default function Country() {
  
@@ -118,14 +121,31 @@ export default function Country() {
   ];
   return (
     <main>
+       <Helmet>
+  
+        {/* SEO meta data since react does not hold interent capability for meta tags without the Helmet package */}
+        <title>Location</title>
+        <meta name='author' content='Ketania Govender'/>
+          <meta name="description" content="Locational information form "/>
+   
+    <meta property="og:site_name" content="Scroll Troll" />
+    <meta property="og:title" content="Location form" />
+    <meta property="og:type" content="website" />
+     <meta
+      property="og:image"content="https://github.com/ketaniaaa/scrolltroll/src/images/navLogo.png"/>
+    <meta property="og:image:alt" content="Scroll Troll Logo" />
+    <meta
+      property="og:url" content="https://ketaniaaa.github.io/scrolltroll/#/Wireframes"/>
+       <meta name="keywords" content="intentionally bad ux, bad ux, parody, twitter meme, ux game, design tips"/>
+      </Helmet>
       <img src={ProgressBar} alt="progressbar" className="progressBar" />
 
-      <form className="formContainer form">
+      <form className="formContainer h-form">
         <h1 className="p-name formTitle">Where are you from?</h1>
 
         <form action="" className="nameSection">
           <section className="inputCountry">
-            <p className="inputTitles">Select your country *</p>
+            <p className="inputTitles p-label">Select your country *</p>
             <select
               name="country"
               id="country"
@@ -151,14 +171,14 @@ export default function Country() {
         <section
           className={`drawContainer ${setState ? "showDraw" : "hideDraw"}`}
         >
-          <p className="inputTitles">if other, please draw your flag:</p>
-          <p className="psa">
+          <p className="inputTitles p-label">if other, please draw your flag:</p>
+          <p className="psa p-summary">
             {" "}
             * please note that because it seems that you are not from a legit
             country, some/most content will not be available in your region
           </p>
 
-          <section className="drawContainer">
+          <section className="drawContainer u-photo">
             <ReactSketchCanvas
               style={canvasStyles}
               strokeWidth={4}
@@ -168,13 +188,13 @@ export default function Country() {
               className="canvasDraw"
             />
           </section>
-          <p className="psa">AWE!! SAFFA!!</p>
+          <p className="psa p-summary">AWE!! SAFFA!!</p>
         </section>
 
-        <section className="adressForm">
+        <section className="adressForm h-adr">
           <form>
-            <p className="inputTitles">Address</p>
-            <input type="number" placeholder="#" className="inputsC" />
+            <p className="inputTitles  p-label">Address</p>
+            <input type="number" placeholder="#" className="inputsC p-street-address" />
             <input placeholder="Street Name" className="inputsB" />
             <select placeholder="road type" className="inputsD">
               <option value="Avenue"> Ave</option>
@@ -186,25 +206,26 @@ export default function Country() {
           </form>
         </section>
         <section className="City">
-          <p className="inputTitles">Province</p>
+          <p className="inputTitles  p-label">Province</p>
           <Select
             options={options}
             placeholder="province"
             onChange={handleProvinceChange}
+            className='p-region'
           />
           {errorMessage && <p className="errorMessage">{errorMessage}</p>}
-          <p className="inputTitles">Please choose your phone number</p>
-          <Slider min={2700000000} max={2799999999} valueLabelDisplay="auto" color='success' />
+          <p className="inputTitles p-label">Please choose your phone number</p>
+          <Slider min={2700000000} max={2799999999} valueLabelDisplay="auto" color='success' className='p-tel'/>
         </section>
 
-        <section className="countryNav">
-          <button className="more">more</button>
+        <section className="countryNav navigation">
+          <button className="more bt-button">more</button>
           <button onClick={goBack} className="back">
             Back
           </button>
-          <p className="next">
+          <p className="next u-url">
             click{" "}
-            <Link to="/Password" className="thisLink">
+            <Link to="/Password" className="thisLink u-url">
               THIS{" "}
             </Link>{" "}
             to <em className="proceed">proceed</em>

@@ -4,7 +4,7 @@ import SocialNav from '../../components/SocialNav';
 import gd from '../../images/formimages/gdimp.png';
 import SendIcon from '@mui/icons-material/Send';
 import Fab from '@mui/material/Fab';
-
+import Helmet from 'react-helmet';
 
 export default function Post() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -18,6 +18,23 @@ export default function Post() {
 
   return (
     <main>
+       <Helmet>
+  
+        {/* SEO meta data since react does not hold interent capability for meta tags without the Helmet package */}
+        <title> Make a Post!</title>
+        <meta name='author' content='Ketania Govender'/>
+          <meta name="description" content="post on scroll troll! start chatting "/>
+   
+    <meta property="og:site_name" content="Scroll Troll" />
+    <meta property="og:title" content="Make a post!" />
+    <meta property="og:type" content="website" />
+     <meta
+      property="og:image"content="https://github.com/ketaniaaa/scrolltroll/src/images/navLogo.png"/>
+    <meta property="og:image:alt" content="Scroll Troll Logo" />
+    <meta
+      property="og:url" content="https://ketaniaaa.github.io/scrolltroll/"/>
+       <meta name="keywords" content="intentionally bad ux, bad ux, parody, twitter meme, ux game, design tips"/>
+      </Helmet>
       <section className="postContainer h-entry">
         <SocialNav />
         <article className='userPosting'>

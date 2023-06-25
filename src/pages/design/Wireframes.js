@@ -12,6 +12,12 @@ import WireframeSelection from '../../images/designimages/lfselection.png';
 import WireframeCard from '../../images/designimages/lfcard.png'
 import WireframeEntry from '../../images/designimages/lftemplate.png';
 
+import WireframeName from '../../images/designimages/lfnameform.png';
+import WireframeLocation from '../../images/designimages/countryformlf.png';
+import WireframePassword from '../../images/designimages/passwordlf.png';
+import WireframeRecap from '../../images/designimages/recaptchalf.png';
+import WireframePost from '../../images/designimages/postlf.png';
+
 import MobileHome from '../../images/designimages/lfhomemobile.png';
 import MobileMenu from '../../images/designimages/mobilemenulf.png';
 import MobileSel from '../../images/designimages/lfmobileselection.png';
@@ -88,7 +94,7 @@ constructor(props) {
           { activeTab === 0 &&
              <article className={`e-content designActiveContent bfCont ${activeTab === 0 ? 'designActiveSection' : 'designInactiveSection'}`}>
      <h3 className='p-name wireframeTitle'>Home Page </h3>
-     <img src={WireframeHome} alt="wireframe of the homepage" className='u-photo designImg'/>
+     <img src={WireframeHome} alt="wireframe of the homepage" className='u-photo wireframeImg'/>
      <ol className='wireframeAnList'> 
         <li className='wireframeLi'>
             <p className='e-content wireframeP'>Navigation - The title of the header is positioned on the left-hand side of the screen, this is in a large font so that it is clearly visible and the user is aware of what site they are on. I have positioned it on the left side of the screen in order to mimic the reading convention, therefore the user's gaze starts at the left and moves to the right where there are links and navigation to other pages.
@@ -154,23 +160,148 @@ The footer is another consistent component that remains the same throughout the 
         </p>
        </li>
         </ol>
-          <h3 className='p-name wireframeTitle'>Internet Artwork Form A </h3>
-         <img src={WireframeSelection} alt="Wireframe of the name and age input form" className='u-photo designImg'/>
+          <h3 className='p-name wireframeTitle'>Internet Artwork Name and Age Form </h3>
+         <img src={WireframeName} alt="Wireframe of the name and age input form" className='u-photo wireframeImg'/>
         <ol className='wireframeAnList'>
              
             <li className='wireframeLi'>
-            <p className='e-content wireframeP'> Page Title - The page title is in large font size and centred at the top of the page below the navigation bar. This positioning is clear and obvious to the user in order to immediately inform the user of where they are on the site The format of both the blog and design selection pages are the same in order to maintain uniformity.</p>
+            <p className='e-content wireframeP'> Form progress bar - the progress bar of the forms becomes apparent after interacting with the initial part of the form that is present on the home page. This is incorrect use of the navigation bar as a standard progress bar should be present from the start of an interaction. This progress bar also shows that the user is on the third step which is incorrect and therefore confuses the user. The form is also centered wrong so that it is cut off and the user is additionally confused about the length of the form.</p>
             </li>
 
             <li className='wireframeLi'>
-            <p className='e-content wireframeP'> Cards - The blog and design card has been designed to look like a tweet. This design choice is further reflected in the blog and design templates and the card design is the same for both content selection pages. This design choice has been implemented in order to convey the theme of a social media site that is Scroll Troll. I have designed Scroll Troll to be a parody of social media like Twitter. The use of this theme establishes uniformity and coherence. 
+            <p className='e-content wireframeP'> 
+Name Input - The theme of this form is to highlight the lack of consideration for ethnic names in a lot of user interface designs and therefore I have added a name and surname input in which the user is presented with an error message when trying to add their first name. The user is also provided with a drop-down selection for their surname. The form inputs are still clear and adhered to good UX practice in the sense that there are labels for inputs to give the user clarity on what is the required information.
+
+</p>
+            </li>
+             <li className='wireframeLi'>
+            <p className='e-content wireframeP'> Age selection - The age selection is a game of snake. This breaks convention.
+            </p>
+            </li>
+             <li className='wireframeLi'>
+            <p className='e-content wireframeP'> Proceed button - The proceed button has a confusing copy that is not clear in order to disorient the user. This button will also have a contrasting colour to stand out the user but the colour will indicate cancel instead of proceed.
+
 </p>
             </li>
             </ol>
 
+                   <h3 className='p-name wireframeTitle'> Internet Artwork Locational Form </h3>
+         <img src={WireframeLocation} alt="Wireframe of the location input form" className='u-photo wireframeImg'/>
+        <ol className='wireframeAnList'>
+             
+            <li className='wireframeLi'>
+            <p className='e-content wireframeP'>Country selection - the country selection first provides the user with a selection list to choose between first-world countries. If they cannot find their country, a draw box is provided to allow the user to draw the flag of their country.
+           </p>
+            </li>
+
+               <li className='wireframeLi'>
+            <p className='e-content wireframeP'>Address - The address input is largely basic until the user must choose their province, in which they must choose from a list of pictures with each province AND city's coat of arms instead of the names. 
+           </p>
+            </li>
+
+               <li className='wireframeLi'>
+            <p className='e-content wireframeP'>Slider - I have added a slider for the user to choose their phone number. 
+           </p>
+            </li>
+
+               <li className='wireframeLi'>
+            <p className='e-content wireframeP'>
+Navigation - The proceed and back buttons have swapped UI as the back button is emphasized through the use of colour and size and the proceed link is styled in order to avoid attention from the user. I have also added an additional button with little context that is confusing to the user. 
+
+           </p>
+            </li>
+
+         
+            </ol>
+
+              <h3 className='p-name wireframeTitle'> Internet Artwork Password Form </h3>
+         <img src={WireframePassword} alt="Wireframe of the password and security input form" className='u-photo wireframeImg'/>
+        <ol className='wireframeAnList'>
+             
+       
+
+               <li className='wireframeLi'>
+            <p className='e-content wireframeP'>
+Password creation - The password creation is initially conventional though the confirmation of the password is an option between yes and no.
+
+           </p>
+            </li>
+
+               <li className='wireframeLi'>
+            <p className='e-content wireframeP'>
+Security questions - this section of inputs refers to a set of security questions that are all text fields with labels that display the questions above the inputs. 
+
+           </p>
+            </li>
+            
+               <li className='wireframeLi'>
+            <p className='e-content wireframeP'>Id input - this is a joke to get the user to share personal information that a site would never need though the design of the inputs is individual number selectors. 
+           </p>
+            </li>
+               <li className='wireframeLi'>
+            <p className='e-content wireframeP'> The navigation follows similar suit of the previous form though the next button indicates to the user that the form is ending. 
+           </p>
+            </li>
+
+         
+            </ol>
+  <h3 className='p-name wireframeTitle'> Internet Artwork ReCaptcha Form </h3>
+         <img src={WireframeRecap} alt="Wireframe of the the recaptcha form " className='u-photo wireframeImg'/>
+        <ol className='wireframeAnList'>
+             
+            <li className='wireframeLi'>
+            <p className='e-content wireframeP'> This section is a copy of the google reCaptcha forms that ensure that users are not bots. The design will be done as to seem as similar to the authetic design as possible.
+           </p>
+            </li>
+
+               <li className='wireframeLi'>
+            <p className='e-content wireframeP'>
+              Timer - a timer will be included on the security questions page in order to add more pressure on the user to finish the form quickly as a sense of urgency is created.
+           </p>
+            </li>
+
+               <li className='wireframeLi'>
+            <p className='e-content wireframeP'> Questions - each question will be presented as a picture and the input will be a text field
+           </p>
+            </li>
+            
+               <li className='wireframeLi'>
+            <p className='e-content wireframeP'> Navigation - here the navigation follows convention and breaks the pattern that has been established in earlier forms to confuse the user. 
+           </p>
+            </li>
+
+         
+            </ol>
+              <h3 className='p-name wireframeTitle'> Internet Artwork Post Area</h3>
+         <img src={WireframePost} alt="Wireframe of the post creation area of scroll troll" className='u-photo wireframeImg'/>
+        <ol className='wireframeAnList'>
+             
+            <li className='wireframeLi'>
+            <p className='e-content wireframeP'> Prompt- this prompt urges the user to use the text field and create a post since they now have a Scroll Troll account.
+           </p>
+            </li>
+
+               <li className='wireframeLi'>
+            <p className='e-content wireframeP'> Profile information - this mirrors the design of a tweet and shows the users name and username to indicate that they have made an account and that they can now make use of the social media capabilities.
+           </p>
+            </li>
+
+               <li className='wireframeLi'> A text box will be provided to the user to that they are able to create a post.
+            <p className='e-content wireframeP'>
+           </p>
+            </li>
+            
+               <li className='wireframeLi'> Modal - Upon typing a post, a modal will appear to the user to indicate that the website is broken and therefore means that they have gone through the terrible form for nothing. 
+            <p className='e-content wireframeP'>
+           </p>
+            </li>
+
+         
+            </ol>
+
 
          <h3 className='p-name wireframeTitle'>Selection Pages </h3>
-         <img src={WireframeSelection} alt="Wireframe of the blog and design selection pages" className='u-photo designImg'/>
+         <img src={WireframeSelection} alt="Wireframe of the blog and design selection pages" className='u-photo wireframeImg'/>
         <ol className='wireframeAnList'>
              
             <li className='wireframeLi'>
@@ -185,7 +316,7 @@ The footer is another consistent component that remains the same throughout the 
 
 
  <h3 className='p-name wireframeTitle'>Selection Cards </h3>
- <img src={WireframeCard} alt="Wireframe of the selection cards" className='u-photo designImg'/>
+ <img src={WireframeCard} alt="Wireframe of the selection cards" className='u-photo wireframeImg'/>
 <ol className='wireframeAnList'>
             <li className='wireframeLi'>
             <p className='e-content wireframeP'> Icon - The icon contains a profile picture of the author of the post, like the picture of a user in a tweet.
@@ -224,7 +355,7 @@ The use of colour is again utilised to create an information hierarchy as this i
         </ol>
 
         <h3 className='p-name wireframeTitle'>Entry Template</h3>
-        <img src={WireframeEntry} alt="A wireframe of the entry templates of scroll troll" className='u-photo designImg'/>
+        <img src={WireframeEntry} alt="A wireframe of the entry templates of scroll troll" className='u-photo wireframeImg'/>
         <ol className='wireframeAnList'>
            <li className='wireframeLi'>
             <p className='e-content wireframeP'> 
@@ -324,7 +455,7 @@ Subscribe - this aspect is purely to follow the convention of blogs which allows
    <h3 className='p-name wireframeTitle' > Mobile Home</h3>
 
        
-         <img src={MobileHome} alt="Wireframe of the blog and design selection pages" className='u-photo designImg'/>
+         <img src={MobileHome} alt="Wireframe of the blog and design selection pages" className='u-photo wireframeImg'/>
         <ol className='wireframeAnList'>
              
             <li className='wireframeLi'>
@@ -338,7 +469,7 @@ Subscribe - this aspect is purely to follow the convention of blogs which allows
             </ol>
 
                <h3 className='p-name wireframeTitle' > Mobile Menu</h3>
-         <img src={MobileMenu} alt="Wireframe of the blog and design selection pages" className='u-photo designImg'/>
+         <img src={MobileMenu} alt="Wireframe of the blog and design selection pages" className='u-photo wireframeImg'/>
         <ol className='wireframeAnList'>
              
             <li className='wireframeLi'>
@@ -362,7 +493,7 @@ Subscribe - this aspect is purely to follow the convention of blogs which allows
            
             </ol>
                       <h3 className='p-name wireframeTitle' > Mobile Selection Pages</h3>
-         <img src={MobileSel} alt="Wireframe of mobile blog and design selection pages" className='u-photo designImg'/>
+         <img src={MobileSel} alt="Wireframe of mobile blog and design selection pages" className='u-photo wireframeImg'/>
         <ol className='wireframeAnList'>
              
             <li className='wireframeLi'>
@@ -372,7 +503,7 @@ The card design stays the same on mobile as on desktop, the only difference is t
             </ol>
 
              <h3 className='p-name wireframeTitle' > Mobile Entry Template</h3>
-         <img src={MobileTemp} alt="Wireframe of the mobile entry selection" className='u-photo designImg'/>
+         <img src={MobileTemp} alt="Wireframe of the mobile entry selection" className='u-photo wireframeImg'/>
         <ol className='wireframeAnList'>
              
             <li className='wireframeLi'>

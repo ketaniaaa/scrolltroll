@@ -8,6 +8,8 @@ import icon from '../../images/icon.png';
 import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';
 import ShareButton from '../../components/ShareButton';
+import SubscribeButton from '../../components/SubscribeButton';
+import TopButton from '../../components/BlogToTop';
 import { Helmet } from 'react-helmet';
 export default class UXReflection2 extends Component {
     constructor(props) {
@@ -95,8 +97,40 @@ export default class UXReflection2 extends Component {
        </ol>
       
         </section>
+         {/* Related Articles for easy navigation*/}
+        <section className='p-related relatedContent'>
+        <h4 className='relatedTitle'>Related Articles</h4>
+        <section className='relatedSpan h-card'>
+
+        <article className='h-card relatedCard'>
+        <h5 className='relatedArticle p-name'>Style Guide </h5>
+        <p className='relatedSummary p-summary'> 
+        Design elements that have formed Scroll Troll</p>
+        <HashLink to='/StyleGuide#top' className='readMoreLink u-url'> Read More</HashLink>
+        </article>
+
+        <article className='h-card relatedCard'>
+        <h5 className='relatedArticle p-name'> Wireframes </h5>
+        <p className='relatedSummary p-summary'> Low-fidelity Wireframes for Scroll Troll.</p>
+        <HashLink to='/Wireframes' className='readMoreLink u-url'> Read More</HashLink>
+        </article>
+
+        <article className='h-card relatedCard'>
+        <h5 className='relatedArticle p-name'>UX and UI Exam Reflection </h5>
+        <p className='relatedSummary p-summary'> This blog post explores UX and UI implementation of Scroll Troll.</p>
+        <HashLink to='/UXReflection2#top' className='readMoreLink u-url'> Read More</HashLink>
+        </article>
+        </section>
+
+        <section className='emailSubscribe'>
+        <input type="email" name="email" id="subEmail" placeholder='email@example.com' />
+        <SubscribeButton/>
+        <TopButton/>
+        </section>
+        </section>  {/* End Related Section */}
+
 </section>
-<HashLink smooth to="#top"> Back to top</HashLink>
+
      </main>
     )
   }

@@ -236,10 +236,9 @@ width: 100%;
             padding: 10px;
             font-size: 1em;
             font-family: 'Outfit';
+            margin: 5px;
     }
-    #idsel{
-        margin: 5px;
-    }
+  
     .passwordNav{
         margin: 20px;
         width: 100%;
@@ -555,10 +554,9 @@ color: white;
  }
  .inputsE{
     padding: 5px;
+    margin: none;
  }
- #idsel{
-    margin: 0px;
- }
+
  .passwordNav{
     transform: translateX(20px);
  }

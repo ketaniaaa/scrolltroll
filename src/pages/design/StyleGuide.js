@@ -5,13 +5,26 @@ import '../../styles/blogTemplate.css';
 import ShareButton from '../../components/ShareButton';
 import BackButton from '../../components/EntryBackButton';
 
+
 import Inspiration from '../../images/designimages/Inspiration.png';
 import TwitterInspo from '../../images/designimages/twitterinspo.png';
 import Colours from '../../images/designimages/palette.png';
 import Typography from '../../images/designimages/fonts.png';
 import LogoDesign from '../../images/designimages/logodesign.png';
 import Inputs from '../../images/designimages/InputFields.png';
-import IconDesign from '../../images/designimages/icons.png'
+import IconDesign from '../../images/designimages/icons.png';
+import MainContrast from '../../images/designimages/maintextcontrast.png';
+import ButtonContrast from '../../images/designimages/sharerenamebutton.png';
+import SignContrast from '../../images/designimages/signupcontrast.png';
+import ModalContrast from '../../images/designimages/modalcontrast.png';
+import GridLayout from '../../images/designimages/layouts.png';
+
+
+
+import SubscribeButton from '../../components/SubscribeButton';
+import TopButton from '../../components/BlogToTop';
+import { HashLink } from 'react-router-hash-link';
+
 
 import { Helmet } from 'react-helmet';
 export default class StyleGude extends Component {
@@ -103,6 +116,18 @@ export default class StyleGude extends Component {
 <img src={Colours} alt="colour palette" className='u-photo styleImg'/>
       <p className='e-content wireframeP'>Since I wanted to maintain a childlike feel for the UI of the site, I wanted to keep the colour palette simple. I have chosen jewel tones of the primary colours for my main colours of the site. These colours can be seen featured in the text and images of the site. These colours also are dark and therefore easy to read against a light background.</p>
        <p className='e-content wireframeP'>For my secondary colours and neutrals, I have chosen a green, a light beige and a charcoal tone. The green is featured on icons and drawings as the main logo features a green troll. The troll characters are consistently found across the site but are not used for text as the low contrast makes it hard to read. For the background, I have chosen a pale beige in the tonal family of yellow that I have chosen for the site. This tone gives a slight tint to the page while not competing with the darker blues and reds which make up the text for the site. This ensures that there is ample negative space and breathability for the user by using this colour as a background tone.&nbsp;</p>
+      <h3 className='p-name wireframeTitle'>Contrast Checking </h3>
+     <p className='e-content wireframeP'> The Web Content Accessibility Guidelines (WCAG) requires high contrast for colours used on pages in order to ensure accessibility. I have tested colour combinations used on Scroll Troll using their contrast checker.</p>
+      <img src={MainContrast} alt="screenshot depicting the contrast between primary text and background" className='u-photo styleImg'/>
+       <p className='e-content wireframeP'>This image shows the contrast between the primary text such as headings and paragraph text against the background colour of the wesbite. The WCAG requires a minimum contrast between text and background to be 4.5:1. As shown above, the main text has a contrast rating of 13.63:1 which allows for a high level of accessibility to users who are sight-impaired.</p>
+            <img src={ButtonContrast} alt="screenshot depicting the contrast of buttons" className='u-photo styleImg'/>
+<p className='e-content wireframeP'> The buttons also pass the tests for high contrast. This ensures that these buttons are highly visible and easy to read.</p>
+   
+ <img src={SignContrast} alt="screenshot depicting the contrast of the signup links and buttons" className='u-photo styleImg'/>
+ <p className='e-content wireframeP'>The sign up button does have the lowest contrast across the components on the site as this colour combination does not pass the check for large text and bodies of text. This button does however pass accessibility contrast checks for UI elements such as buttons. This therefore means that the button is usable for Scroll Troll while still meeting the minimum WCAG standards.</p> 
+                   <img src={ModalContrast} alt="screenshot depicting the contrast on the modals " className='u-photo styleImg'/>
+   <p className='e-content wireframeP'>Finally, I have checked the contrast for the modals across the website as these pop up when interacting with the internet artwork and the 'share' buttons on entry pages. This too does pass the contrast requirements though is of less contrast than of the main text. This is acceptable as these components are far and few and mainly act as part of the internet artwork that inherently aims to be intentionally bad UI. I did still want the content to be reable in modals but I opted for colours that are a bit more abrasive to the user than the main text.</p>
+     
       </article> }
         { activeTab === 2 &&
 
@@ -121,8 +146,8 @@ export default class StyleGude extends Component {
       <p className='e-content wireframeP'>I then wanted to make sure that the logo could be recognisable. To do this I made silhouettes which can be used for tab icons and badges as the shape holds up well on a small scale.</p>
         <h3 className='p-name wireframeTitle'>Icons</h3>
 <img src={IconDesign} alt="icon designs" className='u-photo styleImg'/>
-      <p className='e-content wireframeP'>The icons used on Scroll Troll are largely hand drawn by me. I wanted to keep to my theme of juvenline and rustic elements for I have hand  drawn arrows which are used in article navigation and created vector icons for the mobile menu and the close buttons on modals.</p>
-
+      <p className='e-content wireframeP'>The icons used on Scroll Troll are largely hand drawn by me. The premade icons that I found online were too high-end for the aesthetic that I wanted to achieve on Scroll Troll and therefore decided to create my own. These custom icons fit the look of the font that is used throughout the website. This therefore, aids in visual cohesion and reinforces a clear visual identity for Scroll Troll.</p>
+       <p className='e-content wireframeP'>These icons are used for scroll-to-top buttons, the mobile menu and the closing of modals and pop-ups. I have also created additional icons for fabs that are commonly used on social medias to indicate home, feed and inboxes. As Scroll Troll is not actually a functioning social media, these icons have not been used on this version of the site. </p>
       </article>}
         { activeTab === 4 &&
       
@@ -134,6 +159,13 @@ export default class StyleGude extends Component {
            <p className='e-content wireframeP'>Finally, I have used rounded buttons intentionally. Pumpkin Web Design suggests that rounded corners allow the user to focus on the content of the button because the curves redirect the user&apos;s gaze towards the centre. The rounded button also creates a more positive vibe and requires less cognitive processing than squares. I have used square buttons for links in the internet artwork to subvert this experience in order to create a higher cognitive load for the user and make buttons harder to find.</p>
 
       </article>}
+      { activeTab === 5 &&
+       <article className={`e-content designActiveContent bfCont ${activeTab === 5 ? 'activeSection' : 'inactiveSection'}`}>
+ <h3 className='p-name wireframeTitle'>Layouts</h3>
+<img src={GridLayout} alt="Grid layout example" className='u-photo styleImg'/>
+     <p className='e-content wireframeP'  >For the layout of Scroll Troll, I have used a grid layout. This was chosen because the simple use of grid lines allows for application of traditional design principles such as creating focal points. In Scroll Troll, I have aligned main content along grid lines to allow for negative space on the sides of entry pages for breathability. This allows for a less invasive visual of the website. This layout also allows for content to be emphasized and be place in a convenient visual position that naturally demands attention from the user. </p>
+   <p className='e-content wireframeP'  > The layout is discussed in more detail in the Wireframe blog. </p>
+      </article>}
   { activeTab === 6 &&
  <ul className={`h-card blogReferenceSection ${activeTab === 6 ? 'activeSection' : 'inactiveSection'}`}>
     <h3 className='p-name referenceList' id='refList'>References</h3>
@@ -141,6 +173,37 @@ export default class StyleGude extends Component {
     <li className='author'>&nbsp;Arnold, B. (2022) <em>Serif vs. Sans Serif Fonts: What&rsquo;s the Difference and When to Use</em>, <em>Vandelay Design</em>. Available at: <a href="https://www.vandelaydesign.com/serif-vs-sans-serif-fonts/"  className='u-url refA'>https://www.vandelaydesign.com/serif-vs-sans-serif-fonts/</a> (Accessed: 9 June 2023).</li>
   </ul>}
         </section>
+          {/* Related Articles for easy navigation*/}
+        <section className='p-related relatedContent'>
+        <h4 className='relatedTitle'>Related Articles</h4>
+        <section className='relatedSpan h-card'>
+
+        <article className='h-card relatedCard'>
+        <h5 className='relatedArticle p-name'>Wireframes </h5>
+        <p className='relatedSummary p-summary'> 
+       Low-fidelity wireframes for Scroll Troll</p>
+        <HashLink to='/Wireframes#top' className='readMoreLink u-url'> Read More</HashLink>
+        </article>
+
+        <article className='h-card relatedCard'>
+        <h5 className='relatedArticle p-name'> IXD </h5>
+        <p className='relatedSummary p-summary'> All about the user interactions on the site along with flows and personas.</p>
+        <HashLink to='/IXD' className='readMoreLink u-url'> Read More</HashLink>
+        </article>
+
+        <article className='h-card relatedCard'>
+        <h5 className='relatedArticle p-name'>UX and UI Exam Reflection </h5>
+        <p className='relatedSummary p-summary'> This blog post explores UX and UI implementation of Scroll Troll.</p>
+        <HashLink to='/UXReflection2#top' className='readMoreLink u-url'> Read More</HashLink>
+        </article>
+        </section>
+
+        <section className='emailSubscribe'>
+        <input type="email" name="email" id="subEmail" placeholder='email@example.com' />
+        <SubscribeButton/>
+        <TopButton/>
+        </section>
+        </section>  {/* End Related Section */}
 </section>
      </main>
     )

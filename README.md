@@ -11,9 +11,5 @@ This site contains a homepage, blog and design page as the artwork is implicit i
 
 
 - do more page??
-- fix style guide
-- add ixd page
-- proof read articles
-- add microformats/headers and meta data for forms
-- add form wireframes
-- writing: new reflections x2, update prep and rationale, ai and art. 
+- proof read articles!!!
+- writing: new reflections x2, Prep blog and Rationale blog!!!!!. 
