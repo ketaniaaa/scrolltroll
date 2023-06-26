@@ -4,7 +4,7 @@ This website was a coursework project in the class Interactive Media. Scroll Tro
 
 The purpose of Scroll Troll is to subvert the conventions of good UX and UI. This aims to be a demonstration of the phrase 'know the rules to break the rules" and is a parody social media site.  
 
-![Home Page]()
+![Home Page](https://github.com/ketaniaaa/scrolltroll/blob/main/src/images/blogimages/screen1.png)
 This site contains a homepage, blog and design page as the artwork is implicit in the homepage of this site
 
 
