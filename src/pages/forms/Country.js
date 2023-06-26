@@ -30,6 +30,7 @@ export default function Country() {
   
  const [state, setState] = React.useState(false);
  const [errorMessage, setErrorMessage] = React.useState("");
+ //Inline styling is used because of the props type for this external package.
   const canvasStyles = {
     border: "4px solid #252762",
     borderRadius: "15px",
@@ -58,7 +59,7 @@ export default function Country() {
   const goMore = () =>{
     navigate('/More')
   }
-
+//A list of pictures because you cannot put an images as an option in plain HTML
   const options = [
     {
       value: "nope",

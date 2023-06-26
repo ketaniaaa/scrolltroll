@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import cbat from '../images/formimages/cbat.mp3';
 
 class Timer extends Component {
+  //set interval of timer 
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +16,7 @@ class Timer extends Component {
       this.setState(prevState => ({ seconds: prevState.seconds - 1 }));
     }, 1000);
   }
-
+//if timer is up, play audio
   componentDidUpdate() {
     if (this.state.seconds === 0) {
       this.playAudio();

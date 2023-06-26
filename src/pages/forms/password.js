@@ -21,7 +21,7 @@ export default function Password() {
 
     let valid = true;
     let errorMessage = '';
-
+//Password checks are done using regex formats and state is used to check the correct type against the users input
     if (!state.password.includes('28061914')) {
       valid = false;
       errorMessage =
@@ -54,7 +54,7 @@ export default function Password() {
       setState((prevState => ({
         ...prevState,
         errorMessage,
-         
+       //user can only progress form if the password is valid  
       })));
         alert('Form is invalid, please fill out the form correctly.'); 
     }

@@ -13,7 +13,7 @@ export default function Post() {
     if (!isModalOpen) {
       setIsModalOpen(true);
     }
-    // Handle other input change logic here
+
   };
 
   return (

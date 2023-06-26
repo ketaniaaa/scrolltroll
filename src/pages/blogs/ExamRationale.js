@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Link} from "react-router-dom";
+
 import { HashLink } from 'react-router-hash-link';
 
 import EssayBanner from '../../images/blogimages/rationale.png';

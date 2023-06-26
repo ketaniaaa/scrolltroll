@@ -28,7 +28,7 @@ export default function Submit() {
 
   const handleAnswerChange = (event, field) => {
     const answer = event.target.value;
-      const correctXAnswers = ['3 or -1', 'x = 3 or x =-1', 'x = -1 or x =-3' ,'-1 or 3'];
+      const correctXAnswers = ['3 or -1', 'x = 3 or x =-1', 'x = -1 or x = -3' ,'-1 or 3', 'x=3 x=-1','x=3 or x=-1', 'x=-1 or x=3'] ;
     const correctPAnswer = '-1';
     const correctTAnswer = '3';
 

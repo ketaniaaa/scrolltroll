@@ -6,9 +6,11 @@ import '../../styles/forms.css';
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 import { Helmet } from 'react-helmet';
-
+//I have used functions instead of Class components for the forms because I felt that the use of state and vanilla JS was easier for me to grasp in this format as opposed to using constructors.
 
 export default function NameForm() {
+
+  //Most common surnames in the UK and US for the MUI autocomplete feature.
 const surnames = [
   { title: "Smith" },
   { title: "Johnson" },
@@ -123,8 +125,10 @@ const inputBox =() => setInputState(false);
               onInputCapture={inputError}
               id="fname"
               name="fname"
+
               className={`inputsA p-given-name${inputBox ? "errorInput" : ""}`}
             />
+            {/* An error message will be rendered when the user types. I have used state to check if the input has changed via the inputError function */}
             {!!state && (
               <p className="errorMessage">ERROR: choose a more normal name</p>
             )}

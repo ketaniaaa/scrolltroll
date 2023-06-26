@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../styles/snake.css";
-
+//key mapping for WASD controls 
 const height = 10;
 const width = 10;
 const stop = 32;
@@ -45,7 +45,7 @@ export default class Snake extends Component {
     this.isCollapsed();
     this.isEaten();
   }
-
+//when user presses button, will trigger this to change direction or snake
   moveSnake = () => {
     let snakeCopy = [...this.state.snake];
     let head = { ...snakeCopy[snakeCopy.length - 1] };
