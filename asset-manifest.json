@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/scrolltroll/static/css/main.f58f9742.css",
-    "main.js": "/scrolltroll/static/js/main.5057befb.js",
+    "main.js": "/scrolltroll/static/js/main.6dede70b.js",
     "static/js/787.d01dd61d.chunk.js": "/scrolltroll/static/js/787.d01dd61d.chunk.js",
     "static/media/rickroll.mp4": "/scrolltroll/static/media/rickroll.8f7c034541e50f2bb2d3.mp4",
     "static/media/kicon.png": "/scrolltroll/static/media/kicon.ade22e4979525d0c88f3.png",
@@ -94,11 +94,11 @@
     "static/media/menuvector.svg": "/scrolltroll/static/media/menuvector.c5d3542d46e919af5f1ed4814484f339.svg",
     "static/media/closeWhite.svg": "/scrolltroll/static/media/closeWhite.fb97d77a583252137ef19ebdd9a402f7.svg",
     "main.f58f9742.css.map": "/scrolltroll/static/css/main.f58f9742.css.map",
-    "main.5057befb.js.map": "/scrolltroll/static/js/main.5057befb.js.map",
+    "main.6dede70b.js.map": "/scrolltroll/static/js/main.6dede70b.js.map",
     "787.d01dd61d.chunk.js.map": "/scrolltroll/static/js/787.d01dd61d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f58f9742.css",
-    "static/js/main.5057befb.js"
+    "static/js/main.6dede70b.js"
   ]
 }
