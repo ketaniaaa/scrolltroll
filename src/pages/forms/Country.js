@@ -55,6 +55,9 @@ export default function Country() {
   const goBack = () => {
     navigate(-1);
   };
+  const goMore = () =>{
+    navigate('/More')
+  }
 
   const options = [
     {
@@ -219,7 +222,7 @@ export default function Country() {
         </section>
 
         <section className="countryNav navigation">
-          <button className="more bt-button">more</button>
+          <button className="more bt-button" onClick={goMore}>more</button>
           <button onClick={goBack} className="back">
             Back
           </button>

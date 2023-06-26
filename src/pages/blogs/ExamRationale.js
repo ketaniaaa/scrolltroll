@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 import EssayBanner from '../../images/blogimages/rationale.png';
-import icon from '../../images/icon.png';
+import icon from '../../images/kicon.png';
 import Name from '../../images/designimages/nameform.png';
 import Country from '../../images/designimages/country.png';
 import Password from '../../images/designimages/password.png';

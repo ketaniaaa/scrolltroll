@@ -7,7 +7,7 @@ import BlogImgF from '../images/blogimages/reflection.JPG';
 import BlogImgG from '../images/blogimages/rationale.png';
 import BlogImgH from '../images/blogimages/compref.png';
 import BlogImgI from '../images/blogimages/reflection3.png';
-import icon from '../images/navLogo.png';
+import icon from '../images/kicon.png';
 
 
 

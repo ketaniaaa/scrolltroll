@@ -15,6 +15,7 @@ import Country from './pages/forms/Country';
 import Password from './pages/forms/Password';
 import Submit from './pages/forms/Submit';
 import Post from './pages/forms/Post';
+import More from './pages/forms/More';
 
 
 //Blog Imports 
@@ -104,6 +105,7 @@ class App extends Component {
           <Route path="/Password" element={<Password />} />
           <Route path="/Submit" element={<Submit />} />
           <Route path="/Post" element={<Post />} />
+           <Route path="/More" element={<More />} />
         </Routes>
         <Footer />
       </div>

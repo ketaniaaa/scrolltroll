@@ -16,6 +16,34 @@
         -moz-box-shadow: 30px 30px 0px 0px rgba(32, 34, 88, 0.66);
         font-family: 'ScrollTroll';
 }
+.moreMain{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #FFA900;
+}
+.moreTitle{
+    justify-self: center;
+    align-self: center;
+    font-size: 7em;
+    color: #D11F2F;
+    width: 90%;
+}
+.moreP{
+    justify-self: center;
+        align-self: center;
+        font-family: 'ScrollTroll';
+        font-size: 2em;
+            color: #D11F2F;
+            width: 80%;
+
+}
+.ricked{
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+}
 .mobileSnake{
     display: none;
 }
@@ -193,7 +221,7 @@ margin: 10px;
 }
 .passwordError{
     white-space: pre-line;
-    color: #D11F2F;
+    color: #7A9647;
 }
 .passwordnputError{
     width: 100%;
@@ -631,5 +659,12 @@ font-family: 'ScrollTroll';
  .mobmodalH2{
     font-family: 'Comic Neue';
     color: #FFA900;
+ }
+ .moreTitle {
+     justify-self: center;
+     align-self: center;
+     font-size: 5em;
+     color: #D11F2F;
+     width: 90%;
  }
 }

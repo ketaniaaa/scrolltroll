@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 import EssayBanner from '../../images/blogimages/ethno.JPG';
-import icon from '../../images/icon.png';
+import icon from '../../images/kicon.png';
 
 import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';

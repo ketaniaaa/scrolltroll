@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { HashLink } from "react-router-hash-link";
 
 import EssayBanner from "../../images/blogimages/process.JPG";
-import icon from "../../images/icon.png";
+import icon from "../../images/kicon.png";
 import EssayPic1 from "../../images/blogimages/progressbar.png";
 import EssayPic3 from "../../images/blogimages/phonenumber.png";
 import EssayPic2 from "../../images/blogimages/dob.png";
@@ -122,7 +122,7 @@ export default class PrepBlog extends Component {
                 or &lsquo;r/badUIbattles&rsquo;. This subreddit explores fun and
                 interesting ways to create the most annoying user interfaces. I
                 wanted to use this inspiration to create a sort of learning
-                material for how not to design interfaces.&nbsp; I was also largely inspired by this site: <a href="https://sharepointlist.com/" target='_blank'>Service Never</a>
+                material for how not to design interfaces.&nbsp; I was also largely inspired by this site: <a href="https://sharepointlist.com/" target='_blank' rel="noreferrer" >Service Never</a>
                 which is a help desk that will never help you. This site is hilarious in the ways that it demonstrates bad UI while paying homage to 
                 the design style of internet pages in the late 90s/ early 2000's. 
               </p>

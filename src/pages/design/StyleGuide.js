@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import EssayBanner from '../../images/designimages/styleguide.JPG';
-import icon from '../../images/icon.png';
+import icon from '../../images/kicon.png';
 import '../../styles/blogTemplate.css';
 import ShareButton from '../../components/ShareButton';
 import BackButton from '../../components/EntryBackButton';

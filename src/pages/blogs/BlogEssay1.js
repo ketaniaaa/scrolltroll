@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { HashLink } from 'react-router-hash-link';
 
 import EssayBanner from '../../images/blogimages/essay.JPG';
-import icon from '../../images/icon.png';
+import icon from '../../images/kicon.png';
 import EssayPic from '../../images/blogimages/poem-portrait.png';
 import '../../styles/blogTemplate.css';
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 
 import EssayBanner from '../../images/designimages/ixd.JPG';
-import icon from '../../images/icon.png';
+import icon from '../../images/kicon.png';
 import '../../styles/blogTemplate.css';
 import BackButton from '../../components/EntryBackButton';
 import ShareButton from '../../components/ShareButton';

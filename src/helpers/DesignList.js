@@ -1,5 +1,5 @@
 
-import icon from '../images/navLogo.png';
+import icon from '../images/kicon.png';
 
 import DesignImgA from '../images/designimages/wireframes.JPG';
 import DesignImgB from '../images/designimages/styleguide.JPG';
