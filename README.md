@@ -12,4 +12,4 @@ This site contains a homepage, blog and design page as the artwork is implicit i
 
 - do more page??
 - proof read articles!!!
-- writing: new reflections x2, Prep blog and Rationale blog!!!!!. 
+- writing: UX Reflection!

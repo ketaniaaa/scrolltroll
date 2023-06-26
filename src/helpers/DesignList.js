@@ -5,10 +5,32 @@ import DesignImgA from '../images/designimages/wireframes.JPG';
 import DesignImgB from '../images/designimages/styleguide.JPG';
 import DesignImgC from '../images/designimages/ixd.JPG';
 import DesignImgD from '../images/designimages/us.JPG';
+import DesignImgE from '../images/blogimages/uxref.png';
 
 
 export const DesignList =[
-    
+    {
+    name: "Final UX and UI Reflection",
+    user: "@ketania",
+    description: "An final critique of the UX and UI implementation of TrollScroll",
+    icon: icon,
+    image: DesignImgE,
+    date: "11:45PM. 25 June, 2023",
+    platform: "ScrollTroll Desktop",
+    alt: 'Drawing of a computer screen with a glare'
+ ,route: "/UXReflection3#top"
+},
+{
+    name: "Interaction Design",
+    user: "@ketania",
+    description: "All about the user interactions on the site along with flows and personas",
+    icon: icon,
+    image: DesignImgC,
+    date: "3:5PM. 25 June, 2023",
+    platform: "ScrollTroll Desktop",
+    alt: 'A drawing of flowchart '
+     ,route: "/IXD"
+},
 {
     name: "Style Guide",
     user: "@ketania",
@@ -31,17 +53,7 @@ export const DesignList =[
     alt: 'Drawing of low-fidelity wireframes',
     route: "/Wireframes#top"
 },
-{
-    name: "Interaction Design",
-    user: "@ketania",
-    description: "All about the user interactions on the site along with flows and personas",
-    icon: icon,
-    image: DesignImgC,
-    date: "3:5PM. 25 June, 2023",
-    platform: "ScrollTroll Desktop",
-    alt: 'A drawing of flowchart '
-     ,route: "/IXD"
-},
+
 {
     name: "UX Reflection of ScrollTroll",
     user: "@ketania",

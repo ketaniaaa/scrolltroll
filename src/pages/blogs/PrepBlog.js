@@ -8,6 +8,7 @@ import EssayPic3 from "../../images/blogimages/phonenumber.png";
 import EssayPic2 from "../../images/blogimages/dob.png";
 import EssayPic4 from "../../images/blogimages/name.png";
 import EssayPic5 from "../../images/blogimages/trollinghehe.png";
+import Inspo from '../../images/blogimages/inspo.png'
 
 import "../../styles/blogTemplate.css";
 import BackButton from "../../components/EntryBackButton";
@@ -34,7 +35,7 @@ export default class PrepBlog extends Component {
       <main className="e-content blogEntryMain" id="#top">
         <Helmet>
           {/* SEO meta data since react does not hold interent capability for meta tags without the Helmet package */}
-          <title> Preparatory Work & Rationale</title>
+          <title> Preparatory Work for Scroll Troll</title>
           <meta name="author" content="Ketania Govender" />
           <meta
             name="description"
@@ -42,7 +43,7 @@ export default class PrepBlog extends Component {
           />
 
           <meta property="og:site_name" content="Scroll Troll" />
-          <meta property="og:title" content="Preparatory Work & Rational" />
+          <meta property="og:title" content="Preparatory Work for Scroll Troll" />
           <meta property="og:type" content="website" />
           <meta
             property="og:image"
@@ -76,7 +77,7 @@ export default class PrepBlog extends Component {
 
         <section className="e-content blogTempMain">
           <h1 className="blogTitle p-name">
-            Preparatory Work and Rationale for Internet Artwork{" "}
+            Preparatory Work and for my Internet Artwork{" "}
           </h1>
           <h2 className="blogAuthor p-author">@Ketania</h2>
           <p className="p-summary blogDescription">
@@ -115,16 +116,22 @@ export default class PrepBlog extends Component {
                 activeTab === 0 ? "activeSection" : "inactiveSection"
               }`}
             >
-              <p>
+              <p className = 'e-content'>
                 When approaching the design of Scroll Troll, I was largely
                 influenced by the subreddit &lsquo;Intentionally Bad UI&rsquo;
                 or &lsquo;r/badUIbattles&rsquo;. This subreddit explores fun and
                 interesting ways to create the most annoying user interfaces. I
                 wanted to use this inspiration to create a sort of learning
-                material for how not to design interfaces.&nbsp;
+                material for how not to design interfaces.&nbsp; I was also largely inspired by this site: <a href="https://sharepointlist.com/" target='_blank'>Service Never</a>
+                which is a help desk that will never help you. This site is hilarious in the ways that it demonstrates bad UI while paying homage to 
+                the design style of internet pages in the late 90s/ early 2000's. 
               </p>
-              <p></p>
-              <p>
+                <figure className='u-photo blogFigure'>
+          <img src={Inspo} alt="collage/moodbard of inpiration" className='blogFigure u-photo'/> 
+          <figcaption className='p-caption figCap'>  <em>Figure 1:</em> Inspiration
+          </figcaption>
+          </figure>
+              <p className = 'e-content'>
                 My vision for the site is to create a form to sign-up for a
                 parody social media website using intentionally bad UI that
                 mimics the home pages of many other major social media sites.
@@ -133,8 +140,8 @@ export default class PrepBlog extends Component {
                 have named the website Scroll Troll because I am therefore
                 &lsquo;trolling&rsquo; the user.
               </p>
-              <p></p>
-              <p>
+             
+              <p className = 'e-content'>
                 The artwork will be contained on the homepage. I have chosen to
                 include it on the homepage initially rather than on a separate
                 page because I want to ensure thematic consistency between the
@@ -162,8 +169,8 @@ export default class PrepBlog extends Component {
                 brushes to give the drawings a more juvenile feeling. This is
                 elaborated on in the site&rsquo;s style guide.
               </p>
-              <p></p>
-              <p>
+             
+              <p className = 'e-content'>
                 Social media sites often make use of eye-catching heroes on the
                 home page to entice a user to sign up as an account is required
                 to make use of the social function. I have looked at many sites
@@ -182,8 +189,8 @@ export default class PrepBlog extends Component {
                 may also urge the user to complete it as I would like my user to
                 experience each intended feature of the artwork form.
               </p>
-              <p></p>
-              <p>
+              
+              <p className = 'e-content'>
                 The artwork would include scenarios such as wrong progression
                 bars to confuse the user about where they are and swapping the
                 design of buttons and headings so that convention is broken.
@@ -191,9 +198,14 @@ export default class PrepBlog extends Component {
                 that allow for smooth interaction with the site. The components
                 I would like to add to my internet artwork will be further
                 discussed below through an exploration of UI design principles.
+                The main technical concern that I have is the handling of forms
+                as I have not worked with forms before. In order to make this project do-able for me
+                I have decided that form validation is not required for each instance of the artwork as the point is 
+                to disappoint the user at the end when they are told that Scroll Troll cannot support users. 
+                The important technical lessons to revise for my interent artwork are the state lectures since I am almost entirely relient on information provided by the user. 
               </p>
-              <p></p>
-              <p>
+             
+              <p className = 'e-content'>
                 According to Fleck (2021), a key component of good UI design is
                 avoiding complexity. This reduces the user&rsquo;s cognitive
                 load and therefore makes the experience more enjoyable. This can
@@ -208,19 +220,21 @@ export default class PrepBlog extends Component {
                 is long and shows incorrect steps to both confuse the user and
                 make it seem like the form is lengthy.&nbsp;
               </p>
-              <p>
+             
                 <figure className="u-photo blogFigure">
                   <img src={EssayPic1} alt="" className="blogFigure u-photo" />
                 </figure>
-              </p>
+              
 
-              <p>
+              <p className = 'e-content'>
                 This image is a prototype of a progress bar. In order to create
-                this, I will use React-Stepper from the MUI and useState. This
+                this, I will images or SVG's. I did contemplate using the MUI stepper 
+                though considering that I do not want a stepper that actually does its intended job 
+                of correctly informing the user, swapping an image for each pages works fine. 
+                This
                 allows me to access the previous state and position on the site
-                to update the colours of the progress bar. This can also be done
-                without accessing previous locations by simply restyling the bar
-                using CSS. This bar will be an unordered list displayed as an
+                to update the colours of the progress bar. 
+              . This bar will be an unordered list displayed as an
                 inline flex with certain children having a green colour to
                 indicate where in the form the user is. The progress bar will
                 further break UI guidelines with styling. I am to shift the
@@ -230,7 +244,7 @@ export default class PrepBlog extends Component {
                 space and grid alignment. &nbsp;I will further switch between
                 form segments with a next button.&nbsp;
               </p>
-              <p>
+              <p className = 'e-content'>
                 The styling of the next button is simple in its rule-breaking: I
                 will style the navigation link to have a smaller font size and
                 swop cursors for normal text having a selection cursor while the
@@ -239,8 +253,8 @@ export default class PrepBlog extends Component {
                 not be emphasised and the user&apos;s expectation of a pointer
                 cursor for links is broken.&nbsp;
               </p>
-              <p></p>
-              <p>
+              <p className = 'e-content'></p>
+              <p className = 'e-content'>
                 Fleck also mentions that good UI should avoid over-complication.
                 I aim to do just this in my artwork. Users have conventions for
                 filling out forms and aspects of forms such as dates. For the
@@ -256,12 +270,12 @@ export default class PrepBlog extends Component {
                 </a>
                 . This package will allow me to create most of the forms.
               </p>
-              <p>
+             
                 <figure className="u-photo blogFigure">
                   <img src={EssayPic2} alt="" className="blogFigure u-photo" />
                 </figure>
-              </p>
-              <p>
+              
+              <p className = 'e-content'>
                 Another key element is entering a phone number. Often users can
                 type in a number and the only suggested input is the area code
                 due to the length of phone numbers. I aim to complicate this
@@ -269,14 +283,14 @@ export default class PrepBlog extends Component {
                 9999. This means that a large range of numbers is encapsulated
                 in a small area of a slider. This is frustrating because the
                 user is unable to easily find their number. This again will be
-                created using MUI&nbsp;
+                created using MUI and will simply be change to include and min and max prop on the component.&nbsp;
               </p>
-              <p>
+              
                 <figure className="u-photo blogFigure">
                   <img src={EssayPic3} alt="" className="blogFigure u-photo" />
                 </figure>
-              </p>
-              <p>
+              
+              <p className = 'e-content'>
                 Addresses are often part of forms as they provide geographical
                 information about a user. On social media sites, a user&apos;s
                 country location allows for country-specific content such as on
@@ -311,10 +325,12 @@ export default class PrepBlog extends Component {
                 <a href="https://medium.com/@pdx.lucasm/canvas-with-react-js-32e133c05258">
                   https://medium.com/@pdx.lucasm/canvas-with-react-js-32e133c05258
                 </a>{" "}
-                .
+                . While this might be hard to create a drawing app myself, there are packages available such as ReactSketchCanvas which 
+                provides a simple canvas for the user to draw on. This might be the approach I need to take as I am unsure of if I will have the time to learn
+                how to create my own drawing app for one section of my artwork. This package therefore will save me time and allow me to adjust the sketching canvas with simple props for default colour and brush.
               </p>
-              <p></p>
-              <p>
+             
+              <p className = 'e-content'>
                 The second feature I wanted to implement that comments on
                 technological bias is auto-correct. Spellcheck or autocorrect is
                 a form of machine learning called (Natural Language Processing)
@@ -334,20 +350,23 @@ export default class PrepBlog extends Component {
                 accompanied by MUI&rsquo;s error message ability for input
                 fields. When a name is entered, it will be underlined in red and
                 an error message saying &ldquo;Try another more normal
-                name&rdquo; will appear. The autocorrect package allows the
+                name&rdquo; will appear. I can also create the error message with a simple 
+                state detection that renders all names an error onInputChange. 
+                 The autocorrect package allows the
                 developer to create a list from which autocorrection is applied.
                 I will make this feature by creating a simple list of two names
                 for each letter that is suggested when a user puts in their
                 name. For example, when I add &ldquo;Ketania&rdquo; as my input
                 the autocorrect will suggest an English name such as
-                &ldquo;Kate&rdquo;.
+                &ldquo;Kate&rdquo;. Another option may be to create an autocomplete list which is supported by MUI which only 
+                requires a simple plain JS list of names.
               </p>
-              <p>
+            
                 <figure className="u-photo blogFigure">
                   <img src={EssayPic4} alt="" className="blogFigure u-photo" />
                 </figure>
-              </p>
-              <p>
+             
+              <p className = 'e-content'>
                 The other feature that I plan on implementing is a
                 &ldquo;troll&rdquo; button which propagates images across the
                 screen on trolls using the CSS property to toggle between hidden
@@ -357,26 +376,33 @@ export default class PrepBlog extends Component {
                 ask the user for the solution to a complex equation but will
                 only let the user progress in the answer is wrong.&nbsp;
               </p>
-              <p>
+             
                 <figure className="u-photo blogFigure">
                   <img src={EssayPic5} alt="" className="blogFigure u-photo" />
                 </figure>
-              </p>
-              <p>
+             
+              <p className = 'e-content'>
                 Other features to implement are a floating submit button. When
                 the user reaches the end of the form, they will be presented
                 will a button that is translated 20px on the Y and X on hover
                 based on the user&apos;s cursor location.&nbsp;
               </p>
-              <p></p>
-              <p>
+              <p className = 'e-content'>One feature that I think is crucial is a password input. This will require me to 
+                look at REGEX notation in order to set password parameters. I believe that this is within my capabilities as 
+                I have used regex for hashing and authorization in last years D3 project. 
+              </p>
+              <p className = 'e-content'>One feature that I should study up on is a quiz capability to create a mock reCAPTCHA. State in react can confuse me as I am used to using vanilla just and jQuery 
+                or simple DOM access of elements via ids so checking an input against a set answer is something that I need to learn how to do. Lucky, there 
+                are a vast number of Youtube videos that can aid me in my development of this feature. 
+              </p>
+              <p className = 'e-content'>
                 A feature that proves difficult to implement given my skill is
                 an input to scroll function inspired by this website. Ideally, I
                 can implement a similar feature with bigger parameters that
                 detects scrolling and a modal appears asking the user to input
                 the Y-axis pixel scroll they desire.&nbsp;
               </p>
-              <p>
+              <p className = 'e-content'>
                 <a href="https://fibbery.herokuapp.com/scrodal/">
                   https://fibbery.herokuapp.com/scrodal/
                 </a>
@@ -512,7 +538,7 @@ export default class PrepBlog extends Component {
                   Troll.
                 </p>
                 <HashLink
-                  to="/AutocorrectBias#top"
+                  to="/DevBlog#top"
                   className="readMoreLink u-url"
                 >
                   {" "}
@@ -526,7 +552,7 @@ export default class PrepBlog extends Component {
                   An updated reflection of the UX and UI of Scroll Troll and all
                   the changes made.
                 </p>
-                <HashLink to="/AiArt" className="readMoreLink u-url">
+                <HashLink to="/ExamReflection#top" className="readMoreLink u-url">
                   {" "}
                   Read More
                 </HashLink>

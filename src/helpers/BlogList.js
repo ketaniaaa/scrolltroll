@@ -4,11 +4,50 @@ import BlogImgC from '../images/blogimages/ethno.JPG';
 import BlogImgD from '../images/blogimages/name.JPG';
 import BlogImgE from '../images/blogimages/process.JPG';
 import BlogImgF from '../images/blogimages/reflection.JPG';
+import BlogImgG from '../images/blogimages/rationale.png';
+import BlogImgH from '../images/blogimages/compref.png';
+import BlogImgI from '../images/blogimages/reflection3.png';
 import icon from '../images/navLogo.png';
 
 
 
 export const BlogList =[
+     {
+    name: "TrollScroll: Exam Rationale",
+    user: "@ketania",
+    description: "The run down on what my internet artwork is about and why I have chosen it!",
+    icon: icon,
+    image: BlogImgG,
+    date: "11:00AM. 26 June, 2023",
+    platform: "ScrollTroll Desktop",
+   
+    alt: 'Drawing of a paintbrush and code symbols'
+,route: "/ExamRationale#top"
+},
+ {
+    name: "Final UX and UI Reflection ",
+    user: "@ketania",
+    description: " A final critical analysis of the user experience and interaction design of Scroll Troll",
+    icon: icon,
+    image: BlogImgI,
+    date: "11:41PM. 25 June, 2023",
+    platform: "ScrollTroll Desktop",
+   
+    alt: 'Drawing of a paintbrush and code symbols'
+,route: "/ExamReflection#top"
+},
+   {
+    name: "Development Reflection",
+    user: "@ketania",
+    description: "A reflection on the development of my final internet artwork and my struggles!",
+    icon: icon,
+    image: BlogImgH,
+    date: "1:00PM. 22 June, 2023",
+    platform: "ScrollTroll Desktop",
+   
+    alt: 'Drawing of a paintbrush and code symbols'
+,route: "/DevBlog#top"
+},
     {
     name: "TrollScroll: The Making Of",
     user: "@ketania",

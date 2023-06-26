@@ -83,11 +83,12 @@
         z-index: 20; */
         position: relative;
         right: 0;
-        transform: translateX(500px);
+        width: 200px;
+        transform: translateX(-300px);
     }
         .shareP {
-           font-size: 0.5em;
-            transform: translateY(-43px);
+           font-size: 0.7em;
+            transform: translateY(-52px);
             
         }
         .modalContent{

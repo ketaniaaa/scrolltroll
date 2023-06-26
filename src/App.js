@@ -24,6 +24,9 @@ import AfricanArt from './pages/blogs/AfricanArt';
 import Autocorrectbias from './pages/blogs/Autocorrectbias';
 import PrepBlog from './pages/blogs/PrepBlog';
 import AiArt from './pages/blogs/AiArt';
+import ExamRationale from './pages/blogs/ExamRationale';
+import DevBlog from './pages/blogs/DevBlog';
+import ExamReflection from './pages/blogs/ExamReflection';
 
 
 //Design Imports
@@ -32,6 +35,7 @@ import Wireframes from './pages/design/Wireframes';
 import StyleGuide from './pages/design/StyleGuide';
 import IXD from './pages/design/IXD';
 import UXReflection2 from './pages/design/UXReflection2';
+import UXReflection3 from './pages/design/UXReflection3';
 
 //Component Imports 
 import Navbar from './components/Navbar';
@@ -83,12 +87,16 @@ class App extends Component {
           <Route path="/AfricanArt" element={<AfricanArt />} />
           <Route path="/AutocorrectBias" element={<Autocorrectbias />} />
           <Route path="/Reflection2" element={<Reflection2 />} />
+           <Route path="/ExamRationale" element={<ExamRationale />} />
+          <Route path="/DevBlog" element={<DevBlog />} />
+          <Route path="/ExamReflection" element={<ExamReflection />} />
 
           {/* Design Pages */}
           <Route path="/Wireframes" element={<Wireframes />} />
           <Route path="/StyleGuide" element={<StyleGuide />} />
           <Route path="/IXD" element={<IXD />} />
           <Route path="/UXReflection2" element={<UXReflection2 />} />
+               <Route path="/UXReflection3" element={<UXReflection3 />} />
 
           {/* Artwork Pages */}
           <Route path="/NameForm" element={<NameForm />} />

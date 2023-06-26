@@ -113,7 +113,7 @@ export default class Autocorrectionbias extends Component {
               id="blogActive"
               style={{ display: activeTab === 0 ? "block" : "none" }}
             >
-              <p>
+              <p className = 'e-content'>
                 This week as the implemented vision for my internet artwork
                 draws closer, I find myself interrogating the idea of
                 autocorrect bias. In my rationale and prep work found{" "}
@@ -125,7 +125,7 @@ export default class Autocorrectionbias extends Component {
                 computational biases and colonialism in code that has resulted
                 in technology negating the presence of many populations.&nbsp;
               </p>
-              <p>
+              <p className = 'e-content'>
                 As technology has advanced allowing for higher computational
                 functions to be run on a wider spectrum of devices, machine
                 learning (ML) and artificial intelligence (AI) have become
@@ -135,7 +135,7 @@ export default class Autocorrectionbias extends Component {
                 must be initially understood that the data we engage in are
                 inherently biased.&nbsp;
               </p>
-              <p>
+              <p className = 'e-content'>
                 To explain this, let us inspect Graham et al&rsquo;s (2015) idea
                 that there is an information disparity between the global north
                 and the global south. They propose the idea that in
@@ -156,7 +156,7 @@ export default class Autocorrectionbias extends Component {
                 towards these communities. This is seen within the development
                 of Natural Language Processing (NLP).
               </p>
-              <p>
+              <p className = 'e-content'>
                 Nobel coined the phrase &ldquo;technological redlining&rdquo; in
                 her book Algorithms of Oppression (2018, pp18). This term refers
                 to the embedded prejudice in the code that we interact with. As
@@ -179,7 +179,7 @@ export default class Autocorrectionbias extends Component {
                 become a topic of interest within my internet artwork
                 endeavours.
               </p>
-              <p>
+              <p className = 'e-content'>
                 As we are now aware of the colonized nature of technology, the
                 question of correction is raised. Adams (2021, pp177) suggests
                 that the initial step is ensuring that marginalized communities
@@ -194,7 +194,7 @@ export default class Autocorrectionbias extends Component {
                 point-of-view have been made in the example of AI Ethics
                 Guidelines to be produced.&nbsp;
               </p>
-              <p>
+              <p className = 'e-content'>
                 The second step towards more inclusive artificial intelligence
                 is adapting the training methodology for NLP itself. Masakhane
                 does just this as the research community has provided an
@@ -204,7 +204,7 @@ export default class Autocorrectionbias extends Component {
                 adaptive model training and language preservation(Ahia et al.
                 2019, pp2).&nbsp;
               </p>
-              <p>
+              <p className = 'e-content'>
                 While there are steps have been taken to rectify the historical
                 inequality between the North/South in technology, there is still
                 a far way to go. It is therefore of utmost importance for these

@@ -136,7 +136,7 @@ The emotional journey of a website usually aims to predict the feelings of the u
         <article className='h-card relatedCard'>
         <h5 className='relatedArticle p-name'>UX and UI Exam Reflection </h5>
         <p className='relatedSummary p-summary'> This blog post explores UX and UI implementation of Scroll Troll.</p>
-        <HashLink to='/UXReflection2#top' className='readMoreLink u-url'> Read More</HashLink>
+        <HashLink to='/UXReflection3#top' className='readMoreLink u-url'> Read More</HashLink>
         </article>
         </section>
 
